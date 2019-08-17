@@ -1,0 +1,43 @@
+.center {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+
+  &__title {
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  &__sub-title {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+.social-media {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 5%;
+  right: 3%;
+
+  &__link {
+    width: inherit;
+    height: inherit;
+  }
+
+  &__icon {
+    height: inherit;
+    width: inherit;
+    fill: #fff;
+  }
+}
+
+.center {
+  margin-top: 3rem;
+
+  &__main-title {
+    text-align: center;
+  }
+}

@@ -1,0 +1,11 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  line-height: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+}

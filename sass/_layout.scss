@@ -1,0 +1,19 @@
+.top-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(rgba($color-primary-light, .6), rgba($color-primary-dark, .6)) ,url("../img/bg-photo.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.about-section {
+  height: 100vh;
+  background-image: linear-gradient(rgba($color-primary-dark, .8), rgba($color-primary-dark, .8)), url("../img/bg-photo-2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
