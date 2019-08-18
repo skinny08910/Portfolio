@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: linear-gradient(rgba($color-primary-light, .6), rgba($color-primary-dark, .6)) ,url("../img/bg-photo.jpg");
+  background-image: linear-gradient(to right, rgba($color-primary-light, .5), rgba($color-primary-dark, .5)) ,url("../img/bg-photo.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,9 +11,9 @@
 }
 
 .about-section {
-  height: 100vh;
-  background-image: linear-gradient(rgba($color-primary-dark, .8), rgba($color-primary-dark, .8)), url("../img/bg-photo-2.jpg");
+  background-image: linear-gradient(to right, rgba($color-primary-light, .7), rgba($color-primary-dark, .7)), url("../img/bg-photo-2.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 6rem 0;
 }

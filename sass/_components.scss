@@ -3,15 +3,17 @@
   font-family: 'Roboto', sans-serif;
 
   &__title {
-    color: white;
+    color: #fff;
     font-size: 3rem;
     font-weight: 500;
+    margin-bottom: 1rem;
   }
 
   &__sub-title {
     color: #fff;
     font-size: 1.5rem;
     font-weight: 400;
+    text-transform: capitalize;
   }
 }
 
@@ -31,13 +33,138 @@
     height: inherit;
     width: inherit;
     fill: #fff;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      fill: $color-secondary-light;
+    }
   }
 }
 
 .center {
-  margin-top: 3rem;
+  margin-bottom: 5rem;
 
   &__main-title {
-    text-align: center;
+    font-size: 2.1rem;
+    font-weight: 300;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+  }
+
+  &__hr {
+    overflow: visible;
+    /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: $color-secondary-light;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    width: 20%;
+  }
+
+  &__hr::before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: $color-secondary-light;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+  }
+}
+
+.bio-box {
+  font-family: 'Roboto', sans-serif;
+  width: 70rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background-image: linear-gradient(rgba($color-primary-dark, .5), rgba($color-primary-dark, .5));
+  border-radius: 10px;
+
+  &__name {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+
+  &__location {
+    font-size: 1rem;
+    color: $color-secondary-light;
+    margin-bottom: 1.5rem;
+  }
+
+  &__icon {
+    width: 12px;
+    height: 12px;
+    fill: $color-secondary-light;
+    margin-right: 0.2rem;
+  }
+
+  &__paragraph {
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  &__skills {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  &__html {
+    color: #fff;
+    background-color: $color-primary-light;
+    padding: 10px 50px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__css {
+    color: #fff;
+    background-color: $color-primary-light;
+    padding: 10px 50px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__js {
+    color: #fff;
+    background-color: $color-primary-light;
+    padding: 10px 50px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__language {
+    &:hover {
+      &__hover {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+
+  &__hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $color-primary-light;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform: translate3d(0, 40px, 0);
+    transition: all 0.3s ease-in-out;
   }
 }
