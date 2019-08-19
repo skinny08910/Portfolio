@@ -110,7 +110,7 @@ body {
   -moz-box-shadow: -1px 0 78px -10px #55c57a;
   box-shadow: -1px 0 78px -10px #55c57a; }
   .bio-box:hover {
-    animation: shake-2 0.2s ease-in-out 3 alternate; }
+    animation: shake 0.1s ease-in-out 3 alternate; }
   .bio-box__name {
     font-size: 1.5rem;
     color: #fff;
@@ -166,7 +166,7 @@ body {
   width: 70rem;
   margin: 0 auto; }
   .wrapper__items:hover {
-    animation: shake-2 0.2s ease-in-out 3 alternate;
+    animation: shake 0.1s ease-in-out 3 alternate;
     -webkit-box-shadow: -1px 0 78px -10px #55c57a;
     -moz-box-shadow: -1px 0 78px -10px #55c57a;
     box-shadow: -1px 0 78px -10px #55c57a; }

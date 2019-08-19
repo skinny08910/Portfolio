@@ -98,7 +98,7 @@
   box-shadow: -1px 0 78px -10px rgba(85,197,122,1);
 
   &:hover {
-    animation: shake-2 0.2s ease-in-out 3 alternate;
+    animation: shake 0.1s ease-in-out 3 alternate;
   }
 
   &__name {
@@ -177,7 +177,7 @@
 
   &__items {
     &:hover {
-      animation: shake-2 0.2s ease-in-out 3 alternate;
+      animation: shake 0.1s ease-in-out 3 alternate;
       -webkit-box-shadow: -1px 0 78px -10px rgba(85,197,122,1);
       -moz-box-shadow: -1px 0 78px -10px rgba(85,197,122,1);
       box-shadow: -1px 0 78px -10px rgba(85,197,122,1);
