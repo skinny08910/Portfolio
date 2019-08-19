@@ -118,12 +118,14 @@ body {
   .bio-box__location {
     font-size: 1rem;
     color: yellowGreen;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1.5rem;
+    animation: location 0.2s ease-in-out infinite alternate; }
   .bio-box__icon {
     width: 12px;
     height: 12px;
     fill: yellowGreen;
-    margin-right: 0.2rem; }
+    margin-right: 0.2rem;
+    animation: location 0.2s ease-in-out infinite alternate; }
   .bio-box__paragraph {
     color: #fff;
     font-size: 1.1rem;
@@ -340,3 +342,9 @@ video {
     transform: translateY(-10px); }
   100% {
     transform: translateY(10px); } }
+
+@keyframes location {
+  0% {
+    color: rgba(154, 205, 50, 0.5); }
+  100% {
+    color: yellowGreen; } }

@@ -111,6 +111,7 @@
     font-size: 1rem;
     color: $color-secondary-light;
     margin-bottom: 1.5rem;
+    animation: location 0.2s ease-in-out infinite alternate;
   }
 
   &__icon {
@@ -118,6 +119,7 @@
     height: 12px;
     fill: $color-secondary-light;
     margin-right: 0.2rem;
+    animation: location 0.2s ease-in-out infinite alternate;
   }
 
   &__paragraph {
