@@ -1,3 +1,5 @@
+// Center container
+
 .center {
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -16,6 +18,7 @@
     text-transform: capitalize;
   }
 }
+// Social media link
 
 .social-media {
   height: 20px;
@@ -34,12 +37,15 @@
     width: inherit;
     fill: #fff;
     transition: all 0.3s ease-in-out;
+    animation: shake 0.2s ease-in-out infinite alternate;
 
     &:hover {
       fill: $color-secondary-light;
+      animation: shake 0;
     }
   }
 }
+// Center container
 
 .center {
   margin-bottom: 5rem;
@@ -60,7 +66,11 @@
     border-color: $color-secondary-light;
     border-width: 1px 0 0 0;
     border-radius: 20px;
-    width: 20%;
+    width: 25%;
+
+    &--portfolio {
+      width: 10%;
+    }
   }
 
   &__hr::before {
@@ -74,6 +84,7 @@
     border-radius: 20px;
   }
 }
+// Bio box
 
 .bio-box {
   font-family: 'Roboto', sans-serif;
@@ -82,6 +93,13 @@
   padding: 2rem;
   background-image: linear-gradient(rgba($color-primary-dark, .5), rgba($color-primary-dark, .5));
   border-radius: 10px;
+  -webkit-box-shadow: -1px 0 78px -10px rgba(85,197,122,1);
+  -moz-box-shadow: -1px 0 78px -10px rgba(85,197,122,1);
+  box-shadow: -1px 0 78px -10px rgba(85,197,122,1);
+
+  &:hover {
+    animation: shake-2 0.2s ease-in-out 3 alternate;
+  }
 
   &__name {
     font-size: 1.5rem;
@@ -113,58 +131,147 @@
     font-size: 1rem;
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 20%;
     margin: 0 auto;
   }
 
   &__html {
     color: #fff;
-    background-color: $color-primary-light;
-    padding: 10px 50px;
+    background-color: rgba($color-primary-light, .5);
+    padding: 10px 30px;
     border-radius: 10px;
     position: relative;
     cursor: pointer;
+
+    &:hover {
+      background-color: $color-primary-light;
+      animation: shake-2 0.2s ease-in-out 3 alternate 0.3s;
+    }
   }
 
   &__css {
     color: #fff;
-    background-color: $color-primary-light;
-    padding: 10px 50px;
+    background-color: rgba($color-primary-light, .5);
+    padding: 10px 30px;
     border-radius: 10px;
     position: relative;
     cursor: pointer;
-  }
 
-  &__js {
-    color: #fff;
-    background-color: $color-primary-light;
-    padding: 10px 50px;
-    border-radius: 10px;
-    position: relative;
-    cursor: pointer;
-  }
-
-  &__language {
     &:hover {
-      &__hover {
-        transform: translate3d(0, 0, 0);
-      }
+      background-color: $color-primary-light;
+      animation: shake-2 0.2s ease-in-out 3 alternate 0.3s;
+    }
+  }
+}
+// Wrapper
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-template-rows: 360px;
+  grid-gap: 20px;
+  width: 70rem;
+  margin: 0 auto;
+
+  &__items {
+    &:hover {
+      animation: shake-2 0.2s ease-in-out 3 alternate;
+      -webkit-box-shadow: -1px 0 78px -10px rgba(85,197,122,1);
+      -moz-box-shadow: -1px 0 78px -10px rgba(85,197,122,1);
+      box-shadow: -1px 0 78px -10px rgba(85,197,122,1);
+    }
+
+    &:hover > .wrapper__info {
+      opacity: 1;
+      visibility: visible;
+      transform: translate3d(0, 0, 0);
     }
   }
 
-  &__hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: $color-primary-light;
-    width: 100%;
-    height: 100%;
+  &__items--1 {
+    background-image: url("https://cdn.dribbble.com/users/2146089/screenshots/6791385/landing_app_f.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 10px;
-    transform: translate3d(0, 40px, 0);
-    transition: all 0.3s ease-in-out;
+  }
+
+  &__items--2 {
+    background-image: url("https://cdn.dribbble.com/users/702789/screenshots/6373671/erik4.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+
+  &__items--3 {
+    background-image: url("https://cdn.dribbble.com/users/702789/screenshots/6988501/media/754450279893937161016df689828c12.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+
+  &__items--4 {
+    background-image: url("https://cdn.dribbble.com/users/702789/screenshots/6821527/preview.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+
+  &__info {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba($color-primary-light, .8), rgba($color-primary-dark, .8));
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    transform: translate3d(0, 50px,0);
+    transition: all 0.4s ease-in-out 0.6s;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  &__button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+
+    &--project {
+      background-color: rgba($color-primary-light, .5);
+      padding: 10px 25px;
+      border-radius: 10px;
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-primary-light;
+        animation: shake-2 0.2s ease-in-out 3 alternate 0.3s;
+      }
+    }
+
+    &--code {
+      background-color: rgba($color-primary-light, .5);
+      padding: 10px 25px;
+      border-radius: 10px;
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-primary-light;
+        animation: shake-2 0.2s ease-in-out 3 alternate 0.3s;
+      }
+    }
   }
 }

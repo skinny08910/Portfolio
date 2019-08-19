@@ -1,3 +1,5 @@
+// Top section
+
 .top-section {
   display: flex;
   justify-content: center;
@@ -9,11 +11,31 @@
   background-size: cover;
   position: relative;
 }
+// About section
 
 .about-section {
-  background-image: linear-gradient(to right, rgba($color-primary-light, .7), rgba($color-primary-dark, .7)), url("../img/bg-photo-2.jpg");
+  background-image: linear-gradient(to right, rgba($color-primary-light, .5), rgba($color-primary-dark, .5)), url("../img/bg-photo-3.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 6rem 0;
+  padding: 20rem 0;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // overflow: hidden;
+}
+// Portfolio section
+
+.portfolio-section {
+  background-image: linear-gradient(to right, rgba($color-primary-light, .5), rgba($color-primary-dark, .5)), url("../img/bg-photo-4.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20rem 0;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  overflow: hidden;
 }
