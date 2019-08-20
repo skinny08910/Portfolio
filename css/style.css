@@ -23,14 +23,14 @@ body {
   position: relative; }
 
 .about-section {
-  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.5), rgba(40, 180, 133, 0.5)), url("../img/bg-photo-3.jpg");
+  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.5), rgba(40, 180, 133, 0.5)), url("../img/bg-photo-2.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 20rem 0; }
 
 .portfolio-section {
-  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.5), rgba(40, 180, 133, 0.5)), url("../img/bg-photo-4.jpg");
+  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.5), rgba(40, 180, 133, 0.5)), url("../img/bg-photo-3.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,11 +45,17 @@ body {
     font-size: 3rem;
     font-weight: 500;
     margin-bottom: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .center__title {
+        font-size: 2.3rem; } }
   .center__sub-title {
     color: #fff;
     font-size: 1.5rem;
     font-weight: 400;
     text-transform: capitalize; }
+    @media only screen and (max-width: 37.5em) {
+      .center__sub-title {
+        font-size: 1.4rem; } }
 
 .social-media {
   height: 20px;
@@ -57,6 +63,10 @@ body {
   position: absolute;
   top: 5%;
   right: 3%; }
+  @media only screen and (max-width: 37.5em) {
+    .social-media {
+      top: 90%;
+      right: 10%; } }
   .social-media__link {
     width: inherit;
     height: inherit; }
@@ -66,6 +76,9 @@ body {
     fill: #fff;
     transition: all 0.3s ease-in-out;
     animation: shake 0.2s ease-in-out infinite alternate; }
+    @media only screen and (max-width: 37.5em) {
+      .social-media__icon {
+        animation: shake-3 0.2s ease-in-out infinite alternate; } }
     .social-media__icon:hover {
       fill: #7fff00;
       animation: shake 0; }
@@ -78,6 +91,9 @@ body {
     color: #fff;
     text-transform: capitalize;
     margin-bottom: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .center__main-title {
+        font-size: 1.7rem; } }
   .center__hr {
     overflow: visible;
     /* For IE */
@@ -87,8 +103,14 @@ body {
     border-width: 1px 0 0 0;
     border-radius: 20px;
     width: 25%; }
+    @media only screen and (max-width: 37.5em) {
+      .center__hr {
+        width: 65%; } }
     .center__hr--portfolio {
       width: 10%; }
+      @media only screen and (max-width: 37.5em) {
+        .center__hr--portfolio {
+          width: 30%; } }
   .center__hr::before {
     display: block;
     content: "";
@@ -101,75 +123,117 @@ body {
 
 .bio-box {
   font-family: 'Roboto', sans-serif;
-  width: 70rem;
+  max-width: 70rem;
   margin: 0 auto;
   padding: 2rem;
-  background-image: linear-gradient(rgba(40, 180, 133, 0.5), rgba(40, 180, 133, 0.5));
+  background-image: linear-gradient(to right, rgba(40, 180, 133, 0.5), rgba(40, 180, 133, 0.5));
   border-radius: 10px;
-  -webkit-box-shadow: -1px 0 78px -10px #55c57a;
-  -moz-box-shadow: -1px 0 78px -10px #55c57a;
-  box-shadow: -1px 0 78px -10px #55c57a; }
+  -webkit-box-shadow: -1px 0 30px -10px #80ff00;
+  -moz-box-shadow: -1px 0 30px -10px #80ff00;
+  box-shadow: -1px 0 30px -10px #80ff00; }
+  @media only screen and (max-width: 37.5em) {
+    .bio-box {
+      width: 90%; } }
   .bio-box:hover {
-    animation: shake 0.1s ease-in-out 3 alternate; }
+    animation: shake-2 0.2s ease-in-out 3 alternate; }
+    @media only screen and (max-width: 37.5em) {
+      .bio-box:hover {
+        animation: 0; } }
   .bio-box__name {
     font-size: 1.5rem;
     color: #fff;
     margin-bottom: 0.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .bio-box__name {
+        font-size: 1.4rem; } }
   .bio-box__location {
     font-size: 1rem;
     color: #7fff00;
     margin-bottom: 1.5rem;
     animation: location 0.2s ease-in-out infinite alternate; }
+    @media only screen and (max-width: 37.5em) {
+      .bio-box__location {
+        font-size: 0.9rem; } }
   .bio-box__icon {
     width: 12px;
     height: 12px;
     fill: #7fff00;
     margin-right: 0.2rem;
     animation: location 0.2s ease-in-out infinite alternate; }
+    @media only screen and (max-width: 37.5em) {
+      .bio-box__icon {
+        font-size: 1rem; } }
   .bio-box__paragraph {
     color: #fff;
     font-size: 1.1rem;
     line-height: 1.6rem;
     margin-bottom: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .bio-box__paragraph {
+        font-size: 1rem; } }
   .bio-box__skills {
     font-size: 1rem;
     display: flex;
     justify-content: space-between;
     width: 20%;
     margin: 0 auto; }
+    @media only screen and (max-width: 37.5em) {
+      .bio-box__skills {
+        justify-content: center;
+        width: 90; } }
   .bio-box__html {
     color: #fff;
-    background-color: rgba(126, 213, 111, 0.5);
+    background-color: rgba(127, 255, 0, 0.5);
     padding: 10px 30px;
     border-radius: 10px;
     position: relative;
-    cursor: pointer; }
+    cursor: pointer;
+    margin-right: 30px; }
     .bio-box__html:hover {
-      background-color: #7ed56f;
+      background-color: rgba(127, 255, 0, 0.8);
       animation: shake-2 0.2s ease-in-out 3 alternate 0.3s; }
+      @media only screen and (max-width: 37.5em) {
+        .bio-box__html:hover {
+          animation: 0; } }
   .bio-box__css {
     color: #fff;
-    background-color: rgba(126, 213, 111, 0.5);
+    background-color: rgba(127, 255, 0, 0.5);
     padding: 10px 30px;
     border-radius: 10px;
     position: relative;
     cursor: pointer; }
     .bio-box__css:hover {
-      background-color: #7ed56f;
+      background-color: rgba(127, 255, 0, 0.8);
       animation: shake-2 0.2s ease-in-out 3 alternate 0.3s; }
+      @media only screen and (max-width: 37.5em) {
+        .bio-box__css:hover {
+          animation: 0; } }
 
 .wrapper {
   display: grid;
   grid-template-columns: repeat(4, 2fr);
-  grid-template-rows: 360px;
   grid-gap: 20px;
-  width: 70rem;
+  max-width: 70rem;
   margin: 0 auto; }
+  @media only screen and (max-width: 37.5em) {
+    .wrapper {
+      grid-template-columns: 1fr;
+      grid-row-gap: 140px;
+      width: 90%; } }
+  @media only screen and (max-width: 37.5em) {
+    .wrapper__items {
+      height: 130%;
+      -webkit-box-shadow: -1px 0 30px -10px #80ff00;
+      -moz-box-shadow: -1px 0 30px -10px #80ff00;
+      box-shadow: -1px 0 30px -10px #80ff00; } }
   .wrapper__items:hover {
-    animation: shake 0.1s ease-in-out 3 alternate;
-    -webkit-box-shadow: -1px 0 78px -10px #55c57a;
-    -moz-box-shadow: -1px 0 78px -10px #55c57a;
-    box-shadow: -1px 0 78px -10px #55c57a; }
+    animation: shake-2 0.2s ease-in-out 3 alternate;
+    -webkit-box-shadow: -1px 0 30px -10px #80ff00;
+    -moz-box-shadow: -1px 0 30px -10px #80ff00;
+    box-shadow: -1px 0 30px -10px #80ff00; }
+    @media only screen and (max-width: 37.5em) {
+      .wrapper__items:hover {
+        animation: 0; } }
   .wrapper__items:hover > .wrapper__info {
     opacity: 1;
     visibility: visible;
@@ -209,7 +273,7 @@ body {
     background-size: cover;
     padding: 10px;
     transform: translate3d(0, 50px, 0);
-    transition: all 0.4s ease-in-out 0.6s;
+    transition: all 0.4s ease-in-out 0.3s;
     border-radius: 10px;
     opacity: 0;
     visibility: hidden; }
@@ -222,22 +286,22 @@ body {
     width: 80%;
     margin: 20px auto; }
     .wrapper__button-container--project {
-      background-color: rgba(126, 213, 111, 0.5);
+      background-color: rgba(127, 255, 0, 0.5);
       padding: 10px 25px;
       border-radius: 10px;
       position: relative;
       cursor: pointer; }
       .wrapper__button-container--project:hover {
-        background-color: #7ed56f;
+        background-color: rgba(127, 255, 0, 0.8);
         animation: shake-2 0.2s ease-in-out 3 alternate 0.3s; }
     .wrapper__button-container--code {
-      background-color: rgba(126, 213, 111, 0.5);
+      background-color: rgba(127, 255, 0, 0.5);
       padding: 10px 25px;
       border-radius: 10px;
       position: relative;
       cursor: pointer; }
       .wrapper__button-container--code:hover {
-        background-color: #7ed56f;
+        background-color: rgba(127, 255, 0, 0.8);
         animation: shake-2 0.2s ease-in-out 3 alternate 0.3s; }
 
 a,
@@ -343,8 +407,22 @@ video {
   100% {
     transform: translateY(10px); } }
 
+@keyframes shake-3 {
+  0% {
+    fill: rgba(127, 255, 0, 0.1); }
+  100% {
+    fill: #7fff00; } }
+
 @keyframes location {
   0% {
+<<<<<<< HEAD
     color: rgba(127, 255, 0, 0.5); }
   100% {
     color: #7fff00; } }
+=======
+    color: rgba(127, 255, 0, 0.1);
+    fill: rgba(127, 255, 0, 0.1); }
+  100% {
+    color: #7fff00;
+    fill: #7fff00; } }
+>>>>>>> portfolio

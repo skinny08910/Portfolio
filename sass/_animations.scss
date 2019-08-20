@@ -21,12 +21,23 @@
     transform: translateY(10px);
   }
 }
+@keyframes shake-3 {
+  0% {
+    fill: rgba($color-secondary-light, .1);
+  }
+
+  100% {
+    fill: $color-secondary-light;
+  }
+}
 @keyframes location {
   0% {
-    color: rgba($color-secondary-light, .5);
+    color: rgba($color-secondary-light, .1);
+    fill: rgba($color-secondary-light, .1);
   }
 
   100% {
     color: $color-secondary-light;
+    fill: $color-secondary-light;
   }
 }
