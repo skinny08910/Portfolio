@@ -10,6 +10,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  // overflow: hidden;
+  // z-index: 20;
 }
 // About section
 
@@ -24,6 +26,10 @@
   // left: 0;
   // width: 100%;
   // overflow: hidden;
+  @include respond(phone) {
+    padding: 10rem 0;
+    height: 100%;
+  }
 }
 // Portfolio section
 
@@ -33,9 +39,27 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 20rem 0;
+  position: relative;
   // position: absolute;
   // top: 0;
   // left: 0;
   // width: 100%;
-  overflow: hidden;
+  // overflow: scroll;
+  // z-index: 10;
+  @include respond(phone) {
+    padding: 10rem 0;
+    height: 100%;
+  }
+}
+
+.footer {
+  position: absolute;
+  // bottom: 60px;
+  bottom: 10%;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  // width: 100%;
+  @include respond(phone) {
+    bottom: 50px;
+  }
 }
