@@ -55,6 +55,9 @@
     &:hover {
       fill: $color-secondary-light;
       animation: shake 0;
+      @include respond(phone) {
+        animation: shake-3 0.2s ease-in-out infinite alternate;
+      }
     }
   }
 }
@@ -139,14 +142,14 @@
   }
 
   &__state {
-    animation: location 0.2s ease-in-out infinite alternate 0.2s;
+    animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
   }
 
   &__location {
     font-size: 1rem;
     color: $color-secondary-light;
     margin-bottom: 1.5rem;
-    animation: location 0.2s ease-in-out infinite alternate 0.1s;
+    animation: blinker 0.2s ease-in-out infinite alternate 0.1s;
     @include respond(phone) {
       font-size: 0.9rem;
     }
@@ -157,7 +160,7 @@
     height: 12px;
     fill: $color-secondary-light;
     margin-right: 0.2rem;
-    animation: location 0.2s ease-in-out infinite alternate;
+    animation: blinker 0.2s ease-in-out infinite alternate;
     @include respond(phone) {
       font-size: 1rem;
     }
@@ -354,16 +357,22 @@
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
+  @include respond(phone) {
+    font-size: 1rem;
+  }
 }
 
 .footer__copywrite {
-  animation: location 0.2s ease-in-out infinite alternate;
+  color: $color-secondary-light;
+  animation: blinker 0.2s ease-in-out infinite alternate;
 }
 
 .footer__first-name {
-  animation: location 0.2s ease-in-out infinite alternate 0.1s;
+  color: $color-secondary-light;
+  animation: blinker 0.2s ease-in-out infinite alternate 0.1s;
 }
 
 .footer__last-name {
-  animation: location 0.2s ease-in-out infinite alternate 0.2s;
+  color: $color-secondary-light;
+  animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
 }

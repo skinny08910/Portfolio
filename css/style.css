@@ -99,6 +99,9 @@ body {
     .social-media__icon:hover {
       fill: #7fff00;
       animation: shake 0; }
+      @media only screen and (max-width: 37.5em) {
+        .social-media__icon:hover {
+          animation: shake-3 0.2s ease-in-out infinite alternate; } }
 
 .center {
   margin-bottom: 5rem; }
@@ -164,12 +167,12 @@ body {
       .bio-box__name {
         font-size: 1.4rem; } }
   .bio-box__state {
-    animation: location 0.2s ease-in-out infinite alternate 0.2s; }
+    animation: blinker 0.2s ease-in-out infinite alternate 0.2s; }
   .bio-box__location {
     font-size: 1rem;
     color: #7fff00;
     margin-bottom: 1.5rem;
-    animation: location 0.2s ease-in-out infinite alternate 0.1s; }
+    animation: blinker 0.2s ease-in-out infinite alternate 0.1s; }
     @media only screen and (max-width: 37.5em) {
       .bio-box__location {
         font-size: 0.9rem; } }
@@ -178,7 +181,7 @@ body {
     height: 12px;
     fill: #7fff00;
     margin-right: 0.2rem;
-    animation: location 0.2s ease-in-out infinite alternate; }
+    animation: blinker 0.2s ease-in-out infinite alternate; }
     @media only screen and (max-width: 37.5em) {
       .bio-box__icon {
         font-size: 1rem; } }
@@ -329,15 +332,21 @@ body {
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .footer__text {
+      font-size: 1rem; } }
 
 .footer__copywrite {
-  animation: location 0.2s ease-in-out infinite alternate; }
+  color: #7fff00;
+  animation: blinker 0.2s ease-in-out infinite alternate; }
 
 .footer__first-name {
-  animation: location 0.2s ease-in-out infinite alternate 0.1s; }
+  color: #7fff00;
+  animation: blinker 0.2s ease-in-out infinite alternate 0.1s; }
 
 .footer__last-name {
-  animation: location 0.2s ease-in-out infinite alternate 0.2s; }
+  color: #7fff00;
+  animation: blinker 0.2s ease-in-out infinite alternate 0.2s; }
 
 a,
 abbr,
@@ -448,7 +457,7 @@ video {
   100% {
     fill: #7fff00; } }
 
-@keyframes location {
+@keyframes blinker {
   0% {
     color: rgba(127, 255, 0, 0.1);
     fill: rgba(127, 255, 0, 0.1); }
