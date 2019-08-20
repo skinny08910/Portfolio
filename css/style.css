@@ -67,7 +67,7 @@ body {
     transition: all 0.3s ease-in-out;
     animation: shake 0.2s ease-in-out infinite alternate; }
     .social-media__icon:hover {
-      fill: yellowGreen;
+      fill: #7fff00;
       animation: shake 0; }
 
 .center {
@@ -83,7 +83,7 @@ body {
     /* For IE */
     height: 30px;
     border-style: solid;
-    border-color: yellowGreen;
+    border-color: #7fff00;
     border-width: 1px 0 0 0;
     border-radius: 20px;
     width: 25%; }
@@ -95,7 +95,7 @@ body {
     height: 30px;
     margin-top: -31px;
     border-style: solid;
-    border-color: yellowGreen;
+    border-color: #7fff00;
     border-width: 0 0 1px 0;
     border-radius: 20px; }
 
@@ -117,13 +117,13 @@ body {
     margin-bottom: 0.5rem; }
   .bio-box__location {
     font-size: 1rem;
-    color: yellowGreen;
+    color: #7fff00;
     margin-bottom: 1.5rem;
     animation: location 0.2s ease-in-out infinite alternate; }
   .bio-box__icon {
     width: 12px;
     height: 12px;
-    fill: yellowGreen;
+    fill: #7fff00;
     margin-right: 0.2rem;
     animation: location 0.2s ease-in-out infinite alternate; }
   .bio-box__paragraph {
@@ -331,7 +331,7 @@ video {
 @keyframes shake {
   0% {
     transform: translateX(10px);
-    fill: yellowGreen; }
+    fill: #7fff00; }
   100% {
     transform: translateX(-10px); } }
 
@@ -345,6 +345,6 @@ video {
 
 @keyframes location {
   0% {
-    color: rgba(154, 205, 50, 0.5); }
+    color: rgba(127, 255, 0, 0.5); }
   100% {
-    color: yellowGreen; } }
+    color: #7fff00; } }
