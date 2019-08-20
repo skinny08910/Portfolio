@@ -65,7 +65,7 @@ body {
   right: 3%; }
   @media only screen and (max-width: 37.5em) {
     .social-media {
-      top: 90%;
+      top: 85%;
       right: 10%; } }
   .social-media__link {
     width: inherit;
@@ -415,14 +415,8 @@ video {
 
 @keyframes location {
   0% {
-<<<<<<< HEAD
-    color: rgba(127, 255, 0, 0.5); }
-  100% {
-    color: #7fff00; } }
-=======
     color: rgba(127, 255, 0, 0.1);
     fill: rgba(127, 255, 0, 0.1); }
   100% {
     color: #7fff00;
     fill: #7fff00; } }
->>>>>>> portfolio
