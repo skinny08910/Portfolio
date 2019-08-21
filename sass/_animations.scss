@@ -1,10 +1,10 @@
 @keyframes shake {
   0% {
     transform: translateX(10px);
-    fill: $color-secondary-light;
   }
 
   100% {
+    fill: $color-secondary-light;
     transform: translateX(-10px);
   }
 }
@@ -32,12 +32,21 @@
 }
 @keyframes blinker {
   0% {
-    color: rgba($color-secondary-light, .1);
-    fill: rgba($color-secondary-light, .1);
+    color: rgba($color-secondary-light, 0);
+    fill: rgba($color-secondary-light, 0);
   }
 
   100% {
     color: $color-secondary-light;
     fill: $color-secondary-light;
+  }
+}
+@keyframes blinker-2 {
+  0% {
+    box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 0);
+  }
+
+  100% {
+    box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
   }
 }

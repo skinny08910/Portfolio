@@ -45,9 +45,15 @@
   &__icon {
     height: inherit;
     width: inherit;
-    fill: #fff;
+    fill: rgba($color-secondary-light, 0);
     transition: all 0.3s ease-in-out;
     animation: shake 0.2s ease-in-out infinite alternate;
+    @include respond(tab-land) {
+      animation: shake-3 0.2s ease-in-out infinite alternate;
+    }
+    @include respond(tab-port) {
+      animation: shake-3 0.2s ease-in-out infinite alternate;
+    }
     @include respond(phone) {
       animation: shake-3 0.2s ease-in-out infinite alternate;
     }
@@ -55,6 +61,12 @@
     &:hover {
       fill: $color-secondary-light;
       animation: shake 0;
+      @include respond(tab-land) {
+        animation: shake-3 0.2s ease-in-out infinite alternate;
+      }
+      @include respond(tab-port) {
+        animation: shake-3 0.2s ease-in-out infinite alternate;
+      }
       @include respond(phone) {
         animation: shake-3 0.2s ease-in-out infinite alternate;
       }
@@ -90,7 +102,7 @@
       width: 65%;
     }
 
-    &--portfolio {
+    &--project {
       width: 10%;
       @include respond(phone) {
         width: 30%;
@@ -121,12 +133,25 @@
   -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
   -moz-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
   box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
+  animation: blinker-2 2s ease-in-out infinite alternate;
+  @include respond(tab-land) {
+    width: 90%;
+  }
+  @include respond(tab-port) {
+    width: 90%;
+  }
   @include respond(phone) {
     width: 90%;
   }
 
   &:hover {
     animation: shake-2 0.2s ease-in-out 3 alternate;
+    @include respond(tab-land) {
+      animation: 0;
+    }
+    @include respond(tab-port) {
+      animation: 0;
+    }
     @include respond(phone) {
       animation: 0;
     }
@@ -182,6 +207,10 @@
     justify-content: space-between;
     width: 20%;
     margin: 0 auto;
+    @include respond(tab-port) {
+      justify-content: center;
+      width: 90;
+    }
     @include respond(phone) {
       justify-content: center;
       width: 90;
@@ -231,6 +260,14 @@
   grid-gap: 20px;
   max-width: 70rem;
   margin: 0 auto;
+  @include respond(tab-land) {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+  }
+  @include respond(tab-port) {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+  }
   @include respond(phone) {
     grid-template-columns: 1fr;
     grid-row-gap: 140px;
@@ -239,6 +276,7 @@
   }
 
   &__items {
+    animation: blinker-2 2s ease-in-out infinite alternate;
     @include respond(phone) {
       height: 130%;
       -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
@@ -251,6 +289,12 @@
       -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
       -moz-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
       box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
+      @include respond(tab-land) {
+        animation: 0;
+      }
+      @include respond(tab-port) {
+        animation: 0;
+      }
       @include respond(phone) {
         animation: 0;
       }
