@@ -10,8 +10,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  // overflow: hidden;
-  // z-index: 20;
+  overflow: hidden;
+  // z-index: 100;
 }
 // About section
 
@@ -20,12 +20,12 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 20rem 0;
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // width: 100%;
-  // overflow: hidden;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
   @include respond(phone) {
     padding: 10rem 0;
     height: 100%;
@@ -38,28 +38,37 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 20rem 0;
-  position: relative;
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // width: 100%;
-  // overflow: scroll;
-  // z-index: 10;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 20;
   @include respond(phone) {
     padding: 10rem 0;
     height: 100%;
+    overflow: scroll;
   }
 }
+// Footer
 
 .footer {
-  position: absolute;
-  // bottom: 60px;
-  bottom: 10%;
-  left: 50%;
-  transform: translate3d(-50%, 0, 0);
-  // width: 100%;
+  position: relative;
+  z-index: 20;
+  margin-top: -100px;
+  @include respond(tap-port) {}
   @include respond(phone) {
-    bottom: 50px;
+    bottom: 0;
   }
+}
+// Menu
+
+menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  background-image: linear-gradient(to right, rgba($color-primary-light, 1), rgba($color-primary-dark, 1)), url("../img/bg-photo-3.jpg");
 }

@@ -24,6 +24,19 @@
     }
   }
 }
+
+.about-section--center {
+  padding-top: 15rem;
+  @include respond(phone) {
+    padding-top: 0;
+  }
+  @include respond(phone) {
+    padding-top: 0;
+  }
+  @include respond(phone) {
+    padding-top: 0;
+  }
+}
 // Social media link
 
 .social-media {
@@ -121,6 +134,19 @@
     border-radius: 20px;
   }
 }
+
+.project-section--center {
+  padding-top: 7rem;
+  @include respond(tab-land) {
+    padding-top: 15rem;
+  }
+  @include respond(tab-port) {
+    padding-top: 5rem;
+  }
+  @include respond(phone) {
+    padding-top: 0;
+  }
+}
 // Bio box
 
 .bio-box {
@@ -142,19 +168,6 @@
   }
   @include respond(phone) {
     width: 90%;
-  }
-
-  &:hover {
-    animation: shake-2 0.2s ease-in-out 3 alternate;
-    @include respond(tab-land) {
-      animation: 0;
-    }
-    @include respond(tab-port) {
-      animation: 0;
-    }
-    @include respond(phone) {
-      animation: 0;
-    }
   }
 
   &__name {
@@ -228,7 +241,7 @@
 
     &:hover {
       background-color: rgba($color-secondary-light, .8);
-      animation: shake-2 0.2s ease-in-out 3 alternate 0.3s;
+      animation: shake-2 0.2s ease-in-out 3 alternate;
       @include respond(phone) {
         animation: 0;
       }
@@ -245,7 +258,7 @@
 
     &:hover {
       background-color: rgba($color-secondary-light, .8);
-      animation: shake-2 0.2s ease-in-out 3 alternate 0.3s;
+      animation: shake-2 0.2s ease-in-out 3 alternate;
       @include respond(phone) {
         animation: 0;
       }
@@ -285,10 +298,7 @@
     }
 
     &:hover {
-      animation: shake-2 0.2s ease-in-out 3 alternate;
-      -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
-      -moz-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
-      box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
+      transform: scale3d(0, 10px, 0);
       @include respond(tab-land) {
         animation: 0;
       }
@@ -376,7 +386,7 @@
 
       &:hover {
         background-color: rgba($color-secondary-light, .8);
-        animation: shake-2 0.2s ease-in-out 3 alternate 0.2s;
+        animation: shake-2 0.2s ease-in-out 3 alternate;
       }
     }
 
@@ -389,7 +399,7 @@
 
       &:hover {
         background-color: rgba($color-secondary-light, .8);
-        animation: shake-2 0.2s ease-in-out 3 alternate 0.2s;
+        animation: shake-2 0.2s ease-in-out 3 alternate;
       }
     }
   }
@@ -419,4 +429,20 @@
 .footer__last-name {
   color: $color-secondary-light;
   animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
+}
+// Menu
+
+.mobile-menu {
+  display: none;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  img {
+    width: 180px;
+    height: 180px;
+  }
 }
