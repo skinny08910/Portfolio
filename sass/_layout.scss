@@ -11,7 +11,7 @@
   background-size: cover;
   position: relative;
   overflow: hidden;
-  // z-index: 100;
+  z-index: 300;
 }
 // About section
 
@@ -26,6 +26,7 @@
   left: 0;
   width: 100%;
   overflow: hidden;
+  z-index: 200;
   @include respond(phone) {
     padding: 10rem 0;
     height: 100%;
@@ -44,7 +45,7 @@
   left: 0;
   width: 100%;
   overflow: hidden;
-  z-index: 20;
+  z-index: 100;
   @include respond(phone) {
     padding: 10rem 0;
     height: 100%;
@@ -54,21 +55,31 @@
 // Footer
 
 .footer {
-  position: relative;
-  z-index: 20;
-  margin-top: -100px;
-  @include respond(tap-port) {}
+  margin-top: 200px;
+  @include respond(tab-land) {
+    margin-top: 50px;
+  }
+  @include respond(tap-port) {
+    margin-top: -100px;
+  }
   @include respond(phone) {
-    bottom: 0;
+    margin-top: 200px;
   }
 }
 // Menu
 
 menu {
-  display: none;
   position: absolute;
   top: 0;
   left: 0;
-  width: 40%;
-  background-image: linear-gradient(to right, rgba($color-primary-light, 1), rgba($color-primary-dark, 1)), url("../img/bg-photo-3.jpg");
+  width: 10%;
+  height: 100vh;
+  z-index: 350;
+  background-image: linear-gradient(to right bottom, rgba($color-primary-light, .6), rgba($color-primary-dark, .6));
+  @include respond(tab-port) {
+    display: none;
+  }
+  @include respond(phone) {
+    display: none;
+  }
 }

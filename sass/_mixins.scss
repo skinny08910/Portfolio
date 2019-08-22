@@ -25,3 +25,11 @@
     // 1800px
   }
 }
+// Clear float
+@mixin clearFix {
+  &:after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+}
