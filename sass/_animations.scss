@@ -1,27 +1,27 @@
-@keyframes shake {
+@-webkit-keyframes shake {
   0% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
   }
 
   100% {
     fill: $color-secondary-light;
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
   }
 }
-@keyframes shake-2 {
+@-webkit-keyframes shake-2 {
   0% {
-    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
   }
 
   50% {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
   }
 
   100% {
-    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
   }
 }
-@keyframes shake-3 {
+@-webkit-keyframes shake-3 {
   0% {
     fill: rgba($color-secondary-light, .1);
   }
@@ -30,7 +30,7 @@
     fill: $color-secondary-light;
   }
 }
-@keyframes blinker {
+@-webkit-keyframes blinker {
   0% {
     color: rgba($color-secondary-light, 0);
     fill: rgba($color-secondary-light, 0);
@@ -41,7 +41,7 @@
     fill: $color-secondary-light;
   }
 }
-@keyframes blinker-2 {
+@-webkit-keyframes blinker-2 {
   0% {
     box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 0);
   }

@@ -1,5 +1,2 @@
-var languages = document.getElementsByClassName('.language');
-
-function mouseover() {
-  languages.onmouseover.style.width = "20px";
-}
+var menu = document.getElementsByClassName('.sidebar');
+var menuBtn = document.getElementsByClassName('.mobile-menu__menu');

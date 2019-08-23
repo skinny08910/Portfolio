@@ -23,14 +23,25 @@
       font-size: 1.4rem;
     }
   }
+
+  &--top-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+    @include respond(tab-port) {
+      width: 100%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }
 
 .about-section--center {
   padding-top: 15rem;
-  @include respond(phone) {
+  @include respond(tab-land) {
     padding-top: 0;
   }
-  @include respond(phone) {
+  @include respond(tab-port) {
     padding-top: 0;
   }
   @include respond(phone) {
@@ -46,12 +57,12 @@
   top: 5%;
   right: 3%;
   @include respond(tab-port) {
-    top: 10%;
-    right: 5%;
+    top: 14%;
+    right: 3%;
   }
   @include respond(phone) {
     top: 82%;
-    right: 10%;
+    right: 3%;
   }
 
   &__link {
@@ -64,28 +75,28 @@
     width: inherit;
     fill: rgba($color-secondary-light, 0);
     transition: all 0.3s ease-in-out;
-    animation: shake 0.2s ease-in-out infinite alternate;
+    -webkit-animation: shake 0.2s ease-in-out infinite alternate;
     @include respond(tab-land) {
-      animation: shake-3 0.2s ease-in-out infinite alternate;
+      -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
     }
     @include respond(tab-port) {
-      animation: shake-3 0.2s ease-in-out infinite alternate;
+      -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
     }
     @include respond(phone) {
-      animation: shake-3 0.2s ease-in-out infinite alternate;
+      -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
     }
 
     &:hover {
       fill: $color-secondary-light;
-      animation: shake 0;
+      -webkit-animation: shake 0;
       @include respond(tab-land) {
-        animation: shake-3 0.2s ease-in-out infinite alternate;
+        -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
       }
       @include respond(tab-port) {
-        animation: shake-3 0.2s ease-in-out infinite alternate;
+        -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
       }
       @include respond(phone) {
-        animation: shake-3 0.2s ease-in-out infinite alternate;
+        -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
       }
     }
   }
@@ -102,7 +113,7 @@
     text-transform: capitalize;
     margin-bottom: 1rem;
     @include respond(phone) {
-      font-size: 1.7rem;
+      font-size: 1.6rem;
     }
   }
 
@@ -153,7 +164,7 @@
   &__click {
     display: none;
     color: $color-secondary-light;
-    animation: blinker 0.2s ease-in-out infinite alternate;
+    -webkit-animation: blinker 0.2s ease-in-out infinite alternate;
     @include respond(tab-land) {
       display: inline-block;
       font-size: 0.9rem;
@@ -171,7 +182,7 @@
   &__click-2 {
     display: none;
     color: $color-secondary-light;
-    animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
+    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
     @include respond(tab-land) {
       display: inline-block;
       font-size: 0.9rem;
@@ -189,7 +200,7 @@
   &__click-3 {
     display: none;
     color: $color-secondary-light;
-    animation: blinker 0.2s ease-in-out infinite alternate 0.3s;
+    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.3s;
     @include respond(tab-land) {
       display: inline-block;
       font-size: 0.9rem;
@@ -207,7 +218,7 @@
   &__click-4 {
     display: none;
     color: $color-secondary-light;
-    animation: blinker 0.2s ease-in-out infinite alternate 0.4s;
+    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.4s;
     @include respond(tab-land) {
       display: inline-block;
       font-size: 0.9rem;
@@ -225,7 +236,7 @@
   &__click-5 {
     display: none;
     color: $color-secondary-light;
-    animation: blinker 0.2s ease-in-out infinite alternate 0.5s;
+    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.5s;
     @include respond(tab-land) {
       display: inline-block;
       font-size: 0.9rem;
@@ -242,7 +253,7 @@
 }
 
 .project-section--center {
-  padding-top: 10rem;
+  padding-top: 17rem;
   @include respond(tab-land) {
     padding-top: 5rem;
   }
@@ -265,7 +276,7 @@
   -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
   -moz-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
   box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
-  animation: blinker-2 2s ease-in-out infinite alternate;
+  -webkit-animation: blinker-2 2s ease-in-out infinite alternate;
   @include respond(tab-land) {
     width: 90%;
   }
@@ -274,6 +285,7 @@
   }
   @include respond(phone) {
     width: 90%;
+    padding: 1rem;
   }
 
   &__name {
@@ -286,14 +298,14 @@
   }
 
   &__state {
-    animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
+    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
   }
 
   &__location {
     font-size: 1rem;
     color: $color-secondary-light;
     margin-bottom: 1.5rem;
-    animation: blinker 0.2s ease-in-out infinite alternate 0.1s;
+    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.1s;
     @include respond(phone) {
       font-size: 0.9rem;
     }
@@ -304,7 +316,7 @@
     height: 12px;
     fill: $color-secondary-light;
     margin-right: 0.2rem;
-    animation: blinker 0.2s ease-in-out infinite alternate;
+    -webkit-animation: blinker 0.2s ease-in-out infinite alternate;
     @include respond(phone) {
       font-size: 1rem;
     }
@@ -347,9 +359,9 @@
 
     &:hover {
       background-color: rgba($color-secondary-light, .8);
-      animation: shake-2 0.2s ease-in-out 3 alternate;
+      -webkit-animation: shake-2 0.2s ease-in-out 3 alternate;
       @include respond(phone) {
-        animation: 0;
+        -webkit-animation: 0;
       }
     }
   }
@@ -364,9 +376,9 @@
 
     &:hover {
       background-color: rgba($color-secondary-light, .8);
-      animation: shake-2 0.2s ease-in-out 3 alternate;
+      -webkit-animation: shake-2 0.2s ease-in-out 3 alternate;
       @include respond(phone) {
-        animation: 0;
+        -webkit-animation: 0;
       }
     }
   }
@@ -395,7 +407,7 @@
   }
 
   &__items {
-    animation: blinker-2 2s ease-in-out infinite alternate;
+    -webkit-animation: blinker-2 2s ease-in-out infinite alternate;
     @include respond(phone) {
       height: 130%;
       -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
@@ -406,13 +418,13 @@
     &:hover {
       transform: scale3d(0, 10px, 0);
       @include respond(tab-land) {
-        animation: 0;
+        -webkit-animation: 0;
       }
       @include respond(tab-port) {
-        animation: 0;
+        -webkit-animation: 0;
       }
       @include respond(phone) {
-        animation: 0;
+        -webkit-animation: 0;
       }
     }
 
@@ -424,7 +436,7 @@
   }
 
   &__items--1 {
-    background-image: url("https://cdn.dribbble.com/users/2146089/screenshots/6791385/landing_app_f.png");
+    background-image: url("../img/project-img-1.webp");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -432,7 +444,7 @@
   }
 
   &__items--2 {
-    background-image: url("https://cdn.dribbble.com/users/702789/screenshots/6373671/erik4.png");
+    background-image: url("../img/project-img-2.webp");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -440,7 +452,7 @@
   }
 
   &__items--3 {
-    background-image: url("https://cdn.dribbble.com/users/702789/screenshots/6988501/media/754450279893937161016df689828c12.png");
+    background-image: url("../img/project-img-3.webp");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -448,7 +460,7 @@
   }
 
   &__items--4 {
-    background-image: url("https://cdn.dribbble.com/users/702789/screenshots/6821527/preview.png");
+    background-image: url("../img/project-img-4.webp");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -492,7 +504,7 @@
 
       &:hover {
         background-color: rgba($color-secondary-light, .8);
-        animation: shake-2 0.2s ease-in-out 3 alternate;
+        -webkit-animation: shake-2 0.2s ease-in-out 3 alternate;
       }
     }
 
@@ -505,7 +517,7 @@
 
       &:hover {
         background-color: rgba($color-secondary-light, .8);
-        animation: shake-2 0.2s ease-in-out 3 alternate;
+        -webkit-animation: shake-2 0.2s ease-in-out 3 alternate;
       }
     }
   }
@@ -524,17 +536,17 @@
 
 .footer__copywrite {
   color: $color-secondary-light;
-  animation: blinker 0.2s ease-in-out infinite alternate;
+  -webkit-animation: blinker 0.2s ease-in-out infinite alternate;
 }
 
 .footer__first-name {
   color: $color-secondary-light;
-  animation: blinker 0.2s ease-in-out infinite alternate 0.1s;
+  -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.1s;
 }
 
 .footer__last-name {
   color: $color-secondary-light;
-  animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
+  -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
 }
 // Sidebar
 
@@ -545,6 +557,12 @@
   &__list {
     display: block;
     margin-left: 400%;
+    @include respond(tab-port) {
+      margin-left: 300%;
+    }
+    @include respond(phone) {
+      margin-left: 300%;
+    }
 
     &:first-child {
       padding-top: 80px;
@@ -558,6 +576,10 @@
   &__link {
     width: 30px;
     height: 30px;
+    @include respond(phone) {
+      width: 25px;
+      height: 25px;
+    }
   }
 
   &__icon {
@@ -571,29 +593,30 @@
   }
 
   &__icon-1 {
-    animation: blinker 0.2s ease-in-out infinite alternate;
+    -webkit-animation: blinker 0.3s ease-in-out infinite alternate;
   }
 
   &__icon-2 {
-    animation: blinker 0.2s ease-in-out infinite alternate 0.1s;
+    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
   }
 
   &__icon-3 {
-    animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
+    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.2s;
   }
 }
 // Menu
 
 .mobile-menu {
   display: none;
-  position: absolute;
+  text-align: center;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   height: 40px;
-  z-index: 340;
-  text-align: center;
-  background-image: linear-gradient(to right bottom, rgba($color-primary-light, .6), rgba($color-primary-dark, .6));
+  z-index: 500;
+  background-image: linear-gradient(to right bottom, rgba($color-primary-light, .4), rgba($color-primary-dark, .4));
   @include clearFix;
   @include respond(tab-port) {
     display: inline-block;
@@ -606,8 +629,10 @@
     display: inline-block;
     font-family: 'Roboto', sans-serif;
     font-size: 1.7rem;
+    font-weight: 500;
     color: #fff;
     margin-top: 0.1rem;
+    margin-left: 2.5rem;
   }
 
   &__menu {
@@ -622,5 +647,10 @@
     width: 30px;
     height: 30px;
     fill: $color-secondary-light;
+    @include respond(phone) {
+      width: 22px;
+      height: 22px;
+      margin-top: 0.3rem;
+    }
   }
 }

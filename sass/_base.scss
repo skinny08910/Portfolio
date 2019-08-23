@@ -14,4 +14,21 @@ body {
   width: 100%;
   line-height: 1.6rem;
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-45%, -65%);
+  @include respond(tab-port) {
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
+  @include respond(phone) {
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
 }
