@@ -25,13 +25,20 @@
   }
 
   &--top-section {
+    visibility: hidden;
+    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-30%, -50%);
+    -webkit-animation: title 0.3s ease-in-out forwards 1.5s;
+    animation: title 0.3s ease-in-out forwards 1.5s;
     @include respond(tab-port) {
       width: 100%;
-      transform: translate(-50%, -50%);
+      left: 30%;
+    }
+    @include respond(phone) {
+      width: 100%;
+      left: 30%;
     }
   }
 }
@@ -76,27 +83,35 @@
     fill: rgba($color-secondary-light, 0);
     transition: all 0.3s ease-in-out;
     -webkit-animation: shake 0.2s ease-in-out infinite alternate;
+    animation: shake 0.2s ease-in-out infinite alternate;
     @include respond(tab-land) {
       -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
+      animation: shake-3 0.2s ease-in-out infinite alternate;
     }
     @include respond(tab-port) {
       -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
+      animation: shake-3 0.2s ease-in-out infinite alternate;
     }
     @include respond(phone) {
       -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
+      animation: shake-3 0.2s ease-in-out infinite alternate;
     }
 
     &:hover {
       fill: $color-secondary-light;
       -webkit-animation: shake 0;
+      animation: shake 0;
       @include respond(tab-land) {
         -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
+        animation: shake-3 0.2s ease-in-out infinite alternate;
       }
       @include respond(tab-port) {
         -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
+        animation: shake-3 0.2s ease-in-out infinite alternate;
       }
       @include respond(phone) {
         -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
+        animation: shake-3 0.2s ease-in-out infinite alternate;
       }
     }
   }
@@ -164,7 +179,8 @@
   &__click {
     display: none;
     color: $color-secondary-light;
-    -webkit-animation: blinker 0.2s ease-in-out infinite alternate;
+    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
+    animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
     @include respond(tab-land) {
       display: inline-block;
       font-size: 0.9rem;
@@ -182,7 +198,8 @@
   &__click-2 {
     display: none;
     color: $color-secondary-light;
-    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
+    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.3s;
+    animation: blinker 0.2s ease-in-out infinite alternate 0.3s;
     @include respond(tab-land) {
       display: inline-block;
       font-size: 0.9rem;
@@ -200,7 +217,8 @@
   &__click-3 {
     display: none;
     color: $color-secondary-light;
-    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.3s;
+    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.4s;
+    animation: blinker 0.2s ease-in-out infinite alternate 0.4s;
     @include respond(tab-land) {
       display: inline-block;
       font-size: 0.9rem;
@@ -218,7 +236,8 @@
   &__click-4 {
     display: none;
     color: $color-secondary-light;
-    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.4s;
+    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.5s;
+    animation: blinker 0.2s ease-in-out infinite alternate 0.5s;
     @include respond(tab-land) {
       display: inline-block;
       font-size: 0.9rem;
@@ -236,7 +255,8 @@
   &__click-5 {
     display: none;
     color: $color-secondary-light;
-    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.5s;
+    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.6s;
+    animation: blinker 0.2s ease-in-out infinite alternate 0.6s;
     @include respond(tab-land) {
       display: inline-block;
       font-size: 0.9rem;
@@ -277,6 +297,7 @@
   -moz-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
   box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
   -webkit-animation: blinker-2 2s ease-in-out infinite alternate;
+  animation: blinker-2 2s ease-in-out infinite alternate;
   @include respond(tab-land) {
     width: 90%;
   }
@@ -298,14 +319,16 @@
   }
 
   &__state {
-    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
+    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.4s;
+    animation: blinker 0.2s ease-in-out infinite alternate 0.4s;
   }
 
   &__location {
     font-size: 1rem;
     color: $color-secondary-light;
     margin-bottom: 1.5rem;
-    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.1s;
+    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.3s;
+    animation: blinker 0.2s ease-in-out infinite alternate 0.3s;
     @include respond(phone) {
       font-size: 0.9rem;
     }
@@ -316,7 +339,8 @@
     height: 12px;
     fill: $color-secondary-light;
     margin-right: 0.2rem;
-    -webkit-animation: blinker 0.2s ease-in-out infinite alternate;
+    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
+    animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
     @include respond(phone) {
       font-size: 1rem;
     }
@@ -338,6 +362,10 @@
     justify-content: space-between;
     width: 20%;
     margin: 0 auto;
+    @include respond(tab-land) {
+      justify-content: center;
+      width: 90;
+    }
     @include respond(tab-port) {
       justify-content: center;
       width: 90;
@@ -360,8 +388,10 @@
     &:hover {
       background-color: rgba($color-secondary-light, .8);
       -webkit-animation: shake-2 0.2s ease-in-out 3 alternate;
+      animation: shake-2 0.2s ease-in-out 3 alternate;
       @include respond(phone) {
         -webkit-animation: 0;
+        animation: 0;
       }
     }
   }
@@ -377,8 +407,10 @@
     &:hover {
       background-color: rgba($color-secondary-light, .8);
       -webkit-animation: shake-2 0.2s ease-in-out 3 alternate;
+      animation: shake-2 0.2s ease-in-out 3 alternate;
       @include respond(phone) {
         -webkit-animation: 0;
+        animation: 0;
       }
     }
   }
@@ -408,6 +440,7 @@
 
   &__items {
     -webkit-animation: blinker-2 2s ease-in-out infinite alternate;
+    animation: blinker-2 2s ease-in-out infinite alternate;
     @include respond(phone) {
       height: 130%;
       -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
@@ -419,12 +452,15 @@
       transform: scale3d(0, 10px, 0);
       @include respond(tab-land) {
         -webkit-animation: 0;
+        animation: 0;
       }
       @include respond(tab-port) {
         -webkit-animation: 0;
+        animation: 0;
       }
       @include respond(phone) {
         -webkit-animation: 0;
+        animation: 0;
       }
     }
 
@@ -505,6 +541,7 @@
       &:hover {
         background-color: rgba($color-secondary-light, .8);
         -webkit-animation: shake-2 0.2s ease-in-out 3 alternate;
+        animation: shake-2 0.2s ease-in-out 3 alternate;
       }
     }
 
@@ -518,6 +555,7 @@
       &:hover {
         background-color: rgba($color-secondary-light, .8);
         -webkit-animation: shake-2 0.2s ease-in-out 3 alternate;
+        animation: shake-2 0.2s ease-in-out 3 alternate;
       }
     }
   }
@@ -536,17 +574,20 @@
 
 .footer__copywrite {
   color: $color-secondary-light;
-  -webkit-animation: blinker 0.2s ease-in-out infinite alternate;
+  -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
+  animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
 }
 
 .footer__first-name {
   color: $color-secondary-light;
-  -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.1s;
+  -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.3s;
+  animation: blinker 0.2s ease-in-out infinite alternate 0.3s;
 }
 
 .footer__last-name {
   color: $color-secondary-light;
-  -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
+  -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.4s;
+  animation: blinker 0.2s ease-in-out infinite alternate 0.4s;
 }
 // Sidebar
 
@@ -588,20 +629,24 @@
     fill: $color-secondary-light;
 
     &:hover {
+      -webkit-animation: 0;
       animation: 0;
     }
   }
 
   &__icon-1 {
     -webkit-animation: blinker 0.3s ease-in-out infinite alternate;
+    animation: blinker 0.3s ease-in-out infinite alternate;
   }
 
   &__icon-2 {
     -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
+    animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
   }
 
   &__icon-3 {
     -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.2s;
+    animation: blinker 0.3s ease-in-out infinite alternate 0.2s;
   }
 }
 // Menu
@@ -609,7 +654,6 @@
 .mobile-menu {
   display: none;
   text-align: center;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;

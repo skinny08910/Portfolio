@@ -11,12 +11,12 @@
   background-size: cover;
   position: relative;
   overflow: hidden;
-  z-index: 600;
+  z-index: 400;
 }
 // About section
 
 .about-section {
-  display: none;
+  // display: none;
   background-image: linear-gradient(to right, rgba($color-primary-light, .4), rgba($color-primary-dark, .4)), url("../img/bg-photo-2.webp");
   background-position: center center;
   background-repeat: no-repeat;
@@ -27,8 +27,12 @@
   left: 0;
   width: 100%;
   overflow: hidden;
-  z-index: 200;
-  transform: translate3d(500px, 0, 0);
+  // z-index: 200;
+  // // transform: translate3d(500px, 0, 0);
+  @include respond(tab-port) {
+    overflow: scroll;
+    padding: 34rem 0;
+  }
   @include respond(sm-phone) {
     overflow: scroll;
     height: 0;
@@ -36,13 +40,13 @@
   }
   @include respond(phone) {
     overflow: scroll;
-    padding: 26rem 0;
+    padding: 32rem 0;
   }
 }
 // Portfolio section
 
 .project-section {
-  display: none;
+  // display: none;
   background-image: linear-gradient(to right, rgba($color-primary-light, .4), rgba($color-primary-dark, .4)), url("../img/bg-photo-3.webp");
   background-position: center center;
   background-repeat: no-repeat;
@@ -54,7 +58,7 @@
   width: 100%;
   overflow: hidden;
   z-index: 100;
-  transform: translate3d(500px, 0, 0);
+  // transform: translate3d(500px, 0, 0);
   @include respond(phone) {
     overflow: scroll;
     padding: 70rem 0;

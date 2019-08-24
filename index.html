@@ -20,7 +20,7 @@
     <div class="sidebar active">
       <ul class="sidebar__container">
         <li class="sidebar__list">
-          <a rel="noreferrer noopener" href="#home" class="sidebar__link">
+          <a rel="noreferrer noopener" href="#home" aria-label="Home" class="sidebar__link">
             <svg class="sidebar__icon sidebar__icon-1">
               <use xlink:href="img/sprite.svg#icon-home"></use>
             </svg>
@@ -28,7 +28,7 @@
         </li>
 
         <li class="sidebar__list">
-          <a rel="noreferrer noopener" href="#about" class="sidebar__link">
+          <a rel="noreferrer noopener" href="#about" aria-label="About Me" class="sidebar__link">
             <svg class="sidebar__icon sidebar__icon-2">
               <use xlink:href="img/sprite.svg#icon-user"></use>
             </svg>
@@ -36,7 +36,7 @@
         </li>
 
         <li class="sidebar__list">
-          <a rel="noreferrer noopener" href="#project" class="sidebar__link">
+          <a rel="noreferrer noopener" href="#project" aria-label="Project" class="sidebar__link">
             <svg class="sidebar__icon sidebar__icon-3">
               <use xlink:href="img/sprite.svg#icon-folder"></use>
             </svg>
@@ -71,7 +71,7 @@
 
       <!-- Social media link -->
       <div class="social-media">
-        <a rel="noreferrer noopener" href="https://www.linkedin.com/in/nicksonder-examar-a920b217a?trk=people-guest_profile-result-card_result-card_full-click" target="_blank" class="social-media__link">
+        <a rel="noreferrer noopener" href="https://www.linkedin.com/in/nicksonder-examar-a920b217a?trk=people-guest_profile-result-card_result-card_full-click" target="_blank" aria-label="Social Media" class="social-media__link">
           <svg class="social-media__icon">
             <use xlink:href="img/sprite.svg#icon-linkedin"></use>
           </svg>
@@ -125,6 +125,7 @@
         <div class="center project-section--center">
           <h2 class="center__main-title">Projects</h2>
           <hr class="center__hr center__hr--project">
+          <!-- Center Notice -->
           <div class="center__notice">
             <span class="center__click">Click</span>
             <span class="center__click-2">to</span>
@@ -147,7 +148,9 @@
               </p>
               <div class="wrapper__button-container">
                 <div class="wrapper__button-container--project">
-                  Project
+                  <a href="#" target="_blank" aria-label="Project">
+                    Project
+                  </a>
                 </div>
                 <div class="wrapper__button-container--code">
                   Code
