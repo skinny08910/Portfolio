@@ -37,10 +37,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  overflow: hidden;
-  z-index: 400; }
+  overflow: hidden; }
 
 .about-section {
+  display: none;
   background-image: linear-gradient(to right, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4)), url("../img/bg-photo-2.webp");
   background-position: center center;
   background-repeat: no-repeat;
@@ -50,7 +50,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  transform: translate3d(500px, 0, 0); }
   @media only screen and (max-width: 56.25em) {
     .about-section {
       overflow: scroll;
@@ -554,6 +555,9 @@ menu {
     border-radius: 10px;
     opacity: 0;
     visibility: hidden; }
+    .wrapper__info__link {
+      color: #fff;
+      text-decoration: none; }
   .wrapper__title {
     text-align: center;
     font-size: 1.2rem; }
@@ -563,6 +567,8 @@ menu {
     width: 80%;
     margin: 20px auto; }
     .wrapper__button-container--project {
+      color: #fff;
+      text-decoration: none;
       background-color: rgba(127, 255, 0, 0.5);
       padding: 10px 25px;
       border-radius: 10px;
@@ -573,6 +579,8 @@ menu {
         -webkit-animation: shake-2 0.2s ease-in-out 3 alternate;
         animation: shake-2 0.2s ease-in-out 3 alternate; }
     .wrapper__button-container--code {
+      color: #fff;
+      text-decoration: none;
       background-color: rgba(127, 255, 0, 0.5);
       padding: 10px 25px;
       border-radius: 10px;

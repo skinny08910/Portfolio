@@ -518,6 +518,11 @@
     border-radius: 10px;
     opacity: 0;
     visibility: hidden;
+
+    &__link {
+      color: #fff;
+      text-decoration: none;
+    }
   }
 
   &__title {
@@ -532,6 +537,8 @@
     margin: 20px auto;
 
     &--project {
+      color: #fff;
+      text-decoration: none;
       background-color: rgba($color-secondary-light, .5);
       padding: 10px 25px;
       border-radius: 10px;
@@ -546,6 +553,8 @@
     }
 
     &--code {
+      color: #fff;
+      text-decoration: none;
       background-color: rgba($color-secondary-light, .5);
       padding: 10px 25px;
       border-radius: 10px;
