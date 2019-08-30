@@ -54,9 +54,9 @@ var screenResolution = function(mobileScreen) {
 
     // Addind Event Listener to the menu icons for mobile
 
-    homeIconMobile.addEventListener('click', clickedTopMobile);
-    aboutIconMobile.addEventListener('click', clickedAboutMobile);
-    projectIconMobile.addEventListener('click', clickedProjectMobile);
+    // homeIconMobile.addEventListener('click', clickedTopMobile);
+    // aboutIconMobile.addEventListener('click', clickedAboutMobile);
+    // projectIconMobile.addEventListener('click', clickedProjectMobile);
   } else {
     // Desktop menu
 
