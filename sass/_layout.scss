@@ -12,7 +12,6 @@
   background-size: cover;
   position: relative;
   overflow: hidden;
-  z-index: 400;
 }
 // About section
 
@@ -28,8 +27,13 @@
   left: 0;
   width: 100%;
   overflow: hidden;
-  z-index: 200;
   transform: translate3d(500px, 0, 0);
+  transition: transform 0.4s ease-in-out 0.2s;
+
+  &.active {
+    display: block;
+    transform: translate3d(0, 0, 0);
+  }
   @include respond(tab-port) {
     overflow: scroll;
     padding: 34rem 0;
@@ -58,8 +62,13 @@
   left: 0;
   width: 100%;
   overflow: hidden;
-  z-index: 100;
   transform: translate3d(500px, 0, 0);
+  transition: all 0.4s ease-in-out 0.2s !important;
+
+  &.active {
+    display: block;
+    transform: translate3d(0, 0, 0);
+  }
   @include respond(phone) {
     overflow: scroll;
     padding: 70rem 0;
@@ -86,7 +95,7 @@
 // Menu
 
 .main-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 10%;
