@@ -87,6 +87,10 @@ body {
   .project-section.active {
     display: block;
     transform: translate3d(0, 0, 0); }
+  @media only screen and (max-width: 56.25em) {
+    .project-section {
+      overflow: scroll;
+      padding: 34rem 0; } }
   @media only screen and (max-width: 37.5em) {
     .project-section {
       overflow: scroll;
@@ -588,7 +592,7 @@ body {
         width: 60%; } }
     @media only screen and (max-width: 37.5em) {
       .wrapper__button-container {
-        width: 50%;
+        width: 70%;
         margin: 50px auto 0; } }
     .wrapper__button-container--project {
       color: #fff;
