@@ -442,7 +442,7 @@
     -webkit-animation: blinker-2 2s ease-in-out infinite alternate;
     animation: blinker-2 2s ease-in-out infinite alternate;
     @include respond(phone) {
-      height: 130%;
+      height: 110%;
       -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
       -moz-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
       box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
@@ -535,6 +535,16 @@
     justify-content: space-between;
     width: 80%;
     margin: 20px auto;
+    @include respond(tab-land) {
+      width: 50%;
+    }
+    @include respond(tab-port) {
+      width: 60%;
+    }
+    @include respond(phone) {
+      width: 50%;
+      margin: 50px auto 0;
+    }
 
     &--project {
       color: #fff;
