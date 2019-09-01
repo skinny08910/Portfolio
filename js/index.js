@@ -111,5 +111,63 @@ var screenResolution = function() {
 
 }
 
-
 screenResolution();
+
+
+
+/*******************************************************************/
+
+
+//  Function for the project items when on touch devices
+
+var wrapperItem1 = document.getElementsByClassName('wrapper__items--1');
+var wrapperItem2 = document.getElementsByClassName('wrapper__items--2');
+var wrapperItem3 = document.getElementsByClassName('wrapper__items--3');
+var wrapperItem4 = document.getElementsByClassName('wrapper__items--4');
+
+
+//  Function for wrapper item 1
+
+var clickedWrapperItem1 = function() {
+  wrapperItem1[0].classList.toggle('active');
+  wrapperItem2[0].classList.remove('active');
+  wrapperItem3[0].classList.remove('active');
+  wrapperItem4[0].classList.remove('active');
+}
+
+//  Function for wrapper item 2
+
+var clickedWrapperItem2 = function() {
+  wrapperItem1[0].classList.remove('active');
+  wrapperItem2[0].classList.toggle('active');
+  wrapperItem3[0].classList.remove('active');
+  wrapperItem4[0].classList.remove('active');
+}
+
+
+//  Function for wrapper item 3
+
+var clickedWrapperItem3 = function() {
+  wrapperItem1[0].classList.remove('active');
+  wrapperItem2[0].classList.remove('active');
+  wrapperItem3[0].classList.toggle('active');
+  wrapperItem4[0].classList.remove('active');
+}
+
+
+//  Function for wrapper item 4
+
+var clickedWrapperItem4 = function() {
+  wrapperItem1[0].classList.remove('active');
+  wrapperItem2[0].classList.remove('active');
+  wrapperItem3[0].classList.remove('active');
+  wrapperItem4[0].classList.toggle('active');
+}
+
+
+// Adding Event Listener to the project items
+
+wrapperItem1[0].addEventListener('click', clickedWrapperItem1);
+wrapperItem2[0].addEventListener('click', clickedWrapperItem2);
+wrapperItem3[0].addEventListener('click', clickedWrapperItem3);
+wrapperItem4[0].addEventListener('click', clickedWrapperItem4);

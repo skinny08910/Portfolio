@@ -468,7 +468,35 @@
       opacity: 1;
       visibility: visible;
       transform: translate3d(0, 0, 0);
+      @include respond(tab-land) {
+        opacity: 0;
+        visibility: hidden;
+      }
+      @include respond(tab-port) {
+        opacity: 0;
+        visibility: hidden;
+      }
+      @include respond(phone) {
+        opacity: 0;
+        visibility: hidden;
+      }
     }
+    // Active class for touch devices
+    &.active > .wrapper__info {
+      @include respond(tab-land) {
+        opacity: 1;
+        visibility: visible;
+      }
+      @include respond(tab-port) {
+        opacity: 1;
+        visibility: visible;
+      }
+      @include respond(phone) {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    // Active class for touch devices
   }
 
   &__items--1 {
@@ -650,6 +678,18 @@
     &:hover {
       -webkit-animation: 0;
       animation: 0;
+      @include respond(tab-land) {
+        --webkit-animation: blinker 0.3s ease-in-out infinite alternate;
+        animation: blinker 0.3s ease-in-out infinite alternate;
+      }
+      @include respond(tab-port) {
+        --webkit-animation: blinker 0.3s ease-in-out infinite alternate;
+        animation: blinker 0.3s ease-in-out infinite alternate;
+      }
+      @include respond(phone) {
+        --webkit-animation: blinker 0.3s ease-in-out infinite alternate;
+        animation: blinker 0.3s ease-in-out infinite alternate;
+      }
     }
   }
 
