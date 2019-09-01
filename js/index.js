@@ -46,7 +46,7 @@ var screenResolution = function() {
     var clickedTopMobile = function() {
       aboutSection.classList.remove('active');
       projectSection.classList.remove('active');
-      // mainMenu.classList.remove('active');
+      mainMenu[0].classList.remove('active');
     }
 
     // About section function
@@ -54,7 +54,7 @@ var screenResolution = function() {
     var clickedAboutMobile = function() {
       aboutSection.classList.add('active');
       projectSection.classList.remove('active');
-      // mainMenu.classList.remove('active');
+      mainMenu[0].classList.remove('active');
     }
 
     // Project section function
@@ -62,6 +62,7 @@ var screenResolution = function() {
     var clickedProjectMobile = function() {
       projectSection.classList.add('active');
       aboutSection.classList.remove('active');
+      mainMenu[0].classList.remove('active');
     }
 
     // Addind Event Listener to the menu icons for mobile
