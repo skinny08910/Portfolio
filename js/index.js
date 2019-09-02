@@ -44,6 +44,7 @@ var screenResolution = function() {
     // Top section function
 
     var clickedTopMobile = function() {
+      homeSection.style.filter = "blur(0)";
       aboutSection.classList.remove('active');
       projectSection.classList.remove('active');
       mainMenu[0].classList.remove('active');
@@ -52,6 +53,7 @@ var screenResolution = function() {
     // About section function
 
     var clickedAboutMobile = function() {
+      homeSection.style.filter = "blur(2px)";
       aboutSection.classList.add('active');
       projectSection.classList.remove('active');
       mainMenu[0].classList.remove('active');
@@ -60,6 +62,7 @@ var screenResolution = function() {
     // Project section function
 
     var clickedProjectMobile = function() {
+      homeSection.style.filter = "blur(2px)";
       projectSection.classList.add('active');
       aboutSection.classList.remove('active');
       mainMenu[0].classList.remove('active');
