@@ -32,7 +32,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4)), url("../img/bg-photo-1.webp");
+  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4)), url("../img/bg-photo-1.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,7 +40,7 @@ body {
   overflow: hidden; }
 
 .about-section {
-  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4)), url("../img/bg-photo-2.webp");
+  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4)), url("../img/bg-photo-2.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,7 +70,7 @@ body {
       padding: 32rem 0; } }
 
 .project-section {
-  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4)), url("../img/bg-photo-3.webp");
+  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4)), url("../img/bg-photo-3.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -557,25 +557,25 @@ body {
         opacity: 1;
         visibility: visible; } }
   .wrapper__items--1 {
-    background-image: url("../img/project-img-1.webp");
+    background-image: url("../img/project-img-1.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px; }
   .wrapper__items--2 {
-    background-image: url("../img/project-img-2.webp");
+    background-image: url("../img/project-img-2.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px; }
   .wrapper__items--3 {
-    background-image: url("../img/project-img-3.webp");
+    background-image: url("../img/project-img-3.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px; }
   .wrapper__items--4 {
-    background-image: url("../img/project-img-4.webp");
+    background-image: url("../img/project-img-4.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;

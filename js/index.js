@@ -83,6 +83,7 @@ var screenResolution = function() {
     // Top section function
 
     var clickedHomeIcon = function() {
+      homeSection.style.filter = "blur(0)";
       aboutSection.classList.remove('active');
       projectSection.classList.remove('active');
     }
@@ -90,8 +91,8 @@ var screenResolution = function() {
     // About section function
 
     var clickedAboutIcon = function() {
+      homeSection.style.filter = "blur(2px)";
       aboutSection.classList.add('active');
-      // aboutSection.style.transition = "transform 1s ease-in-out";
       projectSection.classList.remove('active');
 
     }
@@ -99,8 +100,8 @@ var screenResolution = function() {
     // Project section function
 
     var clickedProjectIcon = function() {
+      homeSection.style.filter = "blur(2px)";
       projectSection.classList.add('active');
-      // projectSection.style.transition = "transform 1s ease-in-out";
       aboutSection.classList.remove('active');
     }
 
