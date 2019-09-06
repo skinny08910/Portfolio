@@ -37,6 +37,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  z-index: -600;
   overflow: hidden; }
 
 .about-section {
@@ -58,16 +59,19 @@ body {
   @media only screen and (max-width: 56.25em) {
     .about-section {
       overflow: scroll;
-      padding: 34rem 0; } }
+      padding: 34rem 0;
+      z-index: -400; } }
   @media only screen and (max-width: 35.5em) {
     .about-section {
       overflow: scroll;
       height: 0;
-      padding: 24rem 0; } }
+      padding: 24rem 0;
+      z-index: -400; } }
   @media only screen and (max-width: 37.5em) {
     .about-section {
       overflow: scroll;
-      padding: 32rem 0; } }
+      padding: 34rem 0;
+      z-index: -400; } }
 
 .project-section {
   background-image: linear-gradient(to right, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4)), url("../img/bg-photo-3.jpg");
@@ -88,15 +92,18 @@ body {
   @media only screen and (max-width: 56.25em) {
     .project-section {
       overflow: scroll;
-      padding: 34rem 0; } }
+      padding: 34rem 0;
+      z-index: -400; } }
   @media only screen and (max-width: 37.5em) {
     .project-section {
       overflow: scroll;
-      padding: 70rem 0; } }
+      padding: 70rem 0;
+      z-index: -400; } }
   @media only screen and (max-width: 35.5em) {
     .project-section {
       overflow: scroll;
-      padding: 75rem 0; } }
+      padding: 75rem 0;
+      z-index: -400; } }
 
 .footer {
   margin-top: 150px; }

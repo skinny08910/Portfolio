@@ -10,6 +10,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  z-index: -600;
   overflow: hidden;
 }
 // About section
@@ -35,15 +36,18 @@
   @include respond(tab-port) {
     overflow: scroll;
     padding: 34rem 0;
+    z-index: -400;
   }
   @include respond(sm-phone) {
     overflow: scroll;
     height: 0;
     padding: 24rem 0;
+    z-index: -400;
   }
   @include respond(phone) {
     overflow: scroll;
-    padding: 32rem 0;
+    padding: 34rem 0;
+    z-index: -400;
   }
 }
 // Portfolio section
@@ -69,14 +73,17 @@
   @include respond(tab-port) {
     overflow: scroll;
     padding: 34rem 0;
+    z-index: -400;
   }
   @include respond(phone) {
     overflow: scroll;
     padding: 70rem 0;
+    z-index: -400;
   }
   @include respond(sm-phone) {
     overflow: scroll;
     padding: 75rem 0;
+    z-index: -400;
   }
 }
 // Footer
