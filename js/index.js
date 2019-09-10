@@ -9,7 +9,6 @@ var clickedBtn = function() {
 
 menuIcon[0].addEventListener("click", clickedBtn);
 
-
 /*******************************************************************/
 
 // Icon menu
@@ -125,10 +124,13 @@ screenResolution();
 
 //  Function for the project items when on touch devices
 
+// Getting the items from the HTML file
+
 var wrapperItem1 = document.getElementsByClassName('wrapper__items--1');
 var wrapperItem2 = document.getElementsByClassName('wrapper__items--2');
 var wrapperItem3 = document.getElementsByClassName('wrapper__items--3');
 var wrapperItem4 = document.getElementsByClassName('wrapper__items--4');
+
 
 
 //  Function for wrapper item 1
@@ -139,6 +141,7 @@ var clickedWrapperItem1 = function() {
   wrapperItem3[0].classList.remove('active');
   wrapperItem4[0].classList.remove('active');
 }
+
 
 //  Function for wrapper item 2
 

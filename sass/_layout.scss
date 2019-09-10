@@ -5,11 +5,12 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: linear-gradient(to right, rgba($color-primary-light, .4), rgba($color-primary-dark, .4)) ,url("../img/bg-photo-1.jpg");
+  background-image: linear-gradient(to right, rgba($color-primary-dark, .4), rgba($color-primary-dark, .4)) ,url("../img/bg-photo-1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  z-index: -600;
   overflow: hidden;
 }
 // About section
@@ -35,15 +36,18 @@
   @include respond(tab-port) {
     overflow: scroll;
     padding: 34rem 0;
+    z-index: -400;
   }
   @include respond(sm-phone) {
     overflow: scroll;
     height: 0;
     padding: 24rem 0;
+    z-index: -400;
   }
   @include respond(phone) {
     overflow: scroll;
-    padding: 32rem 0;
+    padding: 34rem 0;
+    z-index: -400;
   }
 }
 // Portfolio section
@@ -69,20 +73,26 @@
   @include respond(tab-port) {
     overflow: scroll;
     padding: 34rem 0;
+    z-index: -400;
   }
   @include respond(phone) {
     overflow: scroll;
     padding: 70rem 0;
+    z-index: -400;
   }
   @include respond(sm-phone) {
     overflow: scroll;
     padding: 75rem 0;
+    z-index: -400;
   }
 }
 // Footer
 
 .footer {
   margin-top: 150px;
+  @include respond(laptop) {
+    margin-top: 125px;
+  }
   @include respond(tab-land) {
     margin-top: 50px;
   }
@@ -101,7 +111,7 @@
   left: 0;
   width: 10%;
   height: 100vh;
-  z-index: 5000;
+  z-index: 10000;
   background-image: linear-gradient(to right bottom, rgba($color-primary-light, .7), rgba($color-primary-dark, .7));
   transition: all 0.4s ease-in-out;
 

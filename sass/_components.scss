@@ -42,19 +42,6 @@
     }
   }
 }
-
-.about-section--center {
-  padding-top: 15rem;
-  @include respond(tab-land) {
-    padding-top: 0;
-  }
-  @include respond(tab-port) {
-    padding-top: 0;
-  }
-  @include respond(phone) {
-    padding-top: 0;
-  }
-}
 // Social media link
 
 .social-media {
@@ -175,7 +162,7 @@
     border-width: 0 0 1px 0;
     border-radius: 20px;
   }
-  // Click on projects
+  // Click on projects notice
   &__click {
     display: none;
     color: $color-secondary-light;
@@ -271,14 +258,18 @@
     }
   }
 }
+// About center
 
-.project-section--center {
-  padding-top: 17rem;
+.about-section--center {
+  padding-top: 15rem;
+  @include respond(laptop) {
+    margin-bottom: 3rem;
+  }
   @include respond(tab-land) {
-    padding-top: 5rem;
+    padding-top: 0;
   }
   @include respond(tab-port) {
-    padding-top: 2rem;
+    padding-top: 0;
   }
   @include respond(phone) {
     padding-top: 0;
@@ -415,6 +406,23 @@
     }
   }
 }
+// Project center
+
+.project-section--center {
+  padding-top: 17rem;
+  @include respond(laptop) {
+    margin-bottom: 3rem;
+  }
+  @include respond(tab-land) {
+    padding-top: 5rem;
+  }
+  @include respond(tab-port) {
+    padding-top: 2rem;
+  }
+  @include respond(phone) {
+    padding-top: 0;
+  }
+}
 // Wrapper
 
 .wrapper {
@@ -423,6 +431,9 @@
   grid-gap: 20px;
   max-width: 70rem;
   margin: 0 auto;
+  @include respond(laptop) {
+    grid-template-rows: 320px;
+  }
   @include respond(tab-land) {
     grid-template-columns: repeat(2, 1fr);
     width: 90%;
@@ -433,6 +444,7 @@
   }
   @include respond(phone) {
     grid-template-columns: 1fr;
+    grid-template-rows: 320px;
     grid-row-gap: 140px;
     width: 90%;
     margin-bottom: 50px;
@@ -718,7 +730,7 @@
   left: 0;
   width: 100%;
   height: 40px;
-  z-index: 3000;
+  z-index: 9000;
   background-image: linear-gradient(to right bottom, rgba($color-primary-light, .4), rgba($color-primary-dark, .4));
   @include clearFix;
   @include respond(tab-port) {
@@ -726,6 +738,14 @@
   }
   @include respond(phone) {
     display: inline-block;
+  }
+  // checkbox
+  &__checkbox {
+    // display: none;
+  }
+
+  &__button:checked ~ .main-menu {
+    transform: translate3d(0, 0, 0);
   }
 
   &__logo {
