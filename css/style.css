@@ -13,7 +13,7 @@ body {
   font-weight: 400; }
 
 main {
-  width: 100%; }
+  height: 0; }
 
 .container {
   position: absolute;
@@ -524,7 +524,6 @@ main {
   @media only screen and (max-width: 37.5em) {
     .wrapper {
       grid-template-columns: 1fr;
-      grid-template-rows: 320px;
       grid-row-gap: 140px;
       width: 90%;
       margin-bottom: 50px; } }
