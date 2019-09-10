@@ -411,7 +411,7 @@
 .project-section--center {
   padding-top: 17rem;
   @include respond(laptop) {
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
   }
   @include respond(tab-land) {
     padding-top: 5rem;
