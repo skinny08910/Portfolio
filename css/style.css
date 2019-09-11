@@ -112,10 +112,10 @@ main {
   margin-top: 150px; }
   @media only screen and (min-width: 80em) and (max-width: 90em) {
     .footer {
-      margin-top: 115px; } }
+      margin-top: 100px; } }
   @media only screen and (max-width: 75em) {
     .footer {
-      margin-top: 50px; } }
+      margin-top: 40px; } }
   @media only screen and (max-width: 37.5em) {
     .footer {
       margin-top: 200px; } }
@@ -496,7 +496,8 @@ main {
       margin-bottom: 2.5rem; } }
   @media only screen and (max-width: 75em) {
     .project-section--center {
-      padding-top: 5rem; } }
+      padding-top: 5rem;
+      margin-bottom: 2.5rem; } }
   @media only screen and (max-width: 56.25em) {
     .project-section--center {
       padding-top: 2rem; } }
