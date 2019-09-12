@@ -112,7 +112,7 @@ main {
   margin-top: 150px; }
   @media only screen and (min-width: 80em) and (max-width: 90em) {
     .footer {
-      margin-top: 100px; } }
+      margin-top: 80px; } }
   @media only screen and (max-width: 75em) {
     .footer {
       margin-top: 40px; } }

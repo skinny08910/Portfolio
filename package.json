@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skinny08910/portfolio.git"
+    "url": "git+https://github.com/skinny08910/Portfolio.git"
   },
   "author": "Nicksonder Examar",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/skinny08910/portfolio/issues"
+    "url": "https://github.com/skinny08910/Portfolio/issues"
   },
-  "homepage": "https://github.com/skinny08910/portfolio#readme",
+  "homepage": "https://github.com/skinny08910/Portfolio#readme",
   "devDependencies": {
     "autoprefixer": "^9.6.1",
     "concat": "^1.0.3",
