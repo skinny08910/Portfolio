@@ -437,6 +437,7 @@
   }
   @include respond(tab-land) {
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 220px);
     width: 90%;
   }
   @include respond(tab-port) {
