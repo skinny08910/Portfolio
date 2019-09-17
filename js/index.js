@@ -76,7 +76,7 @@ var screenResolution = function() {
 
   } else {
 
-    // Desktop
+    // Laptop and up
 
 
     // Top section function

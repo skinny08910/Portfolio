@@ -35,7 +35,7 @@ main {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: linear-gradient(to right, rgba(40, 180, 133, 0.4), rgba(40, 180, 133, 0.4)), url("../img/bg-photo-1.jpg");
+  background-image: linear-gradient(to right, rgba(40, 180, 133, 0.4), rgba(40, 180, 133, 0.4)), url("../img/bg-photo-1.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,7 +44,7 @@ main {
   overflow: hidden; }
 
 .about-section {
-  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4)), url("../img/bg-photo-2.jpg");
+  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4)), url("../img/bg-photo-2.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,7 +77,7 @@ main {
       z-index: -400; } }
 
 .project-section {
-  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4)), url("../img/bg-photo-3.jpg");
+  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4)), url("../img/bg-photo-3.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -581,25 +581,25 @@ main {
         opacity: 1;
         visibility: visible; } }
   .wrapper__items--1 {
-    background-image: url("../img/project-img-1.jpg");
+    background-image: url("../img/beatson.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px; }
   .wrapper__items--2 {
-    background-image: url("../img/project-img-2.jpg");
+    background-image: url("../img/project-img-2.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px; }
   .wrapper__items--3 {
-    background-image: url("../img/project-img-3.jpg");
+    background-image: url("../img/project-img-3.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px; }
   .wrapper__items--4 {
-    background-image: url("../img/project-img-4.jpg");
+    background-image: url("../img/castle-care.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
