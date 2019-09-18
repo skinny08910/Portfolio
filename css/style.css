@@ -197,8 +197,6 @@ main {
   .social-media__icon {
     height: inherit;
     width: inherit;
-    fill: rgba(127, 255, 0, 0);
-    transition: all 0.3s ease-in-out;
     -webkit-animation: shake 0.2s ease-in-out infinite alternate;
     animation: shake 0.2s ease-in-out infinite alternate; }
     @media only screen and (max-width: 75em) {
@@ -390,8 +388,8 @@ main {
   -webkit-box-shadow: -1px 0 30px -10px #80ff00;
   -moz-box-shadow: -1px 0 30px -10px #80ff00;
   box-shadow: -1px 0 30px -10px #80ff00;
-  -webkit-animation: blinker-2 2s ease-in-out infinite alternate;
-  animation: blinker-2 2s ease-in-out infinite alternate; }
+  -webkit-animation: blinker-2 1s ease-in-out infinite alternate;
+  animation: blinker-2 1s ease-in-out infinite alternate; }
   @media only screen and (max-width: 75em) {
     .bio-box {
       width: 90%; } }
@@ -410,14 +408,14 @@ main {
       .bio-box__name {
         font-size: 1.4rem; } }
   .bio-box__state {
-    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.4s;
-    animation: blinker 0.2s ease-in-out infinite alternate 0.4s; }
+    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.3s;
+    animation: blinker 0.3s ease-in-out infinite alternate 0.3s; }
   .bio-box__location {
     font-size: 1rem;
     color: #7fff00;
     margin-bottom: 1.5rem;
-    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.3s;
-    animation: blinker 0.2s ease-in-out infinite alternate 0.3s; }
+    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.2s;
+    animation: blinker 0.3s ease-in-out infinite alternate 0.2s; }
     @media only screen and (max-width: 37.5em) {
       .bio-box__location {
         font-size: 0.9rem; } }
@@ -426,8 +424,8 @@ main {
     height: 12px;
     fill: #7fff00;
     margin-right: 0.2rem;
-    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
-    animation: blinker 0.2s ease-in-out infinite alternate 0.2s; }
+    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
+    animation: blinker 0.3s ease-in-out infinite alternate 0.1s; }
     @media only screen and (max-width: 37.5em) {
       .bio-box__icon {
         font-size: 1rem; } }
@@ -530,8 +528,8 @@ main {
       width: 90%;
       margin-bottom: 50px; } }
   .wrapper__items {
-    -webkit-animation: blinker-2 2s ease-in-out infinite alternate;
-    animation: blinker-2 2s ease-in-out infinite alternate; }
+    -webkit-animation: blinker-2 1s ease-in-out infinite alternate;
+    animation: blinker-2 1s ease-in-out infinite alternate; }
     @media only screen and (max-width: 37.5em) {
       .wrapper__items {
         height: 110%;
@@ -676,18 +674,18 @@ main {
 
 .footer__copywrite {
   color: #7fff00;
-  -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
-  animation: blinker 0.2s ease-in-out infinite alternate 0.2s; }
+  --webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
+  animation: blinker 0.3s ease-in-out infinite alternate 0.1s; }
 
 .footer__first-name {
   color: #7fff00;
-  -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.3s;
-  animation: blinker 0.2s ease-in-out infinite alternate 0.3s; }
+  -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.2s;
+  animation: blinker 0.3s ease-in-out infinite alternate 0.2s; }
 
 .footer__last-name {
   color: #7fff00;
-  -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.4s;
-  animation: blinker 0.2s ease-in-out infinite alternate 0.4s; }
+  -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.3s;
+  animation: blinker 0.3s ease-in-out infinite alternate 0.3s; }
 
 .sidebar {
   width: 10%;
@@ -721,25 +719,25 @@ main {
       animation: 0; }
       @media only screen and (max-width: 75em) {
         .sidebar__icon:hover {
-          --webkit-animation: blinker 0.3s ease-in-out infinite alternate;
-          animation: blinker 0.3s ease-in-out infinite alternate; } }
+          --webkit-animation: blinker 0.2s ease-in-out infinite alternate;
+          animation: blinker 0.2s ease-in-out infinite alternate; } }
       @media only screen and (max-width: 56.25em) {
         .sidebar__icon:hover {
           --webkit-animation: blinker 0.3s ease-in-out infinite alternate;
           animation: blinker 0.3s ease-in-out infinite alternate; } }
       @media only screen and (max-width: 37.5em) {
         .sidebar__icon:hover {
-          --webkit-animation: blinker 0.3s ease-in-out infinite alternate;
-          animation: blinker 0.3s ease-in-out infinite alternate; } }
+          --webkit-animation: blinker 0.4s ease-in-out infinite alternate;
+          animation: blinker 0.4s ease-in-out infinite alternate; } }
   .sidebar__icon-1 {
-    -webkit-animation: blinker 0.3s ease-in-out infinite alternate;
-    animation: blinker 0.3s ease-in-out infinite alternate; }
-  .sidebar__icon-2 {
     -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
     animation: blinker 0.3s ease-in-out infinite alternate 0.1s; }
-  .sidebar__icon-3 {
+  .sidebar__icon-2 {
     -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.2s;
     animation: blinker 0.3s ease-in-out infinite alternate 0.2s; }
+  .sidebar__icon-3 {
+    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.3s;
+    animation: blinker 0.3s ease-in-out infinite alternate 0.3s; }
 
 .mobile-menu {
   display: none;
@@ -761,8 +759,6 @@ main {
   @media only screen and (max-width: 37.5em) {
     .mobile-menu {
       display: inline-block; } }
-  .mobile-menu__button:checked ~ .main-menu {
-    transform: translate3d(0, 0, 0); }
   .mobile-menu__logo {
     display: inline-block;
     font-family: 'Roboto', sans-serif;
@@ -875,8 +871,9 @@ video {
   font: inherit;
   vertical-align: baseline; }
 
-@-webkit-keyframes shake {
+@keyframes shake {
   0% {
+    fill: rgba(127, 255, 0, 0);
     -webkit-transform: translateX(10px);
     transform: translateX(10px); }
   100% {
@@ -884,7 +881,7 @@ video {
     -webkit-transform: translateX(-10px);
     transform: translateX(-10px); } }
 
-@-webkit-keyframes shake-2 {
+@keyframes shake-2 {
   0% {
     -webkit-transform: translateY(10px);
     transform: translateY(10px); }
@@ -895,13 +892,13 @@ video {
     -webkit-transform: translateY(10px);
     transform: translateY(10px); } }
 
-@-webkit-keyframes shake-3 {
+@keyframes shake-3 {
   0% {
     fill: rgba(127, 255, 0, 0.1); }
   100% {
     fill: #7fff00; } }
 
-@-webkit-keyframes blinker {
+@keyframes blinker {
   0% {
     color: rgba(127, 255, 0, 0);
     fill: rgba(127, 255, 0, 0); }
@@ -909,7 +906,7 @@ video {
     color: #7fff00;
     fill: #7fff00; } }
 
-@-webkit-keyframes blinker-2 {
+@keyframes blinker-2 {
   0% {
     -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 0);
     box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 0); }
@@ -917,7 +914,7 @@ video {
     -webkit-box-shadow: -1px 0 30px -10px #80ff00;
     box-shadow: -1px 0 30px -10px #80ff00; } }
 
-@-webkit-keyframes title {
+@keyframes title {
   0% {
     visibility: visible;
     -webkit-transform: scale(0, 0) translate(-30%, -50%);

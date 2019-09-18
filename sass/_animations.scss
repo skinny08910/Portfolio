@@ -1,5 +1,6 @@
-@-webkit-keyframes shake {
+@keyframes shake {
   0% {
+    fill: rgba($color-secondary-light, .0);
     -webkit-transform: translateX(10px);
     transform: translateX(10px);
   }
@@ -10,7 +11,7 @@
     transform: translateX(-10px);
   }
 }
-@-webkit-keyframes shake-2 {
+@keyframes shake-2 {
   0% {
     -webkit-transform: translateY(10px);
     transform: translateY(10px);
@@ -26,7 +27,7 @@
     transform: translateY(10px);
   }
 }
-@-webkit-keyframes shake-3 {
+@keyframes shake-3 {
   0% {
     fill: rgba($color-secondary-light, .1);
   }
@@ -35,7 +36,7 @@
     fill: $color-secondary-light;
   }
 }
-@-webkit-keyframes blinker {
+@keyframes blinker {
   0% {
     color: rgba($color-secondary-light, 0);
     fill: rgba($color-secondary-light, 0);
@@ -46,7 +47,7 @@
     fill: $color-secondary-light;
   }
 }
-@-webkit-keyframes blinker-2 {
+@keyframes blinker-2 {
   0% {
     -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 0);
     box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 0);
@@ -57,7 +58,7 @@
     box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
   }
 }
-@-webkit-keyframes title {
+@keyframes title {
   0% {
     visibility: visible;
     -webkit-transform: scale(0, 0) translate(-30%, -50%);
