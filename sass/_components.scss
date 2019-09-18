@@ -412,7 +412,7 @@
     margin-bottom: 2.5rem;
   }
   @include respond(tab-land) {
-    padding-top: 5rem;
+    padding-top: 18rem;
     margin-bottom: 2.5rem;
   }
   @include respond(tab-port) {
@@ -426,24 +426,29 @@
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 2fr);
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: 320px;
   grid-gap: 20px;
-  max-width: 70rem;
+  max-width: 80rem;
   margin: 0 auto;
   @include respond(laptop) {
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 320px;
+    max-width: 70rem;
   }
   @include respond(tab-land) {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 220px);
+    grid-template-rows: repeat(2, 290px);
     width: 90%;
   }
   @include respond(tab-port) {
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 320px);
     width: 90%;
   }
   @include respond(phone) {
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 290px);
     grid-row-gap: 140px;
     width: 90%;
     margin-bottom: 50px;
@@ -510,44 +515,12 @@
     // Active class for touch devices
   }
 
-  &__items--1 {
-    background-image: url("../img/beatson.png");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-  }
-
-  &__items--2 {
-    background-image: url("../img/project-img-2.png");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-  }
-
-  &__items--3 {
-    background-image: url("../img/project-img-3.png");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-  }
-
-  &__items--4 {
-    background-image: url("../img/castle-care.png");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-  }
-
   &__info {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
     height: 100%;
-    background-image: linear-gradient(to right, rgba($color-primary-light, .8), rgba($color-primary-dark, .8));
+    background-image: linear-gradient(to right, rgba($color-primary-light, .9), rgba($color-primary-dark, .9));
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -557,32 +530,49 @@
     border-radius: 10px;
     opacity: 0;
     visibility: hidden;
-
-    &__link {
-      color: #fff;
-      text-decoration: none;
-    }
   }
-
+  // Title
   &__title {
     text-align: center;
     font-size: 1.2rem;
+    margin-bottom: 0.4rem;
   }
 
+  &__title--1 {
+    margin-bottom: 2rem;
+  }
+
+  &__title--2 {
+    margin-bottom: 2rem;
+  }
+
+  &__title--3 {
+    margin-bottom: 2rem;
+  }
+  // Paragraph
+  &__paragraph {
+    line-height: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+  // Buttons
   &__button-container {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    margin: 20px auto;
+    margin: 8px auto;
     @include respond(tab-land) {
       width: 50%;
     }
     @include respond(tab-port) {
       width: 60%;
+      margin: 10px auto 0;
     }
     @include respond(phone) {
       width: 70%;
-      margin: 50px auto 0;
+      margin: 10px auto 0;
+    }
+    @include respond(sm-phone) {
+      margin: 5px auto 0;
     }
 
     &--project {
@@ -617,6 +607,86 @@
       }
     }
   }
+  // Wrapper item 1
+  &__items--1 {
+    background-image: url("../img/beatson.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  // Technologies
+  &__technology {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  // Second title
+  &__second-title {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+
+  &__second-title--1 {
+    margin-bottom: 2rem;
+  }
+
+  &__second-title--2 {
+    margin-bottom: 2rem;
+  }
+
+  &__second-title--3 {
+    margin-bottom: 2rem;
+  }
+  // Wrapper technologies
+  &__wrapper-technologies {
+    @include respond(phone) {
+      margin-bottom: 2rem;
+    }
+    @include respond(sm-phone) {
+      margin-bottom: 0.5rem;
+    }
+  }
+  // Technology list
+  &__list-items {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    margin-left: 1.5rem;
+    @include respond(tab-land) {
+      &:not(:last-child) {
+        margin-left: 2.4rem;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+  // Wrapper item 2
+  &__items--2 {
+    background-image: url("../img/project-img-2.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  // Wrapper item 3
+  &__items--3 {
+    background-image: url("../img/project-img-3.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  // Wrapper item 4
+  &__items--4 {
+    background-image: url("../img/castle-care.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
 }
 // Copywriter
 
@@ -647,9 +717,9 @@
   -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.3s;
   animation: blinker 0.3s ease-in-out infinite alternate 0.3s;
 }
-// Sidebar
+// Side menu
 
-.sidebar {
+.side-menu {
   width: 10%;
   height: 100vh;
 
