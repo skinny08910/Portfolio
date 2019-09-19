@@ -91,7 +91,7 @@
 .footer {
   margin-top: 150px;
   @include respond(laptop) {
-    margin-top: 70px;
+    margin-top: 50px;
   }
   @include respond(tab-land) {
     margin-top: 40px;
