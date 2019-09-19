@@ -67,6 +67,7 @@
   &__icon {
     height: inherit;
     width: inherit;
+    fill: $color-secondary-light;
     -webkit-animation: shake 0.2s ease-in-out infinite alternate;
     animation: shake 0.2s ease-in-out infinite alternate;
     @include respond(tab-land) {
@@ -280,7 +281,7 @@
   max-width: 70rem;
   margin: 0 auto;
   padding: 2rem;
-  background-image: linear-gradient(to right, rgba($color-primary-dark, .5), rgba($color-primary-dark, .5));
+  background-image: linear-gradient(135deg, rgba($color-primary-dark, .5) 50%, rgba($color-primary-dark, .5) 100%);
   border-radius: 10px;
   -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
   -moz-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
@@ -433,7 +434,7 @@
   margin: 0 auto;
   @include respond(laptop) {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 320px;
+    grid-template-rows: 390px;
     max-width: 70rem;
   }
   @include respond(tab-land) {
@@ -448,7 +449,7 @@
   }
   @include respond(phone) {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 290px);
+    grid-template-rows: repeat(4, 320px);
     grid-row-gap: 140px;
     width: 90%;
     margin-bottom: 50px;
@@ -609,7 +610,7 @@
   }
   // Wrapper item 1
   &__items--1 {
-    background-image: url("../img/beatson.png");
+    background-image: url("../img/beatson.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -665,7 +666,7 @@
   }
   // Wrapper item 2
   &__items--2 {
-    background-image: url("../img/project-img-2.png");
+    background-image: url("../img/project-img-2.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -673,7 +674,7 @@
   }
   // Wrapper item 3
   &__items--3 {
-    background-image: url("../img/project-img-3.png");
+    background-image: url("../img/project-img-3.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -681,7 +682,7 @@
   }
   // Wrapper item 4
   &__items--4 {
-    background-image: url("../img/castle-care.png");
+    background-image: url("../img/castle-care.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -746,8 +747,8 @@
     width: 30px;
     height: 30px;
     @include respond(phone) {
-      width: 22px;
-      height: 22px;
+      width: 26px;
+      height: 26px;
     }
   }
 
@@ -800,7 +801,7 @@
   width: 100%;
   height: 40px;
   z-index: 9000;
-  background-image: linear-gradient(to right bottom, rgba($color-primary-light, .4), rgba($color-primary-dark, .4));
+  background-image: linear-gradient(135deg, rgba($color-primary-light, .4) 50%, rgba($color-primary-dark, .4) 100%);
   @include clearFix;
   @include respond(tab-port) {
     display: inline-block;

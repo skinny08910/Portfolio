@@ -1,3 +1,19 @@
+// Shake
+// Safari
+@-webkit-keyframes shake {
+  0% {
+    fill: rgba($color-secondary-light, .0);
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  100% {
+    fill: $color-secondary-light;
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+}
+// Safari
 @keyframes shake {
   0% {
     fill: rgba($color-secondary-light, .0);
@@ -11,6 +27,25 @@
     transform: translateX(-10px);
   }
 }
+// Shake-2
+// Safari
+@-webkit-keyframes shake-2 {
+  0% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+}
+// Safari
 @keyframes shake-2 {
   0% {
     -webkit-transform: translateY(10px);
@@ -27,6 +62,18 @@
     transform: translateY(10px);
   }
 }
+// Shake-3
+// Safari
+@-webkit-keyframes shake-3 {
+  0% {
+    fill: rgba($color-secondary-light, .1);
+  }
+
+  100% {
+    fill: $color-secondary-light;
+  }
+}
+// Safari
 @keyframes shake-3 {
   0% {
     fill: rgba($color-secondary-light, .1);
@@ -36,6 +83,20 @@
     fill: $color-secondary-light;
   }
 }
+// Blinker
+// Safari
+@-webkit-keyframes blinker {
+  0% {
+    color: rgba($color-secondary-light, 0);
+    fill: rgba($color-secondary-light, 0);
+  }
+
+  100% {
+    color: $color-secondary-light;
+    fill: $color-secondary-light;
+  }
+}
+// Safari
 @keyframes blinker {
   0% {
     color: rgba($color-secondary-light, 0);
@@ -47,6 +108,20 @@
     fill: $color-secondary-light;
   }
 }
+// Blinker-2
+// Safari
+@-webkit-keyframes blinker-2 {
+  0% {
+    -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 0);
+    box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
+    box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
+  }
+}
+// Safari
 @keyframes blinker-2 {
   0% {
     -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 0);
@@ -58,6 +133,32 @@
     box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
   }
 }
+// Title
+// Safari
+@-webkit-keyframes title {
+  0% {
+    visibility: visible;
+    -webkit-transform: scale(0, 0) translate(-30%, -50%);
+    transform: scale(0, 0) translate(-30%, -50%);
+    @include respond(phone) {
+      visibility: visible;
+      -webkit-transform: scale(0, 0) translate(-50%, -50%);
+      transform: scale(0, 0) translate(-50%, -50%);
+    }
+  }
+
+  100% {
+    visibility: visible;
+    -webkit-transform: scale(1, 1) translate(-30%, -50%);
+    transform: scale(1, 1) translate(-30%, -50%);
+    @include respond(phone) {
+      visibility: visible;
+      -webkit-transform: scale(1, 1) translate(-50%, -50%);
+      transform: scale(1, 1) translate(-50%, -50%);
+    }
+  }
+}
+// Safari
 @keyframes title {
   0% {
     visibility: visible;
