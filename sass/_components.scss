@@ -410,7 +410,7 @@
 .project-section--center {
   padding-top: 17rem;
   @include respond(laptop) {
-    margin-bottom: 0;
+    margin-bottom: 2.5rem;
   }
   @include respond(tab-land) {
     padding-top: 18rem;
@@ -801,7 +801,7 @@
   width: 100%;
   height: 40px;
   z-index: 9000;
-  background-image: linear-gradient(135deg, rgba($color-primary-light, .4) 50%, rgba($color-primary-dark, .4) 100%);
+  background-image: linear-gradient(135deg, rgba($color-primary-light, 1) 50%, rgba($color-primary-dark, 1) 100%);
   @include clearFix;
   @include respond(tab-port) {
     display: inline-block;
