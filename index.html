@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="html-tag" lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -8,52 +8,74 @@
   <meta name="name" content="Nicksonder Examar" />
   <meta name="description" content="A web developer with passion" />
   <meta name="keywords" content="HTML, CSS, JavaScript, Web Development, Freelancer" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <title>Nicksonder Examar - Web Developer</title>
 </head>
 
 <body>
   <!-- Nav -->
-  <nav class="main-menu">
+  <nav id="main-menu" class="main-menu">
     <!-- Side menu -->
     <div class="side-menu">
+      <!-- Section Links -->
       <ul class="side-menu__container">
         <li class="side-menu__list">
-          <a id="home-icon" rel="noreferrer noopener" href="#home" aria-label="Home" class="side-menu__link">
-            <svg class="side-menu__icon side-menu__icon-1">
+          <a rel="noreferrer noopener" href="#home" aria-label="Home" class="side-menu__link">
+            <svg id="home-icon" class="side-menu__icon side-menu__icon-1">
               <use xlink:href="img/sprite.svg#icon-home"></use>
             </svg>
           </a>
         </li>
 
         <li class="side-menu__list">
-          <a id="about-icon" rel="noreferrer noopener" href="#about" aria-label="About Me" class="side-menu__link">
-            <svg class="side-menu__icon side-menu__icon-2">
+          <a rel="noreferrer noopener" href="#about" aria-label="About Me" class="side-menu__link">
+            <svg id="about-icon" class="side-menu__icon side-menu__icon-2">
               <use xlink:href="img/sprite.svg#icon-user"></use>
             </svg>
           </a>
         </li>
 
         <li class="side-menu__list">
-          <a id="project-icon" rel="noreferrer noopener" href="#project" aria-label="Project" class="side-menu__link">
-            <svg class="side-menu__icon side-menu__icon-3">
+          <a rel="noreferrer noopener" href="#project" aria-label="Project" class="side-menu__link">
+            <svg id="project-icon" class="side-menu__icon side-menu__icon-3">
               <use xlink:href="img/sprite.svg#icon-folder"></use>
             </svg>
           </a>
         </li>
       </ul>
+      <!-- Section Links -->
     </div>
     <!-- Side menu -->
+
+    <!-- Color Picker -->
+    <div class="picker">
+      <svg id="color-icon" class="picker__color-picker">
+        <use xlink:href="img/sprite.svg#icon-invert_colors_on"></use>
+      </svg>
+    </div>
+    <!-- Color Picker -->
+
+    <!-- Color Switcher -->
+    <div id="color-switcher" class="color-switcher">
+      <div class="color-switcher__container">
+        <div id="switcher-1" class="color-switcher__switcher-1">
+        </div>
+        <div id="switcher-2" class="color-switcher__switcher-2">
+        </div>
+        <div id="switcher-3" class="color-switcher__switcher-3">
+        </div>
+      </div>
+    </div>
+    <!-- Color Switcher -->
   </nav>
   <!-- Nav -->
 
   <!-- Mobile menu -->
-  <div class="mobile-menu">
+  <div id="mobile-menu" class="mobile-menu">
     <div class="mobile-menu__logo">NGD</div>
 
     <div class="mobile-menu__menu">
-      <svg class="mobile-menu__icon">
+      <svg id="mobile-menu-icon" class="mobile-menu__icon">
         <use xlink:href="img/sprite.svg#icon-menu"></use>
       </svg>
     </div>
@@ -67,13 +89,13 @@
       <!-- Center -->
       <div class="center center--top-section">
         <h1 class="center__title">Nicksonder Examar</h1>
-        <div class="center__sub-title">A Web Developer</div>
+        <div class="center__sub-title">A Front End Web Developer</div>
       </div>
 
       <!-- Social media link -->
       <div class="social-media">
         <a rel="noreferrer noopener" href="https://www.linkedin.com/in/nicksonder-examar-a920b217a?trk=people-guest_profile-result-card_result-card_full-click" target="_blank" aria-label="Social Media" class="social-media__link">
-          <svg class="social-media__icon">
+          <svg id="social-media" class="social-media__icon">
             <use xlink:href="img/sprite.svg#icon-linkedin"></use>
           </svg>
         </a>
@@ -88,18 +110,21 @@
         <!-- Center -->
         <div class="center about-section--center">
           <h2 class="center__main-title">A little summary about myself</h2>
-          <hr class="center__hr" />
+          <hr id="center-hr" class="center__hr" />
+          <hr id="center-hr-2" class="center__hr-2" />
         </div>
 
         <!-- Bio box -->
-        <div class="bio-box">
+        <div id="bio-box" class="bio-box">
           <h3 class="bio-box__name">Nicksonder Examar</h3>
-          <div class="bio-box__location">
-            <svg class="bio-box__icon">
+          <div id="location-box" class="bio-box__location">
+            <svg id="location-icon" class="bio-box__icon">
               <use xlink:href="img/sprite.svg#icon-location"></use>
             </svg>
-            Florida, <span class="bio-box__state">USA</span>
+            Florida,
+            <span id="country" class="bio-box__state">USA</span>
           </div>
+
           <p class="bio-box__paragraph">
             Hi, I'm Nicksonder Examar, a Web Developer that's looking to get
             in the industry. I'm originally from Haiti where I had most of my
@@ -111,11 +136,11 @@
 
           <!-- Bio skills -->
           <div class="bio-box__skills">
-            <div class="bio-box__html">
+            <div id="html" class="bio-box__html">
               HTML
             </div>
 
-            <div class="bio-box__css">
+            <div id="css" class="bio-box__css">
               CSS
             </div>
           </div>
@@ -131,22 +156,23 @@
         <!-- Center -->
         <div class="center project-section--center">
           <h2 class="center__main-title">Projects</h2>
-          <hr class="center__hr center__hr--project" />
+          <hr id="center-hr-3" class="center__hr center__hr--project" />
+          <hr id="center-hr-4" class="center__hr-2 center__hr-2--project" />
           <!-- Center Notice -->
           <div class="center__notice">
-            <span class="center__click">Click</span>
-            <span class="center__click-2">to</span>
-            <span class="center__click-3">see</span>
-            <span class="center__click-4">the</span>
-            <span class="center__click-5">projects</span>
+            <span id="click" class="center__click">Click</span>
+            <span id="click-2" class="center__click-2">to</span>
+            <span id="click-3" class="center__click-3">see</span>
+            <span id="click-4" class="center__click-4">the</span>
+            <span id="click-5" class="center__click-5">projects</span>
           </div>
         </div>
 
         <!-- Wrapper -->
         <div class="wrapper">
           <!-- Item 1 -->
-          <div class="wrapper__items wrapper__items--1">
-            <div class="wrapper__info">
+          <div id="wrapper-items" class="wrapper__items wrapper__items--1">
+            <div id="wrapper-info-1" class="wrapper__info">
               <!-- Title -->
               <h3 class="wrapper__title wrapper__title--1">BeatsOn</h3>
 
@@ -184,7 +210,7 @@
 
           <!-- Item 2-->
           <div class="wrapper__items wrapper__items--2">
-            <div class="wrapper__info">
+            <div id="wrapper-info-2" class="wrapper__info">
               <!-- Title -->
               <h3 class="wrapper__title wrapper__title--2">Project 2</h3>
 
@@ -224,7 +250,7 @@
 
           <!-- Item 3 -->
           <div class="wrapper__items wrapper__items--3">
-            <div class="wrapper__info">
+            <div id="wrapper-info-3" class="wrapper__info">
               <!-- Title -->
               <h3 class="wrapper__title wrapper__title--3">Project 3</h3>
 
@@ -264,7 +290,7 @@
 
           <!-- Item 4 -->
           <div class="wrapper__items wrapper__items--4">
-            <div class="wrapper__info">
+            <div id="wrapper-info-4" class="wrapper__info">
               <!-- Title -->
               <h3 class="wrapper__title">Castle Care</h3>
 
@@ -308,9 +334,9 @@
         <!-- Footer -->
         <footer class="footer">
           <div class="footer__text">
-            <span class="footer__copywrite">&copy;</span>
-            <span class="footer__first-name">Nicksonder</span>
-            <span class="footer__last-name">Examar</span>
+            <span id="footer-copy" class="footer__copywrite">&copy;</span>
+            <span id="footer__first-name" class="footer__first-name">Nicksonder</span>
+            <span id="footer__last-name" class="footer__last-name">Examar</span>
           </div>
         </footer>
         <!-- Footer -->

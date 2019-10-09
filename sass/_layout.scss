@@ -12,6 +12,14 @@
   position: relative;
   z-index: -600;
   overflow: hidden;
+
+  &.sky-blue {
+    background-image: linear-gradient(135deg, rgba($color-primary-sky-blue-light, .5) 50%, rgba($color-primary-sky-blue-dark, .5) 100%) ,url("../img/bg-photo-1.jpg");
+  }
+
+  &.purple {
+    background-image: linear-gradient(135deg, rgba($color-primary-purple-light, .5) 50%, rgba($color-primary-purple-dark, .5) 100%) ,url("../img/bg-photo-1.jpg");
+  }
 }
 // About section
 
@@ -27,6 +35,14 @@
   width: 100%;
   overflow: hidden;
   transition: all 1s ease-in-out;
+
+  &.sky-blue {
+    background-image: linear-gradient(135deg, rgba($color-primary-sky-blue-light, .5) 50%, rgba($color-primary-sky-blue-dark, .5) 100%) ,url("../img/bg-photo-2.jpg");
+  }
+
+  &.purple {
+    background-image: linear-gradient(135deg, rgba($color-primary-purple-light, .5) 50%, rgba($color-primary-purple-dark, .5) 100%) ,url("../img/bg-photo-2.jpg");
+  }
 
   &.active {
     top: 0;
@@ -64,6 +80,14 @@
   width: 100%;
   overflow: hidden;
   transition: all 1s ease-in-out;
+
+  &.sky-blue {
+    background-image: linear-gradient(135deg, rgba($color-primary-sky-blue-light, .5) 50%, rgba($color-primary-sky-blue-dark, .5) 100%) ,url("../img/bg-photo-3.jpg");
+  }
+
+  &.purple {
+    background-image: linear-gradient(135deg, rgba($color-primary-purple-light, .5) 50%, rgba($color-primary-purple-dark, .5) 100%) ,url("../img/bg-photo-3.jpg");
+  }
 
   &.active {
     top: 0;
@@ -117,6 +141,14 @@
 
   &.active {
     transform: translate3d(0, 0, 0);
+  }
+
+  &.sky-blue {
+    background-image: linear-gradient(135deg, rgba($color-primary-sky-blue-light, 1) 50%, rgba($color-primary-sky-blue-dark, 1) 100%);
+  }
+
+  &.purple {
+    background-image: linear-gradient(135deg, rgba($color-primary-purple-light, 1) 50%, rgba($color-primary-purple-dark, 1) 100%);
   }
   @include respond(tab-port) {
     transform: translate3d(-100%, 0, 0);

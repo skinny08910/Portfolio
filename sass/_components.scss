@@ -67,37 +67,126 @@
   &__icon {
     height: inherit;
     width: inherit;
-    fill: $color-secondary-light;
     -webkit-animation: shake 0.2s ease-in-out infinite alternate;
     animation: shake 0.2s ease-in-out infinite alternate;
+
+    &.sky-blue {
+      fill: $color-primary-sky-blue-dark;
+      -webkit-animation: colorPickerShakeSkyBlue 0.2s ease-in-out infinite alternate;
+      animation: colorPickerShakeSkyBlue 0.2s ease-in-out infinite alternate;
+    }
+
+    &.purple {
+      fill: $color-primary-purple-dark;
+      -webkit-animation: colorPickerShakePurple 0.2s ease-in-out infinite alternate;
+      animation: colorPickerShakePurple 0.2s ease-in-out infinite alternate;
+    }
     @include respond(tab-land) {
       -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
       animation: shake-3 0.2s ease-in-out infinite alternate;
+
+      &.sky-blue {
+        fill: $color-primary-sky-blue-dark;
+        -webkit-animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
+        animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
+      }
+
+      &.purple {
+        fill: $color-primary-purple-dark;
+        -webkit-animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
+        animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
+      }
     }
     @include respond(tab-port) {
       -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
       animation: shake-3 0.2s ease-in-out infinite alternate;
+
+      &.sky-blue {
+        fill: $color-primary-sky-blue-dark;
+        -webkit-animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
+        animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
+      }
+
+      &.purple {
+        fill: $color-primary-purple-dark;
+        -webkit-animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
+        animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
+      }
     }
     @include respond(phone) {
       -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
       animation: shake-3 0.2s ease-in-out infinite alternate;
+
+      &.sky-blue {
+        fill: $color-primary-sky-blue-dark;
+        -webkit-animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
+        animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
+      }
+
+      &.open {
+        fill: $color-primary-purple-dark;
+        -webkit-animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
+        animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
+      }
     }
 
     &:hover {
       fill: $color-secondary-light;
       -webkit-animation: shake 0;
       animation: shake 0;
+
+      &.sky-blue {
+        fill: $color-primary-sky-blue-dark;
+        -webkit-animation: shake 0;
+        animation: shake 0;
+      }
+
+      &.purple {
+        fill: $color-primary-purple-dark;
+        -webkit-animation: shake 0;
+        animation: shake 0;
+      }
       @include respond(tab-land) {
         -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
         animation: shake-3 0.2s ease-in-out infinite alternate;
+
+        &.sky-blue {
+          -webkit-animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
+          animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
+        }
+
+        &.purple {
+          -webkit-animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
+          animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
+        }
       }
       @include respond(tab-port) {
         -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
         animation: shake-3 0.2s ease-in-out infinite alternate;
+
+        &.sky-blue {
+          -webkit-animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
+          animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
+        }
+
+        &.purple {
+          -webkit-animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
+          animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
+        }
       }
       @include respond(phone) {
         -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
         animation: shake-3 0.2s ease-in-out infinite alternate;
+
+        &.sky-blue {
+          -webkit-animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
+          animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
+        }
+
+        &.purple {
+          -webkit-animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
+          animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
+        }
       }
     }
   }
@@ -127,6 +216,14 @@
     border-width: 1px 0 0 0;
     border-radius: 20px;
     width: 30%;
+
+    &.sky-blue {
+      border-color: $color-primary-sky-blue-dark;
+    }
+
+    &.purple {
+      border-color: $color-primary-purple-dark;
+    }
     @include respond(tab-land) {
       width: 45%;
     }
@@ -151,15 +248,47 @@
     }
   }
 
-  &__hr::before {
-    display: block;
-    content: "";
+  &__hr-2 {
+    overflow: visible;
+    /* For IE */
     height: 30px;
-    margin-top: -31px;
+    margin-top: -65px;
     border-style: solid;
     border-color: $color-secondary-light;
     border-width: 0 0 1px 0;
     border-radius: 20px;
+    width: 30%;
+
+    &.sky-blue {
+      border-color: $color-primary-sky-blue-dark;
+    }
+
+    &.purple {
+      border-color: $color-primary-purple-dark;
+    }
+    @include respond(tab-land) {
+      width: 45%;
+    }
+    @include respond(tab-port) {
+      width: 60%;
+    }
+    @include respond(phone) {
+      width: 85%;
+    }
+
+    &--project {
+      width: 10%;
+      margin-top: -66px;
+      @include respond(tab-land) {
+        width: 20%;
+      }
+      @include respond(tab-port) {
+        width: 25%;
+      }
+      @include respond(phone) {
+        width: 30%;
+      }
+    }
   }
   // Click on projects notice
   &__click {
@@ -167,6 +296,16 @@
     color: $color-secondary-light;
     -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
     animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
+
+    &.sky-blue {
+      -webkit-animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.2s;
+      animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.2s;
+    }
+
+    &.purple {
+      -webkit-animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.2s;
+      animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.2s;
+    }
     @include respond(tab-land) {
       display: inline-block;
       font-size: 0.9rem;
@@ -186,6 +325,16 @@
     color: $color-secondary-light;
     -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.3s;
     animation: blinker 0.2s ease-in-out infinite alternate 0.3s;
+
+    &.sky-blue {
+      -webkit-animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.3s;
+      animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.3s;
+    }
+
+    &.purple {
+      -webkit-animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.3s;
+      animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.3s;
+    }
     @include respond(tab-land) {
       display: inline-block;
       font-size: 0.9rem;
@@ -205,6 +354,16 @@
     color: $color-secondary-light;
     -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.4s;
     animation: blinker 0.2s ease-in-out infinite alternate 0.4s;
+
+    &.sky-blue {
+      -webkit-animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.4s;
+      animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.4s;
+    }
+
+    &.purple {
+      -webkit-animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.4s;
+      animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.4s;
+    }
     @include respond(tab-land) {
       display: inline-block;
       font-size: 0.9rem;
@@ -224,6 +383,16 @@
     color: $color-secondary-light;
     -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.5s;
     animation: blinker 0.2s ease-in-out infinite alternate 0.5s;
+
+    &.sky-blue {
+      -webkit-animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.5s;
+      animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.5s;
+    }
+
+    &.purple {
+      -webkit-animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.5s;
+      animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.5s;
+    }
     @include respond(tab-land) {
       display: inline-block;
       font-size: 0.9rem;
@@ -243,6 +412,16 @@
     color: $color-secondary-light;
     -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.6s;
     animation: blinker 0.2s ease-in-out infinite alternate 0.6s;
+
+    &.sky-blue {
+      -webkit-animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.6s;
+      animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.6s;
+    }
+
+    &.purple {
+      -webkit-animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.6s;
+      animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.6s;
+    }
     @include respond(tab-land) {
       display: inline-block;
       font-size: 0.9rem;
@@ -288,6 +467,18 @@
   box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
   -webkit-animation: blinker-2 1s ease-in-out infinite alternate;
   animation: blinker-2 1s ease-in-out infinite alternate;
+
+  &.sky-blue {
+    background-image: linear-gradient(135deg, rgba($color-secondary-sky-blue, .5) 50%, rgba($color-secondary-sky-blue, .5) 100%);
+    -webkit-animation: colorPickerBlinker-2SkyBlue 1s ease-in-out infinite alternate;
+    animation: colorPickerBlinker-2SkyBlue 1s ease-in-out infinite alternate;
+  }
+
+  &.purple {
+    background-image: linear-gradient(135deg, rgba($color-secondary-purple, .5) 50%, rgba($color-secondary-purple, .5) 100%);
+    -webkit-animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate;
+    animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate;
+  }
   @include respond(tab-land) {
     width: 90%;
   }
@@ -311,6 +502,16 @@
   &__state {
     -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.3s;
     animation: blinker 0.3s ease-in-out infinite alternate 0.3s;
+
+    &.sky-blue {
+      -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.3s;
+      animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.3s;
+    }
+
+    &.purple {
+      -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.3s;
+      animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.3s;
+    }
   }
 
   &__location {
@@ -319,6 +520,16 @@
     margin-bottom: 1.5rem;
     -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.2s;
     animation: blinker 0.3s ease-in-out infinite alternate 0.2s;
+
+    &.sky-blue {
+      -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.2s;
+      animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.2s;
+    }
+
+    &.purple {
+      -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.2s;
+      animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.2s;
+    }
     @include respond(phone) {
       font-size: 0.9rem;
     }
@@ -331,6 +542,16 @@
     margin-right: 0.2rem;
     -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
     animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
+
+    &.sky-blue {
+      -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.1s;
+      animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.1s;
+    }
+
+    &.purple {
+      -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.1s;
+      animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.1s;
+    }
     @include respond(phone) {
       font-size: 1rem;
     }
@@ -375,13 +596,39 @@
     cursor: pointer;
     margin-right: 30px;
 
+    &.sky-blue {
+      background-color: rgba($color-primary-sky-blue-dark, .5);
+    }
+
+    &.purple {
+      background-color: rgba($color-primary-purple-dark, .5);
+    }
+
     &:hover {
       background-color: rgba($color-secondary-light, .8);
       -webkit-animation: shake-2 0.2s ease-in-out 3 alternate;
       animation: shake-2 0.2s ease-in-out 3 alternate;
+
+      &.sky-blue {
+        background-color: rgba($color-primary-sky-blue-dark, .8);
+      }
+
+      &.purple {
+        background-color: rgba($color-primary-purple-dark, .8);
+      }
       @include respond(phone) {
         -webkit-animation: 0;
         animation: 0;
+
+        &.sky-blue {
+          -webkit-animation: 0;
+          animation: 0;
+        }
+
+        &.purple {
+          -webkit-animation: 0;
+          animation: 0;
+        }
       }
     }
   }
@@ -394,13 +641,39 @@
     position: relative;
     cursor: pointer;
 
+    &.sky-blue {
+      background-color: rgba($color-primary-sky-blue-dark, .5);
+    }
+
+    &.purple {
+      background-color: rgba($color-primary-purple-dark, .5);
+    }
+
     &:hover {
       background-color: rgba($color-secondary-light, .8);
       -webkit-animation: shake-2 0.2s ease-in-out 3 alternate;
       animation: shake-2 0.2s ease-in-out 3 alternate;
+
+      &.sky-blue {
+        background-color: rgba($color-primary-sky-blue-dark, .8);
+      }
+
+      &.purple {
+        background-color: rgba($color-primary-purple-dark, .8);
+      }
       @include respond(phone) {
         -webkit-animation: 0;
         animation: 0;
+
+        &.sky-blue {
+          -webkit-animation: 0;
+          animation: 0;
+        }
+
+        &.purple {
+          -webkit-animation: 0;
+          animation: 0;
+        }
       }
     }
   }
@@ -458,11 +731,31 @@
   &__items {
     -webkit-animation: blinker-2 1s ease-in-out infinite alternate;
     animation: blinker-2 1s ease-in-out infinite alternate;
+
+    &.sky-blue {
+      -webkit-animation: colorPickerBlinker-2SkyBlue 1s ease-in-out infinite alternate;
+      animation: colorPickerBlinker-2SkyBlue 1s ease-in-out infinite alternate;
+    }
+
+    &.purple {
+      -webkit-animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate;
+      animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate;
+    }
     @include respond(phone) {
       height: 110%;
       -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
       -moz-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
       box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
+
+      &.sky-blue {
+        -webkit-animation: colorPickerBlinker-2SkyBlue 1s ease-in-out infinite alternate;
+        animation: colorPickerBlinker-2SkyBlue 1s ease-in-out infinite alternate;
+      }
+
+      &.purple {
+        -webkit-animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate;
+        animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate;
+      }
     }
 
     &:hover {
@@ -531,6 +824,14 @@
     border-radius: 10px;
     opacity: 0;
     visibility: hidden;
+
+    &.sky-blue {
+      background-image: linear-gradient(to right, rgba($color-primary-sky-blue-light, .9), rgba($color-primary-sky-blue-dark, .9));
+    }
+
+    &.purple {
+      background-image: linear-gradient(to right, rgba($color-primary-purple-light, .9), rgba($color-primary-purple-dark, .9));
+    }
   }
   // Title
   &__title {
@@ -585,10 +886,26 @@
       position: relative;
       cursor: pointer;
 
+      &.sky-blue {
+        background-color: rgba($color-primary-sky-blue-dark, .5);
+      }
+
+      &.purple {
+        background-color: rgba($color-primary-purple-dark, .5);
+      }
+
       &:hover {
         background-color: rgba($color-secondary-light, .8);
         -webkit-animation: shake-2 0.2s ease-in-out 3 alternate;
         animation: shake-2 0.2s ease-in-out 3 alternate;
+
+        &.sky-blue {
+          background-color: rgba($color-primary-sky-blue-dark, .8);
+        }
+
+        &.purple {
+          background-color: rgba($color-primary-purple-dark, .8);
+        }
       }
     }
 
@@ -601,10 +918,26 @@
       position: relative;
       cursor: pointer;
 
+      &.sky-blue {
+        background-color: rgba($color-primary-sky-blue-dark, .5);
+      }
+
+      &.purple {
+        background-color: rgba($color-primary-purple-dark, .5);
+      }
+
       &:hover {
         background-color: rgba($color-secondary-light, .8);
         -webkit-animation: shake-2 0.2s ease-in-out 3 alternate;
         animation: shake-2 0.2s ease-in-out 3 alternate;
+
+        &.sky-blue {
+          background-color: rgba($color-primary-sky-blue-dark, .8);
+        }
+
+        &.purple {
+          background-color: rgba($color-primary-purple-dark, .8);
+        }
       }
     }
   }
@@ -705,18 +1038,54 @@
   color: $color-secondary-light;
   --webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
   animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
+
+  &.sky-blue {
+    color: $color-primary-sky-blue-dark;
+    -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.1s;
+    animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.1s;
+  }
+
+  &.purple {
+    color: $color-primary-purple-dark;
+    -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.1s;
+    animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.1s;
+  }
 }
 
 .footer__first-name {
   color: $color-secondary-light;
   -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.2s;
   animation: blinker 0.3s ease-in-out infinite alternate 0.2s;
+
+  &.sky-blue {
+    color: $color-primary-sky-blue-dark;
+    -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.2s;
+    animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.2s;
+  }
+
+  &.purple {
+    color: $color-primary-purple-dark;
+    -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.2s;
+    animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.2s;
+  }
 }
 
 .footer__last-name {
   color: $color-secondary-light;
   -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.3s;
   animation: blinker 0.3s ease-in-out infinite alternate 0.3s;
+
+  &.sky-blue {
+    color: $color-primary-sky-blue-dark;
+    -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.3s;
+    animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.3s;
+  }
+
+  &.purple {
+    color: $color-primary-purple-dark;
+    -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.3s;
+    animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.3s;
+  }
 }
 // Side menu
 
@@ -757,20 +1126,68 @@
     height: inherit;
     fill: $color-secondary-light;
 
+    &.sky-blue {
+      fill: $color-primary-sky-blue-dark;
+    }
+
+    &.purple {
+      fill: $color-primary-purple-dark;
+    }
+
     &:hover {
       -webkit-animation: 0;
       animation: 0;
+
+      &.sky-blue {
+        -webkit-animation: 0;
+        animation: 0;
+      }
+
+      &.purple {
+        -webkit-animation: 0;
+        animation: 0;
+      }
       @include respond(tab-land) {
         --webkit-animation: blinker 0.2s ease-in-out infinite alternate;
         animation: blinker 0.2s ease-in-out infinite alternate;
+
+        &.sky-blue {
+          --webkit-animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate;
+          animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate;
+        }
+
+        &.purple {
+          --webkit-animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate;
+          animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate;
+        }
       }
       @include respond(tab-port) {
         --webkit-animation: blinker 0.3s ease-in-out infinite alternate;
         animation: blinker 0.3s ease-in-out infinite alternate;
+
+        &.sky-blue {
+          --webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate;
+          animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate;
+        }
+
+        &.purple {
+          --webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate;
+          animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate;
+        }
       }
       @include respond(phone) {
         --webkit-animation: blinker 0.4s ease-in-out infinite alternate;
         animation: blinker 0.4s ease-in-out infinite alternate;
+
+        &.sky-blue {
+          --webkit-animation: colorPickerBlinkerSkyBlue 0.4s ease-in-out infinite alternate;
+          animation: colorPickerBlinkerSkyBlue 0.4s ease-in-out infinite alternate;
+        }
+
+        &.purple {
+          --webkit-animation: colorPickerBlinkerPurple 0.4s ease-in-out infinite alternate;
+          animation: colorPickerBlinkerPurple 0.4s ease-in-out infinite alternate;
+        }
       }
     }
   }
@@ -778,16 +1195,46 @@
   &__icon-1 {
     -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
     animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
+
+    &.sky-blue {
+      -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.1s;
+      animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.1s;
+    }
+
+    &.purple {
+      -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.1s;
+      animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.1s;
+    }
   }
 
   &__icon-2 {
-    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.2s;
-    animation: blinker 0.3s ease-in-out infinite alternate 0.2s;
+    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
+    animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
+
+    &.sky-blue {
+      -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.2s;
+      animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.2s;
+    }
+
+    &.purple {
+      -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.2s;
+      animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.2s;
+    }
   }
 
   &__icon-3 {
     -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.3s;
     animation: blinker 0.3s ease-in-out infinite alternate 0.3s;
+
+    &.sky-blue {
+      -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.3s;
+      animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.3s;
+    }
+
+    &.purple {
+      -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.3s;
+      animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.3s;
+    }
   }
 }
 // Mobile menu
@@ -802,6 +1249,14 @@
   height: 40px;
   z-index: 9000;
   background-image: linear-gradient(135deg, rgba($color-primary-light, 1) 50%, rgba($color-primary-dark, 1) 100%);
+
+  &.sky-blue {
+    background-image: linear-gradient(135deg, rgba($color-primary-sky-blue-light, 1) 50%, rgba($color-primary-sky-blue-dark, 1) 100%);
+  }
+
+  &.purple {
+    background-image: linear-gradient(135deg, rgba($color-primary-purple-light, 1) 50%, rgba($color-primary-purple-dark, 1) 100%);
+  }
   @include clearFix;
   @include respond(tab-port) {
     display: inline-block;
@@ -832,10 +1287,253 @@
     width: 30px;
     height: 30px;
     fill: $color-secondary-light;
+
+    &.sky-blue {
+      fill: $color-primary-sky-blue-light;
+    }
+
+    &.purple {
+      fill: $color-primary-purple-light;
+    }
     @include respond(phone) {
       width: 22px;
       height: 22px;
       margin-top: 0.3rem;
+    }
+  }
+}
+// Color Picker
+
+.picker {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 40%;
+  bottom: 20%;
+  cursor: pointer;
+  @include respond(tab-land) {
+    left: 35%;
+  }
+  @include respond(tab-port) {
+    left: 32%;
+  }
+  @include respond(phone) {
+    left: 30%;
+  }
+
+  &__color-picker {
+    width: inherit;
+    height: inherit;
+    fill: $color-secondary-light;
+    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.4s;
+    animation: blinker 0.3s ease-in-out infinite alternate 0.4s;
+
+    &.sky-blue {
+      fill: $color-primary-sky-blue-dark;
+      -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s;
+      animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s;
+    }
+
+    &.purple {
+      fill: $color-primary-purple-dark;
+      -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s;
+      animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s;
+    }
+
+    &:hover {
+      -webkit-animation: 0;
+      animation: 0;
+
+      &.sky-blue {
+        -webkit-animation: 0;
+        animation: 0;
+      }
+
+      &.purple {
+        -webkit-animation: 0;
+        animation: 0;
+      }
+      @include respond(tab-land) {
+        --webkit-animation: blinker 0.3s ease-in-out infinite alternate 4s;
+        animation: blinker 0.3s ease-in-out infinite alternate 0.4s;
+
+        &.sky-blue {
+          -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s;
+          animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s;
+        }
+
+        &.purple {
+          -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s;
+          animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s;
+        }
+      }
+      @include respond(tab-port) {
+        --webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.4s;
+        animation: blinker 0.3s ease-in-out infinite alternate 0.4s;
+
+        &.sky-blue {
+          -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s;
+          animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s;
+        }
+
+        &.purple {
+          -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s;
+          animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s;
+        }
+      }
+      @include respond(phone) {
+        --webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.4s;
+        animation: blinker 0.3s ease-in-out infinite alternate 0.4s;
+
+        &.sky-blue {
+          -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s;
+          animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s;
+        }
+
+        &.purple {
+          -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s;
+          animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s;
+        }
+      }
+    }
+  }
+}
+// Color Switcher
+
+.color-switcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 50px;
+  background-image: linear-gradient(135deg, rgba($color-primary-light, 1) 50%, rgba($color-primary-dark, 1) 100%);
+  position: relative;
+  left: 0;
+  bottom: 30%;
+  border-radius: 30px;
+  margin: 0 auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &.sky-blue {
+    background-image: linear-gradient(135deg, rgba($color-primary-sky-blue-light, 1) 50%, rgba($color-primary-sky-blue-dark, 1) 100%);
+  }
+
+  &.purple {
+    background-image: linear-gradient(135deg, rgba($color-primary-purple-light, 1) 50%, rgba($color-primary-purple-dark, 1) 100%);
+  }
+  @include respond(tab-land) {
+    width: 66%;
+    height: 160px;
+    bottom: 36%;
+  }
+  @include respond(tab-port) {
+    height: 160px;
+    bottom: 40%;
+  }
+  @include respond(sm-phone) {
+    bottom: 52%;
+  }
+  @include respond(phone) {
+    height: 135px;
+    bottom: 48%;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 80%;
+    @include respond(tab-land) {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      grid-gap: 10px;
+    }
+    @include respond(tab-port) {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      grid-gap: 10px;
+    }
+    @include respond(phone) {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      grid-gap: 10px;
+    }
+    @include respond(sm-phone) {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      grid-gap: 10px;
+    }
+  }
+
+  &__switcher-1 {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background-color: $color-primary-sky-blue-dark;
+    border-radius: 50%;
+    cursor: pointer;
+    @include respond(tab-land) {
+      justify-self: center;
+    }
+    @include respond(tab-port) {
+      justify-self: center;
+    }
+    @include respond(phone) {
+      justify-self: center;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__switcher-2 {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background-color: $color-primary-purple-dark;
+    border-radius: 50%;
+    cursor: pointer;
+    @include respond(tab-land) {
+      justify-self: center;
+    }
+    @include respond(tab-port) {
+      justify-self: center;
+    }
+    @include respond(phone) {
+      justify-self: center;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__switcher-3 {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background-color: $color-secondary-light;
+    border-radius: 50%;
+    cursor: pointer;
+    @include respond(tab-land) {
+      justify-self: center;
+    }
+    @include respond(tab-port) {
+      justify-self: center;
+    }
+    @include respond(phone) {
+      justify-self: center;
+      width: 30px;
+      height: 30px;
     }
   }
 }

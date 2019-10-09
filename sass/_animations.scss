@@ -27,6 +27,66 @@
     transform: translateX(-10px);
   }
 }
+// Color Picker
+// Sky Blue
+// Safari
+@-webkit-keyframes colorPickerShakeSkyBlue {
+  0% {
+    fill: rgba($color-primary-sky-blue-light, .0);
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  100% {
+    fill: $color-primary-sky-blue-dark;
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+}
+// Safari
+@keyframes colorPickerShakeSkyBlue {
+  0% {
+    fill: rgba($color-primary-sky-blue-light, .0);
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  100% {
+    fill: $color-primary-sky-blue-dark;
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+}
+// Purple
+// Safari
+@-webkit-keyframes colorPickerShakePurple {
+  0% {
+    fill: rgba($color-primary-purple-light, .0);
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  100% {
+    fill: $color-primary-purple-dark;
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+}
+// Safari
+@keyframes colorPickerShakePurple {
+  0% {
+    fill: rgba($color-primary-purple-light, .0);
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  100% {
+    fill: $color-primary-purple-dark;
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+}
+/*********************************************************************************/
 // Shake-2
 // Safari
 @-webkit-keyframes shake-2 {
@@ -62,6 +122,7 @@
     transform: translateY(10px);
   }
 }
+/*********************************************************************************/
 // Shake-3
 // Safari
 @-webkit-keyframes shake-3 {
@@ -83,6 +144,50 @@
     fill: $color-secondary-light;
   }
 }
+// Color Picker
+// Sky Blue
+// Safari
+@-webkit-keyframes colorPickerShake-3SkyBlue {
+  0% {
+    fill: rgba($color-primary-sky-blue-light, .1);
+  }
+
+  100% {
+    fill: $color-primary-sky-blue-dark;
+  }
+}
+// Safari
+@keyframes colorPickerShake-3SkyBlue {
+  0% {
+    fill: rgba($color-primary-sky-blue-light, .1);
+  }
+
+  100% {
+    fill: $color-primary-sky-blue-dark;
+  }
+}
+// Purple
+// Safari
+@-webkit-keyframes colorPickerShake-3Purple {
+  0% {
+    fill: rgba($color-primary-purple-light, .1);
+  }
+
+  100% {
+    fill: $color-primary-purple-dark;
+  }
+}
+// Safari
+@keyframes colorPickerShake-3Purple {
+  0% {
+    fill: rgba($color-primary-purple-light, .1);
+  }
+
+  100% {
+    fill: $color-primary-purple-dark;
+  }
+}
+/*********************************************************************************/
 // Blinker
 // Safari
 @-webkit-keyframes blinker {
@@ -108,6 +213,58 @@
     fill: $color-secondary-light;
   }
 }
+// Color Picker
+// Blue Sky
+// Safari
+@-webkit-keyframes colorPickerBlinkerSkyBlue {
+  0% {
+    color: rgba($color-primary-sky-blue-light, 0);
+    fill: rgba($color-primary-sky-blue-light, 0);
+  }
+
+  100% {
+    color: $color-primary-sky-blue-dark;
+    fill: $color-primary-sky-blue-dark;
+  }
+}
+// Safari
+@keyframes colorPickerBlinkerSkyBlue {
+  0% {
+    color: rgba($color-primary-sky-blue-light, 0);
+    fill: rgba($color-primary-sky-blue-light, 0);
+  }
+
+  100% {
+    color: $color-primary-sky-blue-dark;
+    fill: $color-primary-sky-blue-dark;
+  }
+}
+// Purple
+// Safari
+@-webkit-keyframes colorPickerBlinkerPurple {
+  0% {
+    color: rgba($color-primary-purple-light, 0);
+    fill: rgba($color-primary-purple-light, 0);
+  }
+
+  100% {
+    color: $color-primary-purple-dark;
+    fill: $color-primary-purple-dark;
+  }
+}
+// Safari
+@keyframes colorPickerBlinkerPurple {
+  0% {
+    color: rgba($color-primary-purple-light, 0);
+    fill: rgba($color-primary-purple-light, 0);
+  }
+
+  100% {
+    color: $color-primary-purple-dark;
+    fill: $color-primary-purple-dark;
+  }
+}
+/*********************************************************************************/
 // Blinker-2
 // Safari
 @-webkit-keyframes blinker-2 {
@@ -133,6 +290,58 @@
     box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
   }
 }
+// Color Picker
+// Sky Blue
+// Safari
+@-webkit-keyframes colorPickerBlinker-2SkyBlue {
+  0% {
+    -webkit-box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 0);
+    box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
+    box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
+  }
+}
+// Safari
+@keyframes colorPickerBlinker-2SkyBlue {
+  0% {
+    -webkit-box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 0);
+    box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
+    box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
+  }
+}
+// Purple
+// Safari
+@-webkit-keyframes colorPickerBlinker-2Purple {
+  0% {
+    -webkit-box-shadow: -1px 0 30px -10px rgba(255, 51, 255, 0);
+    box-shadow: -1px 0 30px -10px rgba(255, 51, 255, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: -1px 0 30px -10px rgba(255, 51, 255, 1);
+    box-shadow: -1px 0 30px -10px rgba(7255, 51, 255, 1);
+  }
+}
+// Safari
+@keyframes colorPickerBlinker-2Purple {
+  0% {
+    -webkit-box-shadow: -1px 0 30px -10px rgba(255, 51, 255, 0);
+    box-shadow: -1px 0 30px -10px rgba(255, 51, 255, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: -1px 0 30px -10px rgba(255, 51, 255, 1);
+    box-shadow: -1px 0 30px -10px rgba(7255, 51, 255, 1);
+  }
+}
+/*********************************************************************************/
 // Title
 // Safari
 @-webkit-keyframes title {
