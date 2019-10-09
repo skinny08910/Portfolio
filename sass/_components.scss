@@ -1428,6 +1428,9 @@
   &.purple {
     background-image: linear-gradient(135deg, rgba($color-primary-purple-light, 1) 50%, rgba($color-primary-purple-dark, 1) 100%);
   }
+  @include respond(laptop) {
+    bottom: 32%;
+  }
   @include respond(tab-land) {
     width: 66%;
     height: 160px;
@@ -1484,11 +1487,19 @@
     background-color: $color-primary-sky-blue-dark;
     border-radius: 50%;
     cursor: pointer;
+    @include respond(laptop) {
+      width: 34px;
+      height: 34px;
+    }
     @include respond(tab-land) {
       justify-self: center;
+      width: 34px;
+      height: 34px;
     }
     @include respond(tab-port) {
       justify-self: center;
+      width: 34px;
+      height: 34px;
     }
     @include respond(phone) {
       justify-self: center;
@@ -1504,11 +1515,19 @@
     background-color: $color-primary-purple-dark;
     border-radius: 50%;
     cursor: pointer;
+    @include respond(laptop) {
+      width: 34px;
+      height: 34px;
+    }
     @include respond(tab-land) {
       justify-self: center;
+      width: 34px;
+      height: 34px;
     }
     @include respond(tab-port) {
       justify-self: center;
+      width: 34px;
+      height: 34px;
     }
     @include respond(phone) {
       justify-self: center;
@@ -1524,11 +1543,19 @@
     background-color: $color-secondary-light;
     border-radius: 50%;
     cursor: pointer;
+    @include respond(laptop) {
+      width: 34px;
+      height: 34px;
+    }
     @include respond(tab-land) {
       justify-self: center;
+      width: 34px;
+      height: 34px;
     }
     @include respond(tab-port) {
       justify-self: center;
+      width: 34px;
+      height: 34px;
     }
     @include respond(phone) {
       justify-self: center;
