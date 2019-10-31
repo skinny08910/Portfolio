@@ -1,10 +1,10 @@
 // Mobile menu
 
 var menuIcon = document.getElementsByClassName('mobile-menu__menu');
-var mainMenu = document.getElementsByClassName('main-menu');
+var mainMenuClass = document.getElementsByClassName('main-menu');
 
 var clickedBtn = function() {
-  mainMenu.classList.toggle('active');
+  mainMenuClass[0].classList.toggle('active');
 }
 
 menuIcon[0].addEventListener("click", clickedBtn);
@@ -46,7 +46,6 @@ var screenResolution = function() {
       homeSection.style.filter = "blur(0)";
       aboutSection.classList.remove('active');
       projectSection.classList.remove('active');
-      mainMenu.classList.remove('active');
     }
 
     // About section function
@@ -55,7 +54,6 @@ var screenResolution = function() {
       homeSection.style.filter = "blur(2px)";
       aboutSection.classList.add('active');
       projectSection.classList.remove('active');
-      mainMenu.classList.remove('active');
     }
 
     // Project section function
@@ -64,7 +62,6 @@ var screenResolution = function() {
       homeSection.style.filter = "blur(2px)";
       projectSection.classList.add('active');
       aboutSection.classList.remove('active');
-      mainMenu.classList.remove('active');
     }
 
     // Addind Event Listener to the menu icons for mobile
@@ -93,7 +90,6 @@ var screenResolution = function() {
       homeSection.style.filter = "blur(2px)";
       aboutSection.classList.add('active');
       projectSection.classList.remove('active');
-
     }
 
     // Project section function
@@ -113,7 +109,7 @@ var screenResolution = function() {
 
   }
 
-}
+};
 
 screenResolution();
 
@@ -121,64 +117,144 @@ screenResolution();
 
 /*******************************************************************/
 
-
-//  Function for the project items when on touch devices
-
 // Getting the items from the HTML file
 
 var wrapperItem1 = document.getElementsByClassName('wrapper__items--1');
 var wrapperItem2 = document.getElementsByClassName('wrapper__items--2');
 var wrapperItem3 = document.getElementsByClassName('wrapper__items--3');
 var wrapperItem4 = document.getElementsByClassName('wrapper__items--4');
+var wrapperItem5 = document.getElementsByClassName('wrapper__items--5');
+var wrapperItemAll = document.getElementsByClassName('wrapper__items');
+
+window.addEventListener('mouseup', function(event) {
+
+  var box = document.getElementsByClassName('wrapper__items');
 
 
+  if (event.target != box && event.target.parentNode != box) {
 
-//  Function for wrapper item 1
+    // Function for wrapper item 1
 
-var clickedWrapperItem1 = function() {
-  wrapperItem1[0].classList.toggle('active');
-  wrapperItem2[0].classList.remove('active');
-  wrapperItem3[0].classList.remove('active');
-  wrapperItem4[0].classList.remove('active');
-}
+    var clickedWrapperItem1 = function() {
+      wrapperItem1[0].classList.toggle('active');
+      wrapperItem2[0].classList.remove('active');
+      wrapperItem3[0].classList.remove('active');
+      wrapperItem4[0].classList.remove('active');
+      wrapperItem5[0].classList.remove('active');
+    }
 
+    // Remove function for wrapper item 1
 
-//  Function for wrapper item 2
-
-var clickedWrapperItem2 = function() {
-  wrapperItem1[0].classList.remove('active');
-  wrapperItem2[0].classList.toggle('active');
-  wrapperItem3[0].classList.remove('active');
-  wrapperItem4[0].classList.remove('active');
-}
-
-
-//  Function for wrapper item 3
-
-var clickedWrapperItem3 = function() {
-  wrapperItem1[0].classList.remove('active');
-  wrapperItem2[0].classList.remove('active');
-  wrapperItem3[0].classList.toggle('active');
-  wrapperItem4[0].classList.remove('active');
-}
+    var removeWrapperItem1 = function() {
+      wrapperItem1[0].classList.remove('active');
+      wrapperItem2[0].classList.remove('active');
+      wrapperItem3[0].classList.remove('active');
+      wrapperItem4[0].classList.remove('active');
+      wrapperItem5[0].classList.remove('active');
+    }
 
 
-//  Function for wrapper item 4
+    //  Function for wrapper item 2
 
-var clickedWrapperItem4 = function() {
-  wrapperItem1[0].classList.remove('active');
-  wrapperItem2[0].classList.remove('active');
-  wrapperItem3[0].classList.remove('active');
-  wrapperItem4[0].classList.toggle('active');
-}
+    var clickedWrapperItem2 = function() {
+      wrapperItem1[0].classList.remove('active');
+      wrapperItem2[0].classList.toggle('active');
+      wrapperItem3[0].classList.remove('active');
+      wrapperItem4[0].classList.remove('active');
+      wrapperItem5[0].classList.remove('active');;
+    }
+
+    // Remove function for wrapper item 2
+
+    var removeWrapperItem2 = function() {
+      wrapperItem1[0].classList.remove('active');
+      wrapperItem2[0].classList.remove('active');
+      wrapperItem3[0].classList.remove('active');
+      wrapperItem4[0].classList.remove('active');
+      wrapperItem5[0].classList.remove('active');
+    }
 
 
-// Adding Event Listener to the project items
+    //  Function for wrapper item 3
 
-wrapperItem1[0].addEventListener('click', clickedWrapperItem1);
-wrapperItem2[0].addEventListener('click', clickedWrapperItem2);
-wrapperItem3[0].addEventListener('click', clickedWrapperItem3);
-wrapperItem4[0].addEventListener('click', clickedWrapperItem4);
+    var clickedWrapperItem3 = function() {
+      wrapperItem1[0].classList.remove('active');
+      wrapperItem2[0].classList.remove('active');
+      wrapperItem3[0].classList.toggle('active');
+      wrapperItem4[0].classList.remove('active');
+      wrapperItem5[0].classList.remove('active');
+    }
+
+    // Remove function for wrapper item 3
+
+    var removeWrapperItem3 = function() {
+      wrapperItem1[0].classList.remove('active');
+      wrapperItem2[0].classList.remove('active');
+      wrapperItem3[0].classList.remove('active');
+      wrapperItem4[0].classList.remove('active');
+      wrapperItem5[0].classList.remove('active');
+    }
+
+
+    //  Function for wrapper item 4
+
+    var clickedWrapperItem4 = function() {
+      wrapperItem1[0].classList.remove('active');
+      wrapperItem2[0].classList.remove('active');
+      wrapperItem3[0].classList.remove('active');
+      wrapperItem4[0].classList.toggle('active');
+      wrapperItem5[0].classList.remove('active');
+    }
+
+    // Remove function for wrapper item 4
+
+    var removeWrapperItem4 = function() {
+      wrapperItem1[0].classList.remove('active');
+      wrapperItem2[0].classList.remove('active');
+      wrapperItem3[0].classList.remove('active');
+      wrapperItem4[0].classList.remove('active');
+      wrapperItem5[0].classList.remove('active');
+    }
+
+    // Function for wrapper item 5
+
+    var clickedWrapperItem5 = function() {
+      wrapperItem1[0].classList.remove('active');
+      wrapperItem2[0].classList.remove('active');
+      wrapperItem3[0].classList.remove('active');
+      wrapperItem4[0].classList.remove('active');
+      wrapperItem5[0].classList.toggle('active');
+    }
+
+    // Remove function for wrapper item 5
+
+    var removeWrapperItem5 = function() {
+      wrapperItem1[0].classList.remove('active');
+      wrapperItem2[0].classList.remove('active');
+      wrapperItem3[0].classList.remove('active');
+      wrapperItem4[0].classList.remove('active');
+      wrapperItem5[0].classList.remove('active');
+    }
+
+    // Initializing the wrapper items functions to remove them once click outside of them
+
+    removeWrapperItem1();
+    removeWrapperItem2();
+    removeWrapperItem3();
+    removeWrapperItem4();
+    removeWrapperItem5();
+
+    // Adding Event Listener to the project items
+
+    wrapperItem1[0].addEventListener('click', clickedWrapperItem1);
+    wrapperItem2[0].addEventListener('click', clickedWrapperItem2);
+    wrapperItem3[0].addEventListener('click', clickedWrapperItem3);
+    wrapperItem4[0].addEventListener('click', clickedWrapperItem4);
+    wrapperItem5[0].addEventListener('click', clickedWrapperItem5);
+
+  };
+
+});
 
 
 
@@ -186,15 +262,15 @@ wrapperItem4[0].addEventListener('click', clickedWrapperItem4);
 
 
 
-// Function for the color picker icon, once they click on it, the site will change color
+// Functions for the color picker icon, once they click on it, the site will change color
 
 // Getting the elements
 // Color Switcher
 
-var colorSwitcher = document.getElementById('color-switcher');
-var switchSkyBlue = document.getElementById('switcher-1');
+var colorSwitcher = document.getElementsByClassName('color-switcher');
+var switchGreen = document.getElementById('switcher-1');
 var switchPurple = document.getElementById('switcher-2');
-var switchGreen = document.getElementById('switcher-3');
+var switchSkyBlue = document.getElementById('switcher-3');
 
 // Icons
 
@@ -203,9 +279,8 @@ var colorIcon = document.getElementById('color-icon');
 var homeIcon = document.getElementById('home-icon');
 var aboutIcon = document.getElementById('about-icon');
 var projectIcon = document.getElementById('project-icon');
-var colorIcon = document.getElementById('color-icon');
-var mainMenu = document.getElementById('main-menu');
-var mobileMenu = document.getElementById('mobile-menu');
+var mainMenu = document.getElementById('mainMenu');
+var mobileMenu = document.getElementById('mobileMenu');
 var mobileMenuIcon = document.getElementById('mobile-menu-icon');
 var socialMediaIcon = document.getElementById('social-media');
 var bioBox = document.getElementById('bio-box');
@@ -242,71 +317,71 @@ var projectSection = document.getElementById('project');
 
 // Function to switch colors
 
-// Sky Blue color function
+// Green color function
 
-var switchColorSkyBlue = function() {
+var switchColorGreen = function() {
 
-  // Adding Sky blue classes
+  // Adding Green classes
 
   // Icons
 
-  colorSwitcher.classList.add('sky-blue');
-  colorIcon.classList.add('sky-blue');
-  homeIcon.classList.add('sky-blue');
-  aboutIcon.classList.add('sky-blue');
-  projectIcon.classList.add('sky-blue');
-  colorIcon.classList.add('sky-blue');
-  mobileMenuIcon.classList.add('sky-blue');
-  mainMenu.classList.add('sky-blue');
-  mobileMenu.classList.add('sky-blue');
-  socialMediaIcon.classList.add('sky-blue');
-  bioBox.classList.add('sky-blue');
-  centerHr.classList.add('sky-blue');
-  centerHr2.classList.add('sky-blue');
-  centerHr3.classList.add('sky-blue');
-  centerHr4.classList.add('sky-blue');
-  locationBox.classList.add('sky-blue');
-  locationIcon.classList.add('sky-blue');
-  country.classList.add('sky-blue');
-  html.classList.add('sky-blue');
-  css.classList.add('sky-blue');
-  click.classList.add('sky-blue');
-  click2.classList.add('sky-blue');
-  click3.classList.add('sky-blue');
-  click4.classList.add('sky-blue');
-  click5.classList.add('sky-blue');
-  wrapperItem1[0].classList.add('sky-blue');
-  wrapperItem2[0].classList.add('sky-blue');
-  wrapperItem3[0].classList.add('sky-blue');
-  wrapperItem4[0].classList.add('sky-blue');
-  wrapperInfo1.classList.add('sky-blue');
-  wrapperInfo2.classList.add('sky-blue');
-  wrapperInfo3.classList.add('sky-blue');
-  wrapperInfo4.classList.add('sky-blue');
-  projectBtn[0].classList.add('sky-blue');
-  projectBtn[1].classList.add('sky-blue');
-  projectBtn[2].classList.add('sky-blue');
-  projectBtn[3].classList.add('sky-blue');
-  codeBtn[0].classList.add('sky-blue');
-  codeBtn[1].classList.add('sky-blue');
-  codeBtn[2].classList.add('sky-blue');
-  codeBtn[3].classList.add('sky-blue');
-  footerCopy.classList.add('sky-blue');
-  footerFirstName.classList.add('sky-blue');
-  footerLastName.classList.add('sky-blue');
+  colorSwitcher[0].classList.add('green');
+  colorIcon.classList.add('green');
+  homeIcon.classList.add('green');
+  aboutIcon.classList.add('green');
+  projectIcon.classList.add('green');
+  colorIcon.classList.add('green');
+  mobileMenuIcon.classList.add('green');
+  mainMenu.classList.add('green');
+  mobileMenu.classList.add('green');
+  socialMediaIcon.classList.add('green');
+  bioBox.classList.add('green');
+  centerHr.classList.add('green');
+  centerHr2.classList.add('green');
+  centerHr3.classList.add('green');
+  centerHr4.classList.add('green');
+  locationBox.classList.add('green');
+  locationIcon.classList.add('green');
+  country.classList.add('green');
+  html.classList.add('green');
+  css.classList.add('green');
+  click.classList.add('green');
+  click2.classList.add('green');
+  click3.classList.add('green');
+  click4.classList.add('green');
+  click5.classList.add('green');
+  wrapperItem1[0].classList.add('green');
+  wrapperItem2[0].classList.add('green');
+  wrapperItem3[0].classList.add('green');
+  wrapperItem4[0].classList.add('green');
+  wrapperInfo1.classList.add('green');
+  wrapperInfo2.classList.add('green');
+  wrapperInfo3.classList.add('green');
+  wrapperInfo4.classList.add('green');
+  projectBtn[0].classList.add('green');
+  projectBtn[1].classList.add('green');
+  projectBtn[2].classList.add('green');
+  projectBtn[3].classList.add('green');
+  codeBtn[0].classList.add('green');
+  codeBtn[1].classList.add('green');
+  codeBtn[2].classList.add('green');
+  codeBtn[3].classList.add('green');
+  footerCopy.classList.add('green');
+  footerFirstName.classList.add('green');
+  footerLastName.classList.add('green');
 
   // Pages
 
-  htmlTag.classList.add('sky-blue');
-  homeSection.classList.add('sky-blue');
-  aboutSection.classList.add('sky-blue');
-  projectSection.classList.add('sky-blue');
+  htmlTag.classList.add('green');
+  homeSection.classList.add('green');
+  aboutSection.classList.add('green');
+  projectSection.classList.add('green');
 
   // Removing Purple classes
 
   // Icons
 
-  colorSwitcher.classList.remove('purple');
+  colorSwitcher[0].classList.remove('purple');
   colorIcon.classList.remove('purple');
   homeIcon.classList.remove('purple');
   aboutIcon.classList.remove('purple');
@@ -367,7 +442,7 @@ var switchColorPurple = function() {
 
   // Icons
 
-  colorSwitcher.classList.add('purple');
+  colorSwitcher[0].classList.add('purple');
   colorIcon.classList.add('purple');
   homeIcon.classList.add('purple');
   aboutIcon.classList.add('purple');
@@ -419,128 +494,128 @@ var switchColorPurple = function() {
   aboutSection.classList.add('purple');
   projectSection.classList.add('purple');
 
-  // Removing Sky Blue classes
+  // Removing Green classes
 
   // Icons
 
-  colorSwitcher.classList.remove('sky-blue');
-  colorIcon.classList.remove('sky-blue');
-  homeIcon.classList.remove('sky-blue');
-  aboutIcon.classList.remove('sky-blue');
-  projectIcon.classList.remove('sky-blue');
-  colorIcon.classList.remove('sky-blue');
-  mobileMenuIcon.classList.remove('sky-blue');
-  mainMenu.classList.remove('sky-blue');
-  mobileMenu.classList.remove('sky-blue');
-  socialMediaIcon.classList.remove('sky-blue');
-  bioBox.classList.remove('sky-blue');
-  centerHr.classList.remove('sky-blue');
-  centerHr2.classList.remove('sky-blue');
-  centerHr3.classList.remove('sky-blue');
-  centerHr4.classList.remove('sky-blue');
-  locationBox.classList.remove('sky-blue');
-  locationIcon.classList.remove('sky-blue');
-  country.classList.remove('sky-blue');
-  html.classList.remove('sky-blue');
-  css.classList.remove('sky-blue');
-  click.classList.remove('sky-blue');
-  click2.classList.remove('sky-blue');
-  click3.classList.remove('sky-blue');
-  click4.classList.remove('sky-blue');
-  click5.classList.remove('sky-blue');
-  wrapperItem1[0].classList.remove('sky-blue');
-  wrapperItem2[0].classList.remove('sky-blue');
-  wrapperItem3[0].classList.remove('sky-blue');
-  wrapperItem4[0].classList.remove('sky-blue');
-  wrapperInfo1.classList.remove('sky-blue');
-  wrapperInfo2.classList.remove('sky-blue');
-  wrapperInfo3.classList.remove('sky-blue');
-  wrapperInfo4.classList.remove('sky-blue');
-  projectBtn[0].classList.remove('sky-blue');
-  projectBtn[1].classList.remove('sky-blue');
-  projectBtn[2].classList.remove('sky-blue');
-  projectBtn[3].classList.remove('sky-blue');
-  codeBtn[0].classList.remove('sky-blue');
-  codeBtn[1].classList.remove('sky-blue');
-  codeBtn[2].classList.remove('sky-blue');
-  codeBtn[3].classList.remove('sky-blue');
-  footerCopy.classList.remove('sky-blue');
-  footerFirstName.classList.remove('sky-blue');
-  footerLastName.classList.remove('sky-blue');
+  colorSwitcher[0].classList.remove('green');
+  colorIcon.classList.remove('green');
+  homeIcon.classList.remove('green');
+  aboutIcon.classList.remove('green');
+  projectIcon.classList.remove('green');
+  colorIcon.classList.remove('green');
+  mobileMenuIcon.classList.remove('green');
+  mainMenu.classList.remove('green');
+  mobileMenu.classList.remove('green');
+  socialMediaIcon.classList.remove('green');
+  bioBox.classList.remove('green');
+  centerHr.classList.remove('green');
+  centerHr2.classList.remove('green');
+  centerHr3.classList.remove('green');
+  centerHr4.classList.remove('green');
+  locationBox.classList.remove('green');
+  locationIcon.classList.remove('green');
+  country.classList.remove('green');
+  html.classList.remove('green');
+  css.classList.remove('green');
+  click.classList.remove('green');
+  click2.classList.remove('green');
+  click3.classList.remove('green');
+  click4.classList.remove('green');
+  click5.classList.remove('green');
+  wrapperItem1[0].classList.remove('green');
+  wrapperItem2[0].classList.remove('green');
+  wrapperItem3[0].classList.remove('green');
+  wrapperItem4[0].classList.remove('green');
+  wrapperInfo1.classList.remove('green');
+  wrapperInfo2.classList.remove('green');
+  wrapperInfo3.classList.remove('green');
+  wrapperInfo4.classList.remove('green');
+  projectBtn[0].classList.remove('green');
+  projectBtn[1].classList.remove('green');
+  projectBtn[2].classList.remove('green');
+  projectBtn[3].classList.remove('green');
+  codeBtn[0].classList.remove('green');
+  codeBtn[1].classList.remove('green');
+  codeBtn[2].classList.remove('green');
+  codeBtn[3].classList.remove('green');
+  footerCopy.classList.remove('green');
+  footerFirstName.classList.remove('green');
+  footerLastName.classList.remove('green');
 
   // Pages
 
-  htmlTag.classList.remove('sky-blue');
-  homeSection.classList.remove('sky-blue');
-  aboutSection.classList.remove('sky-blue');
-  projectSection.classList.remove('sky-blue');
+  htmlTag.classList.remove('green');
+  homeSection.classList.remove('green');
+  aboutSection.classList.remove('green');
+  projectSection.classList.remove('green');
 }
 
-// Green Color function by removing both Sky Blue and Purple classes
+// Sky Blue Color function by removing both Green and Purple classes
 
-var switchColorGreen = function() {
+var switchColorSkyBlue = function() {
 
-  // Removing Sky Blue classes
+  // Removing Green classes
 
   // Icons
 
-  colorSwitcher.classList.remove('sky-blue');
-  colorIcon.classList.remove('sky-blue');
-  homeIcon.classList.remove('sky-blue');
-  aboutIcon.classList.remove('sky-blue');
-  projectIcon.classList.remove('sky-blue');
-  colorIcon.classList.remove('sky-blue');
-  mobileMenuIcon.classList.remove('sky-blue');
-  mainMenu.classList.remove('sky-blue');
-  mobileMenu.classList.remove('sky-blue');
-  socialMediaIcon.classList.remove('sky-blue');
-  bioBox.classList.remove('sky-blue');
-  centerHr.classList.remove('sky-blue');
-  centerHr2.classList.remove('sky-blue');
-  centerHr3.classList.remove('sky-blue');
-  centerHr4.classList.remove('sky-blue');
-  locationBox.classList.remove('sky-blue');
-  locationIcon.classList.remove('sky-blue');
-  country.classList.remove('sky-blue');
-  html.classList.remove('sky-blue');
-  css.classList.remove('sky-blue');
-  click.classList.remove('sky-blue');
-  click2.classList.remove('sky-blue');
-  click3.classList.remove('sky-blue');
-  click4.classList.remove('sky-blue');
-  click5.classList.remove('sky-blue');
-  wrapperItem1[0].classList.remove('sky-blue');
-  wrapperItem2[0].classList.remove('sky-blue');
-  wrapperItem3[0].classList.remove('sky-blue');
-  wrapperItem4[0].classList.remove('sky-blue');
-  wrapperInfo1.classList.remove('sky-blue');
-  wrapperInfo2.classList.remove('sky-blue');
-  wrapperInfo3.classList.remove('sky-blue');
-  wrapperInfo4.classList.remove('sky-blue');
-  projectBtn[0].classList.remove('sky-blue');
-  projectBtn[1].classList.remove('sky-blue');
-  projectBtn[2].classList.remove('sky-blue');
-  projectBtn[3].classList.remove('sky-blue');
-  codeBtn[0].classList.remove('sky-blue');
-  codeBtn[1].classList.remove('sky-blue');
-  codeBtn[2].classList.remove('sky-blue');
-  codeBtn[3].classList.remove('sky-blue');
-  footerCopy.classList.remove('sky-blue');
-  footerFirstName.classList.remove('sky-blue');
-  footerLastName.classList.remove('sky-blue');
+  colorSwitcher[0].classList.remove('green');
+  colorIcon.classList.remove('green');
+  homeIcon.classList.remove('green');
+  aboutIcon.classList.remove('green');
+  projectIcon.classList.remove('green');
+  colorIcon.classList.remove('green');
+  mobileMenuIcon.classList.remove('green');
+  mainMenu.classList.remove('green');
+  mobileMenu.classList.remove('green');
+  socialMediaIcon.classList.remove('green');
+  bioBox.classList.remove('green');
+  centerHr.classList.remove('green');
+  centerHr2.classList.remove('green');
+  centerHr3.classList.remove('green');
+  centerHr4.classList.remove('green');
+  locationBox.classList.remove('green');
+  locationIcon.classList.remove('green');
+  country.classList.remove('green');
+  html.classList.remove('green');
+  css.classList.remove('green');
+  click.classList.remove('green');
+  click2.classList.remove('green');
+  click3.classList.remove('green');
+  click4.classList.remove('green');
+  click5.classList.remove('green');
+  wrapperItem1[0].classList.remove('green');
+  wrapperItem2[0].classList.remove('green');
+  wrapperItem3[0].classList.remove('green');
+  wrapperItem4[0].classList.remove('green');
+  wrapperInfo1.classList.remove('green');
+  wrapperInfo2.classList.remove('green');
+  wrapperInfo3.classList.remove('green');
+  wrapperInfo4.classList.remove('green');
+  projectBtn[0].classList.remove('green');
+  projectBtn[1].classList.remove('green');
+  projectBtn[2].classList.remove('green');
+  projectBtn[3].classList.remove('green');
+  codeBtn[0].classList.remove('green');
+  codeBtn[1].classList.remove('green');
+  codeBtn[2].classList.remove('green');
+  codeBtn[3].classList.remove('green');
+  footerCopy.classList.remove('green');
+  footerFirstName.classList.remove('green');
+  footerLastName.classList.remove('green');
 
   // Pages
 
-  htmlTag.classList.remove('sky-blue');
-  homeSection.classList.remove('sky-blue');
-  aboutSection.classList.remove('sky-blue');
-  projectSection.classList.remove('sky-blue');
+  htmlTag.classList.remove('green');
+  homeSection.classList.remove('green');
+  aboutSection.classList.remove('green');
+  projectSection.classList.remove('green');
 
   // Removing Purple classes
 
   // Icons
 
-  colorSwitcher.classList.remove('purple');
+  colorSwitcher[0].classList.remove('purple');
   colorIcon.classList.remove('purple');
   homeIcon.classList.remove('purple');
   aboutIcon.classList.remove('purple');
@@ -591,28 +666,23 @@ var switchColorGreen = function() {
   homeSection.classList.remove('purple');
   aboutSection.classList.remove('purple');
   projectSection.classList.remove('purple');
+
 }
+
 
 // Function to make the color switcher visible
 
 var colorSwitcherToggle = function() {
-  colorSwitcher.classList.toggle('active');
+  colorSwitcher[0].classList.toggle('active');
 }
-
-var colorSwitcherRemove = function() {
-  colorSwitcher.classList.remove('active');
-}
-
-
-// Init the functions
 
 // Make the color switcher visible and hidden
+
 colorIcon.addEventListener('click', colorSwitcherToggle);
-mobileMenu.addEventListener('click', colorSwitcherRemove);
-mobileMenuIcon.addEventListener('click', colorSwitcherRemove);
+
 
 // Switch colors
 
-switchSkyBlue.addEventListener('click', switchColorSkyBlue);
-switchPurple.addEventListener('click', switchColorPurple);
 switchGreen.addEventListener('click', switchColorGreen);
+switchPurple.addEventListener('click', switchColorPurple);
+switchSkyBlue.addEventListener('click', switchColorSkyBlue);

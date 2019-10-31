@@ -2,13 +2,13 @@
 // Safari
 @-webkit-keyframes shake {
   0% {
-    fill: rgba($color-secondary-light, .0);
+    fill: rgba($color-primary-sky-blue-light, .0);
     -webkit-transform: translateX(10px);
     transform: translateX(10px);
   }
 
   100% {
-    fill: $color-secondary-light;
+    fill: $color-primary-sky-blue-dark;
     -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
@@ -16,6 +16,22 @@
 // Safari
 @keyframes shake {
   0% {
+    fill: rgba($color-primary-sky-blue-light, .0);
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  100% {
+    fill: $color-primary-sky-blue-dark;
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+}
+// Color Picker
+// Green
+// Safari
+@-webkit-keyframes colorPickerShakeGreen {
+  0% {
     fill: rgba($color-secondary-light, .0);
     -webkit-transform: translateX(10px);
     transform: translateX(10px);
@@ -27,32 +43,16 @@
     transform: translateX(-10px);
   }
 }
-// Color Picker
-// Sky Blue
 // Safari
-@-webkit-keyframes colorPickerShakeSkyBlue {
+@keyframes colorPickerShakeGreen {
   0% {
-    fill: rgba($color-primary-sky-blue-light, .0);
+    fill: rgba($color-secondary-light, .0);
     -webkit-transform: translateX(10px);
     transform: translateX(10px);
   }
 
   100% {
-    fill: $color-primary-sky-blue-dark;
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px);
-  }
-}
-// Safari
-@keyframes colorPickerShakeSkyBlue {
-  0% {
-    fill: rgba($color-primary-sky-blue-light, .0);
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px);
-  }
-
-  100% {
-    fill: $color-primary-sky-blue-dark;
+    fill: $color-secondary-light;
     -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
@@ -87,56 +87,32 @@
   }
 }
 /*********************************************************************************/
-// Shake-2
-// Safari
-@-webkit-keyframes shake-2 {
-  0% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-  }
-
-  50% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-
-  100% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-  }
-}
-// Safari
-@keyframes shake-2 {
-  0% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-  }
-
-  50% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-
-  100% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-  }
-}
-/*********************************************************************************/
 // Shake-3
 // Safari
 @-webkit-keyframes shake-3 {
   0% {
-    fill: rgba($color-secondary-light, .1);
+    fill: rgba($color-primary-sky-blue-light, .1);
   }
 
   100% {
-    fill: $color-secondary-light;
+    fill: $color-primary-sky-blue-dark;
   }
 }
 // Safari
 @keyframes shake-3 {
   0% {
+    fill: rgba($color-primary-sky-blue-light, .1);
+  }
+
+  100% {
+    fill: $color-primary-sky-blue-dark;
+  }
+}
+// Color Picker
+// Green
+// Safari
+@-webkit-keyframes colorPickerShake-3Green {
+  0% {
     fill: rgba($color-secondary-light, .1);
   }
 
@@ -144,26 +120,14 @@
     fill: $color-secondary-light;
   }
 }
-// Color Picker
-// Sky Blue
 // Safari
-@-webkit-keyframes colorPickerShake-3SkyBlue {
+@keyframes colorPickerShake-3Green {
   0% {
-    fill: rgba($color-primary-sky-blue-light, .1);
+    fill: rgba($color-secondary-light, .1);
   }
 
   100% {
-    fill: $color-primary-sky-blue-dark;
-  }
-}
-// Safari
-@keyframes colorPickerShake-3SkyBlue {
-  0% {
-    fill: rgba($color-primary-sky-blue-light, .1);
-  }
-
-  100% {
-    fill: $color-primary-sky-blue-dark;
+    fill: $color-secondary-light;
   }
 }
 // Purple
@@ -192,20 +156,34 @@
 // Safari
 @-webkit-keyframes blinker {
   0% {
-    color: rgba($color-secondary-light, 0);
-    fill: rgba($color-secondary-light, 0);
+    color: #fff;
+    fill: #fff;
   }
 
   100% {
-    color: $color-secondary-light;
-    fill: $color-secondary-light;
+    color: $color-primary-sky-blue-dark;
+    fill: $color-primary-sky-blue-dark;
   }
 }
 // Safari
 @keyframes blinker {
   0% {
-    color: rgba($color-secondary-light, 0);
-    fill: rgba($color-secondary-light, 0);
+    color: #fff;
+    fill: #fff;
+  }
+
+  100% {
+    color: $color-primary-sky-blue-dark;
+    fill: $color-primary-sky-blue-dark;
+  }
+}
+// Color Picker
+// Green
+// Safari
+@-webkit-keyframes colorPickerBlinkerGreen {
+  0% {
+    color: #fff;
+    fill: #fff;
   }
 
   100% {
@@ -213,38 +191,24 @@
     fill: $color-secondary-light;
   }
 }
-// Color Picker
-// Blue Sky
 // Safari
-@-webkit-keyframes colorPickerBlinkerSkyBlue {
+@keyframes colorPickerBlinkerGreen {
   0% {
-    color: rgba($color-primary-sky-blue-light, 0);
-    fill: rgba($color-primary-sky-blue-light, 0);
+    color: #fff;
+    fill: #fff;
   }
 
   100% {
-    color: $color-primary-sky-blue-dark;
-    fill: $color-primary-sky-blue-dark;
-  }
-}
-// Safari
-@keyframes colorPickerBlinkerSkyBlue {
-  0% {
-    color: rgba($color-primary-sky-blue-light, 0);
-    fill: rgba($color-primary-sky-blue-light, 0);
-  }
-
-  100% {
-    color: $color-primary-sky-blue-dark;
-    fill: $color-primary-sky-blue-dark;
+    color: $color-secondary-light;
+    fill: $color-secondary-light;
   }
 }
 // Purple
 // Safari
 @-webkit-keyframes colorPickerBlinkerPurple {
   0% {
-    color: rgba($color-primary-purple-light, 0);
-    fill: rgba($color-primary-purple-light, 0);
+    color: #fff;
+    fill: #fff;
   }
 
   100% {
@@ -255,8 +219,8 @@
 // Safari
 @keyframes colorPickerBlinkerPurple {
   0% {
-    color: rgba($color-primary-purple-light, 0);
-    fill: rgba($color-primary-purple-light, 0);
+    color: #fff;
+    fill: #fff;
   }
 
   100% {
@@ -269,20 +233,34 @@
 // Safari
 @-webkit-keyframes blinker-2 {
   0% {
-    -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 0);
-    box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 0);
+    -webkit-box-shadow: -1px 0 30px -10px rgb(255, 255, 255);
+    box-shadow: -1px 0 30px -10px rgb(255, 255, 255);
   }
 
   100% {
-    -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
-    box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
+    -webkit-box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
+    box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
   }
 }
 // Safari
 @keyframes blinker-2 {
   0% {
-    -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 0);
-    box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 0);
+    -webkit-box-shadow: -1px 0 30px -10px rgb(255, 255, 255);
+    box-shadow: -1px 0 30px -10px rgb(255, 255, 255);
+  }
+
+  100% {
+    -webkit-box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
+    box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
+  }
+}
+// Color Picker
+// Green
+// Safari
+@-webkit-keyframes colorPickerBlinker-2Green {
+  0% {
+    -webkit-box-shadow: -1px 0 30px -10px rgb(255, 255, 255);
+    box-shadow: -1px 0 30px -10px rgb(255, 255, 255);
   }
 
   100% {
@@ -290,38 +268,24 @@
     box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
   }
 }
-// Color Picker
-// Sky Blue
 // Safari
-@-webkit-keyframes colorPickerBlinker-2SkyBlue {
+@keyframes colorPickerBlinker-2Green {
   0% {
-    -webkit-box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 0);
-    box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 0);
+    -webkit-box-shadow: -1px 0 30px -10px rgb(255, 255, 255);
+    box-shadow: -1px 0 30px -10px rgb(255, 255, 255);
   }
 
   100% {
-    -webkit-box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
-    box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
-  }
-}
-// Safari
-@keyframes colorPickerBlinker-2SkyBlue {
-  0% {
-    -webkit-box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 0);
-    box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 0);
-  }
-
-  100% {
-    -webkit-box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
-    box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
+    -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
+    box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
   }
 }
 // Purple
 // Safari
 @-webkit-keyframes colorPickerBlinker-2Purple {
   0% {
-    -webkit-box-shadow: -1px 0 30px -10px rgba(255, 51, 255, 0);
-    box-shadow: -1px 0 30px -10px rgba(255, 51, 255, 0);
+    -webkit-box-shadow: -1px 0 30px -10px rgb(255, 255, 255);
+    box-shadow: -1px 0 30px -10px rgb(255, 255, 255);
   }
 
   100% {
@@ -332,8 +296,8 @@
 // Safari
 @keyframes colorPickerBlinker-2Purple {
   0% {
-    -webkit-box-shadow: -1px 0 30px -10px rgba(255, 51, 255, 0);
-    box-shadow: -1px 0 30px -10px rgba(255, 51, 255, 0);
+    -webkit-box-shadow: -1px 0 30px -10px rgb(255, 255, 255);
+    box-shadow: -1px 0 30px -10px rgb(255, 255, 255);
   }
 
   100% {

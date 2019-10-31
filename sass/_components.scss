@@ -67,126 +67,21 @@
   &__icon {
     height: inherit;
     width: inherit;
-    -webkit-animation: shake 0.2s ease-in-out infinite alternate;
-    animation: shake 0.2s ease-in-out infinite alternate;
-
-    &.sky-blue {
-      fill: $color-primary-sky-blue-dark;
-      -webkit-animation: colorPickerShakeSkyBlue 0.2s ease-in-out infinite alternate;
-      animation: colorPickerShakeSkyBlue 0.2s ease-in-out infinite alternate;
-    }
-
-    &.purple {
-      fill: $color-primary-purple-dark;
-      -webkit-animation: colorPickerShakePurple 0.2s ease-in-out infinite alternate;
-      animation: colorPickerShakePurple 0.2s ease-in-out infinite alternate;
-    }
-    @include respond(tab-land) {
-      -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
-      animation: shake-3 0.2s ease-in-out infinite alternate;
-
-      &.sky-blue {
-        fill: $color-primary-sky-blue-dark;
-        -webkit-animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
-        animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
-      }
-
-      &.purple {
-        fill: $color-primary-purple-dark;
-        -webkit-animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
-        animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
-      }
-    }
-    @include respond(tab-port) {
-      -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
-      animation: shake-3 0.2s ease-in-out infinite alternate;
-
-      &.sky-blue {
-        fill: $color-primary-sky-blue-dark;
-        -webkit-animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
-        animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
-      }
-
-      &.purple {
-        fill: $color-primary-purple-dark;
-        -webkit-animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
-        animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
-      }
-    }
-    @include respond(phone) {
-      -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
-      animation: shake-3 0.2s ease-in-out infinite alternate;
-
-      &.sky-blue {
-        fill: $color-primary-sky-blue-dark;
-        -webkit-animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
-        animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
-      }
-
-      &.open {
-        fill: $color-primary-purple-dark;
-        -webkit-animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
-        animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
-      }
-    }
+    fill: #fff;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
-      fill: $color-secondary-light;
-      -webkit-animation: shake 0;
-      animation: shake 0;
+      fill: $color-primary-sky-blue-dark;
+      transform: scale(1.3, 1.3);
 
-      &.sky-blue {
-        fill: $color-primary-sky-blue-dark;
-        -webkit-animation: shake 0;
-        animation: shake 0;
+      &.green {
+        fill: $color-secondary-light;
+        transform: scale(1.3, 1.3);
       }
 
       &.purple {
         fill: $color-primary-purple-dark;
-        -webkit-animation: shake 0;
-        animation: shake 0;
-      }
-      @include respond(tab-land) {
-        -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
-        animation: shake-3 0.2s ease-in-out infinite alternate;
-
-        &.sky-blue {
-          -webkit-animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
-          animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
-        }
-
-        &.purple {
-          -webkit-animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
-          animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
-        }
-      }
-      @include respond(tab-port) {
-        -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
-        animation: shake-3 0.2s ease-in-out infinite alternate;
-
-        &.sky-blue {
-          -webkit-animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
-          animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
-        }
-
-        &.purple {
-          -webkit-animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
-          animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
-        }
-      }
-      @include respond(phone) {
-        -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
-        animation: shake-3 0.2s ease-in-out infinite alternate;
-
-        &.sky-blue {
-          -webkit-animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
-          animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
-        }
-
-        &.purple {
-          -webkit-animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
-          animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
-        }
+        transform: scale(1.3, 1.3);
       }
     }
   }
@@ -212,13 +107,13 @@
     /* For IE */
     height: 30px;
     border-style: solid;
-    border-color: $color-secondary-light;
+    border-color: $color-primary-sky-blue-dark;
     border-width: 1px 0 0 0;
     border-radius: 20px;
     width: 30%;
 
-    &.sky-blue {
-      border-color: $color-primary-sky-blue-dark;
+    &.green {
+      border-color: $color-secondary-light;
     }
 
     &.purple {
@@ -254,13 +149,13 @@
     height: 30px;
     margin-top: -65px;
     border-style: solid;
-    border-color: $color-secondary-light;
+    border-color: $color-primary-sky-blue-dark;
     border-width: 0 0 1px 0;
     border-radius: 20px;
     width: 30%;
 
-    &.sky-blue {
-      border-color: $color-primary-sky-blue-dark;
+    &.green {
+      border-color: $color-secondary-light;
     }
 
     &.purple {
@@ -293,18 +188,19 @@
   // Click on projects notice
   &__click {
     display: none;
-    color: $color-secondary-light;
-    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
-    animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
+    color: $color-primary-sky-blue-dark;
+    -webkit-animation: blinker 0.5s ease-in-out infinite alternate;
+    animation: blinker 0.5s ease-in-out infinite alternate;
 
-    &.sky-blue {
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.2s;
-      animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.2s;
+    &.green {
+      color: $color-secondary-light;
+      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate;
+      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate;
     }
 
     &.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.2s;
-      animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.2s;
+      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate;
+      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate;
     }
     @include respond(tab-land) {
       display: inline-block;
@@ -322,18 +218,20 @@
 
   &__click-2 {
     display: none;
-    color: $color-secondary-light;
-    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.3s;
-    animation: blinker 0.2s ease-in-out infinite alternate 0.3s;
+    color: $color-primary-sky-blue-dark;
+    -webkit-animation: blinker 0.5s ease-in-out infinite alternate 0.2s;
+    animation: blinker 0.5s ease-in-out infinite alternate 0.2s;
 
-    &.sky-blue {
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.3s;
-      animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.3s;
+    &.green {
+      color: $color-secondary-light;
+      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.2s;
+      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.2s;
     }
 
     &.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.3s;
-      animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.3s;
+      color: $color-primary-purple-dark;
+      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.2s;
+      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.2s;
     }
     @include respond(tab-land) {
       display: inline-block;
@@ -351,18 +249,19 @@
 
   &__click-3 {
     display: none;
-    color: $color-secondary-light;
-    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.4s;
-    animation: blinker 0.2s ease-in-out infinite alternate 0.4s;
+    color: $color-primary-sky-blue-dark;
+    -webkit-animation: blinker 0.5s ease-in-out infinite alternate 0.3s;
+    animation: blinker 0.5s ease-in-out infinite alternate 0.3s;
 
-    &.sky-blue {
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.4s;
-      animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.4s;
+    &.green {
+      color: $color-secondary-light;
+      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.3s;
+      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.3s;
     }
 
     &.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.4s;
-      animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.4s;
+      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.3s;
+      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.3s;
     }
     @include respond(tab-land) {
       display: inline-block;
@@ -380,18 +279,19 @@
 
   &__click-4 {
     display: none;
-    color: $color-secondary-light;
-    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.5s;
-    animation: blinker 0.2s ease-in-out infinite alternate 0.5s;
+    color: $color-primary-sky-blue-dark;
+    -webkit-animation: blinker 0.5s ease-in-out infinite alternate 0.4s;
+    animation: blinker 0.5s ease-in-out infinite alternate 0.4s;
 
-    &.sky-blue {
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.5s;
-      animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.5s;
+    &.green {
+      color: $color-secondary-light;
+      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.4s;
+      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.4s;
     }
 
     &.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.5s;
-      animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.5s;
+      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.4s;
+      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.4s;
     }
     @include respond(tab-land) {
       display: inline-block;
@@ -409,18 +309,19 @@
 
   &__click-5 {
     display: none;
-    color: $color-secondary-light;
-    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.6s;
-    animation: blinker 0.2s ease-in-out infinite alternate 0.6s;
+    color: $color-primary-sky-blue-dark;
+    -webkit-animation: blinker 0.5s ease-in-out infinite alternate 0.5s;
+    animation: blinker 0.5s ease-in-out infinite alternate 0.5s;
 
-    &.sky-blue {
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.6s;
-      animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.6s;
+    &.green {
+      color: $color-secondary-light;
+      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.5s;
+      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.5s;
     }
 
     &.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.6s;
-      animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.6s;
+      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.5s;
+      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.5s;
     }
     @include respond(tab-land) {
       display: inline-block;
@@ -460,18 +361,18 @@
   max-width: 70rem;
   margin: 0 auto;
   padding: 2rem;
-  background-image: linear-gradient(135deg, rgba($color-primary-dark, .5) 50%, rgba($color-primary-dark, .5) 100%);
+  background-image: linear-gradient(135deg, rgba($color-secondary-sky-blue, .5) 50%, rgba($color-secondary-sky-blue, .5) 100%);
   border-radius: 10px;
-  -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
-  -moz-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
-  box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
+  -webkit-box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
+  -moz-box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
+  box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
   -webkit-animation: blinker-2 1s ease-in-out infinite alternate;
   animation: blinker-2 1s ease-in-out infinite alternate;
 
-  &.sky-blue {
-    background-image: linear-gradient(135deg, rgba($color-secondary-sky-blue, .5) 50%, rgba($color-secondary-sky-blue, .5) 100%);
-    -webkit-animation: colorPickerBlinker-2SkyBlue 1s ease-in-out infinite alternate;
-    animation: colorPickerBlinker-2SkyBlue 1s ease-in-out infinite alternate;
+  &.green {
+    background-image: linear-gradient(135deg, rgba($color-primary-dark, .5) 50%, rgba($color-primary-dark, .5) 100%);
+    -webkit-animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate;
+    animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate;
   }
 
   &.purple {
@@ -500,35 +401,35 @@
   }
 
   &__state {
-    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.3s;
-    animation: blinker 0.3s ease-in-out infinite alternate 0.3s;
+    -webkit-animation: blinker 0.5s ease-in-out infinite alternate 0.3s;
+    animation: blinker 0.5s ease-in-out infinite alternate 0.3s;
 
-    &.sky-blue {
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.3s;
-      animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.3s;
+    &.green {
+      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.3s;
+      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.3s;
     }
 
     &.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.3s;
-      animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.3s;
+      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.3s;
+      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.3s;
     }
   }
 
   &__location {
     font-size: 1rem;
-    color: $color-secondary-light;
+    color: $color-primary-sky-blue-dark;
     margin-bottom: 1.5rem;
-    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.2s;
-    animation: blinker 0.3s ease-in-out infinite alternate 0.2s;
+    -webkit-animation: blinker 0.5s ease-in-out infinite alternate 0.2s;
+    animation: blinker 0.5s ease-in-out infinite alternate 0.2s;
 
-    &.sky-blue {
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.2s;
-      animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.2s;
+    &.green {
+      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.2s;
+      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.2s;
     }
 
     &.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.2s;
-      animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.2s;
+      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.2s;
+      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.2s;
     }
     @include respond(phone) {
       font-size: 0.9rem;
@@ -538,19 +439,19 @@
   &__icon {
     width: 12px;
     height: 12px;
-    fill: $color-secondary-light;
+    fill: $color-primary-sky-blue-dark;
     margin-right: 0.2rem;
-    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
-    animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
+    -webkit-animation: blinker 0.5s ease-in-out infinite alternate;
+    animation: blinker 0.5s ease-in-out infinite alternate;
 
-    &.sky-blue {
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.1s;
-      animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.1s;
+    &.green {
+      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate;
+      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate;
     }
 
     &.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.1s;
-      animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.1s;
+      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate;
+      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate;
     }
     @include respond(phone) {
       font-size: 1rem;
@@ -589,15 +490,16 @@
 
   &__html {
     color: #fff;
-    background-color: rgba($color-secondary-light, .5);
+    background-color: rgba($color-primary-sky-blue-dark, .5);
     padding: 10px 30px;
     border-radius: 10px;
     position: relative;
     cursor: pointer;
     margin-right: 30px;
+    transition: all 0.3s ease-in-out;
 
-    &.sky-blue {
-      background-color: rgba($color-primary-sky-blue-dark, .5);
+    &.green {
+      background-color: rgba($color-secondary-light, .5);
     }
 
     &.purple {
@@ -605,44 +507,32 @@
     }
 
     &:hover {
-      background-color: rgba($color-secondary-light, .8);
-      -webkit-animation: shake-2 0.2s ease-in-out 3 alternate;
-      animation: shake-2 0.2s ease-in-out 3 alternate;
+      fill: $color-primary-sky-blue-dark;
+      transform: scale(1.08, 1.08);
 
-      &.sky-blue {
-        background-color: rgba($color-primary-sky-blue-dark, .8);
+      &.green {
+        fill: $color-secondary-light;
+        transform: scale(1.1, 1.1);
       }
 
       &.purple {
-        background-color: rgba($color-primary-purple-dark, .8);
-      }
-      @include respond(phone) {
-        -webkit-animation: 0;
-        animation: 0;
-
-        &.sky-blue {
-          -webkit-animation: 0;
-          animation: 0;
-        }
-
-        &.purple {
-          -webkit-animation: 0;
-          animation: 0;
-        }
+        fill: $color-primary-purple-dark;
+        transform: scale(1.1, 1.1);
       }
     }
   }
 
   &__css {
     color: #fff;
-    background-color: rgba($color-secondary-light, .5);
-    padding: 10px 30px;
+    background-color: rgba($color-primary-sky-blue-dark, .5);
+    padding: 10px 35px;
     border-radius: 10px;
     position: relative;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 
-    &.sky-blue {
-      background-color: rgba($color-primary-sky-blue-dark, .5);
+    &.green {
+      background-color: rgba($color-secondary-light, .5);
     }
 
     &.purple {
@@ -650,30 +540,17 @@
     }
 
     &:hover {
-      background-color: rgba($color-secondary-light, .8);
-      -webkit-animation: shake-2 0.2s ease-in-out 3 alternate;
-      animation: shake-2 0.2s ease-in-out 3 alternate;
+      fill: $color-primary-sky-blue-dark;
+      transform: scale(1.08, 1.08);
 
-      &.sky-blue {
-        background-color: rgba($color-primary-sky-blue-dark, .8);
+      &.green {
+        fill: $color-secondary-light;
+        transform: scale(1.1, 1.1);
       }
 
       &.purple {
-        background-color: rgba($color-primary-purple-dark, .8);
-      }
-      @include respond(phone) {
-        -webkit-animation: 0;
-        animation: 0;
-
-        &.sky-blue {
-          -webkit-animation: 0;
-          animation: 0;
-        }
-
-        &.purple {
-          -webkit-animation: 0;
-          animation: 0;
-        }
+        fill: $color-primary-purple-dark;
+        transform: scale(1.1, 1.1);
       }
     }
   }
@@ -683,7 +560,7 @@
 .project-section--center {
   padding-top: 17rem;
   @include respond(laptop) {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
   }
   @include respond(tab-land) {
     padding-top: 18rem;
@@ -700,41 +577,46 @@
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 300px);
+  grid-template-columns: repeat(5, 300px);
   grid-template-rows: 320px;
   grid-gap: 20px;
   max-width: 80rem;
   margin: 0 auto;
   @include respond(laptop) {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 390px;
+    grid-template-rows: 310px 310px;
+    grid-gap: 10px;
     max-width: 70rem;
   }
   @include respond(tab-land) {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 290px);
+    grid-template-rows: repeat(3, 290px);
+    grid-gap: 10px;
     width: 90%;
   }
   @include respond(tab-port) {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 320px);
+    grid-template-rows: repeat(2, 310px);
     width: 90%;
   }
   @include respond(phone) {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 320px);
+    grid-template-rows: repeat(5, 320px);
     grid-row-gap: 140px;
     width: 90%;
     margin-bottom: 50px;
   }
 
   &__items {
+    -webkit-box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
+    -moz-box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
+    box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
     -webkit-animation: blinker-2 1s ease-in-out infinite alternate;
     animation: blinker-2 1s ease-in-out infinite alternate;
 
-    &.sky-blue {
-      -webkit-animation: colorPickerBlinker-2SkyBlue 1s ease-in-out infinite alternate;
-      animation: colorPickerBlinker-2SkyBlue 1s ease-in-out infinite alternate;
+    &.green {
+      -webkit-animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate;
+      animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate;
     }
 
     &.purple {
@@ -743,13 +625,13 @@
     }
     @include respond(phone) {
       height: 110%;
-      -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
-      -moz-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
-      box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
+      -webkit-box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
+      -moz-box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
+      box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
 
-      &.sky-blue {
-        -webkit-animation: colorPickerBlinker-2SkyBlue 1s ease-in-out infinite alternate;
-        animation: colorPickerBlinker-2SkyBlue 1s ease-in-out infinite alternate;
+      &.green {
+        -webkit-animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate;
+        animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate;
       }
 
       &.purple {
@@ -760,17 +642,57 @@
 
     &:hover {
       transform: scale3d(0, 10px, 0);
+
+      &.green {
+        -webkit-animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate;
+        animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate;
+      }
+
+      &.purple {
+        -webkit-animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate;
+        animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate;
+      }
       @include respond(tab-land) {
         -webkit-animation: 0;
         animation: 0;
+
+        &.green {
+          -webkit-animation: 0;
+          animation: 0;
+        }
+
+        &.purple {
+          -webkit-animation: 0;
+          animation: 0;
+        }
       }
       @include respond(tab-port) {
         -webkit-animation: 0;
         animation: 0;
+
+        &.green {
+          -webkit-animation: 0;
+          animation: 0;
+        }
+
+        &.purple {
+          -webkit-animation: 0;
+          animation: 0;
+        }
       }
       @include respond(phone) {
         -webkit-animation: 0;
         animation: 0;
+
+        &.green {
+          -webkit-animation: 0;
+          animation: 0;
+        }
+
+        &.purple {
+          -webkit-animation: 0;
+          animation: 0;
+        }
       }
     }
 
@@ -808,13 +730,13 @@
     }
     // Active class for touch devices
   }
-
+  // Info boxes
   &__info {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
     height: 100%;
-    background-image: linear-gradient(to right, rgba($color-primary-light, .9), rgba($color-primary-dark, .9));
+    background-image: linear-gradient(to right, rgba($color-primary-sky-blue-light, .9), rgba($color-primary-sky-blue-dark, .9));
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -825,8 +747,8 @@
     opacity: 0;
     visibility: hidden;
 
-    &.sky-blue {
-      background-image: linear-gradient(to right, rgba($color-primary-sky-blue-light, .9), rgba($color-primary-sky-blue-dark, .9));
+    &.green {
+      background-image: linear-gradient(to right, rgba($color-primary-light, .9), rgba($color-primary-dark, .9));
     }
 
     &.purple {
@@ -880,14 +802,15 @@
     &--project {
       color: #fff;
       text-decoration: none;
-      background-color: rgba($color-secondary-light, .5);
+      background-color: rgba($color-primary-sky-blue-dark, .5);
       padding: 10px 25px;
       border-radius: 10px;
       position: relative;
       cursor: pointer;
+      transition: all 0.3s ease-in-out;
 
-      &.sky-blue {
-        background-color: rgba($color-primary-sky-blue-dark, .5);
+      &.green {
+        background-color: rgba($color-secondary-light, .5);
       }
 
       &.purple {
@@ -895,16 +818,17 @@
       }
 
       &:hover {
-        background-color: rgba($color-secondary-light, .8);
-        -webkit-animation: shake-2 0.2s ease-in-out 3 alternate;
-        animation: shake-2 0.2s ease-in-out 3 alternate;
+        fill: $color-primary-sky-blue-dark;
+        transform: scale(1.08, 1.08);
 
-        &.sky-blue {
-          background-color: rgba($color-primary-sky-blue-dark, .8);
+        &.green {
+          fill: $color-secondary-light;
+          transform: scale(1.1, 1.1);
         }
 
         &.purple {
-          background-color: rgba($color-primary-purple-dark, .8);
+          fill: $color-primary-purple-dark;
+          transform: scale(1.1, 1.1);
         }
       }
     }
@@ -912,14 +836,15 @@
     &--code {
       color: #fff;
       text-decoration: none;
-      background-color: rgba($color-secondary-light, .5);
-      padding: 10px 25px;
+      background-color: rgba($color-primary-sky-blue-dark, .5);
+      padding: 10px 32px;
       border-radius: 10px;
       position: relative;
       cursor: pointer;
+      transition: all 0.3s ease-in-out;
 
-      &.sky-blue {
-        background-color: rgba($color-primary-sky-blue-dark, .5);
+      &.green {
+        background-color: rgba($color-secondary-light, .5);
       }
 
       &.purple {
@@ -927,23 +852,24 @@
       }
 
       &:hover {
-        background-color: rgba($color-secondary-light, .8);
-        -webkit-animation: shake-2 0.2s ease-in-out 3 alternate;
-        animation: shake-2 0.2s ease-in-out 3 alternate;
+        fill: $color-primary-sky-blue-dark;
+        transform: scale(1.08, 1.08);
 
-        &.sky-blue {
-          background-color: rgba($color-primary-sky-blue-dark, .8);
+        &.green {
+          fill: $color-secondary-light;
+          transform: scale(1.1, 1.1);
         }
 
         &.purple {
-          background-color: rgba($color-primary-purple-dark, .8);
+          fill: $color-primary-purple-dark;
+          transform: scale(1.1, 1.1);
         }
       }
     }
   }
   // Wrapper item 1
   &__items--1 {
-    background-image: url("../img/beatson.jpg");
+    background-image: url("../img/ebay-email-img.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -999,7 +925,7 @@
   }
   // Wrapper item 2
   &__items--2 {
-    background-image: url("../img/project-img-2.jpg");
+    background-image: url("../img/broward-email-img.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1007,7 +933,7 @@
   }
   // Wrapper item 3
   &__items--3 {
-    background-image: url("../img/project-img-3.jpg");
+    background-image: url("../img/beatson.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1016,6 +942,14 @@
   // Wrapper item 4
   &__items--4 {
     background-image: url("../img/castle-care.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  // Wrapper item 5
+  &__items--5 {
+    background-image: url("../img/codingphaseclone-img.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1035,56 +969,56 @@
 }
 
 .footer__copywrite {
-  color: $color-secondary-light;
-  --webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
-  animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
+  color: $color-primary-sky-blue-dark;
+  -webkit-animation: blinker 0.5s ease-in-out infinite alternate;
+  animation: blinker 0.5s ease-in-out infinite alternate;
 
-  &.sky-blue {
-    color: $color-primary-sky-blue-dark;
-    -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.1s;
-    animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.1s;
+  &.green {
+    color: $color-secondary-light;
+    --webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate;
+    animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate;
   }
 
   &.purple {
     color: $color-primary-purple-dark;
-    -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.1s;
-    animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.1s;
+    -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate;
+    animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate;
   }
 }
 
 .footer__first-name {
-  color: $color-secondary-light;
-  -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.2s;
-  animation: blinker 0.3s ease-in-out infinite alternate 0.2s;
+  color: $color-primary-sky-blue-dark;
+  -webkit-animation: blinker 0.5s ease-in-out infinite alternate 0.2s;
+  animation: blinker 0.5s ease-in-out infinite alternate 0.2s;
 
-  &.sky-blue {
-    color: $color-primary-sky-blue-dark;
-    -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.2s;
-    animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.2s;
+  &.green {
+    color: $color-secondary-light;
+    -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.2s;
+    animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.2s;
   }
 
   &.purple {
     color: $color-primary-purple-dark;
-    -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.2s;
-    animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.2s;
+    -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.2s;
+    animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.2s;
   }
 }
 
 .footer__last-name {
-  color: $color-secondary-light;
+  color: $color-primary-sky-blue-dark;
   -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.3s;
   animation: blinker 0.3s ease-in-out infinite alternate 0.3s;
 
-  &.sky-blue {
-    color: $color-primary-sky-blue-dark;
-    -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.3s;
-    animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.3s;
+  &.green {
+    color: $color-secondary-light;
+    -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.3s;
+    animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.3s;
   }
 
   &.purple {
     color: $color-primary-purple-dark;
-    -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.3s;
-    animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.3s;
+    -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.3s;
+    animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.3s;
   }
 }
 // Side menu
@@ -1124,116 +1058,30 @@
   &__icon {
     width: inherit;
     height: inherit;
-    fill: $color-secondary-light;
+    fill: #fff;
+    transition: all 0.3s ease-in-out;
 
-    &.sky-blue {
-      fill: $color-primary-sky-blue-dark;
+    &.green {
+      fill: #fff;
+
+      &:hover {
+        fill: $color-secondary-light;
+        transform: scale(1.3, 1.3);
+      }
     }
 
     &.purple {
-      fill: $color-primary-purple-dark;
+      fill: #fff;
+
+      &:hover {
+        fill: $color-primary-purple-dark;
+        transform: scale(1.3, 1.3);
+      }
     }
 
     &:hover {
-      -webkit-animation: 0;
-      animation: 0;
-
-      &.sky-blue {
-        -webkit-animation: 0;
-        animation: 0;
-      }
-
-      &.purple {
-        -webkit-animation: 0;
-        animation: 0;
-      }
-      @include respond(tab-land) {
-        --webkit-animation: blinker 0.2s ease-in-out infinite alternate;
-        animation: blinker 0.2s ease-in-out infinite alternate;
-
-        &.sky-blue {
-          --webkit-animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate;
-          animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate;
-        }
-
-        &.purple {
-          --webkit-animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate;
-          animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate;
-        }
-      }
-      @include respond(tab-port) {
-        --webkit-animation: blinker 0.3s ease-in-out infinite alternate;
-        animation: blinker 0.3s ease-in-out infinite alternate;
-
-        &.sky-blue {
-          --webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate;
-          animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate;
-        }
-
-        &.purple {
-          --webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate;
-          animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate;
-        }
-      }
-      @include respond(phone) {
-        --webkit-animation: blinker 0.4s ease-in-out infinite alternate;
-        animation: blinker 0.4s ease-in-out infinite alternate;
-
-        &.sky-blue {
-          --webkit-animation: colorPickerBlinkerSkyBlue 0.4s ease-in-out infinite alternate;
-          animation: colorPickerBlinkerSkyBlue 0.4s ease-in-out infinite alternate;
-        }
-
-        &.purple {
-          --webkit-animation: colorPickerBlinkerPurple 0.4s ease-in-out infinite alternate;
-          animation: colorPickerBlinkerPurple 0.4s ease-in-out infinite alternate;
-        }
-      }
-    }
-  }
-
-  &__icon-1 {
-    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
-    animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
-
-    &.sky-blue {
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.1s;
-      animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.1s;
-    }
-
-    &.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.1s;
-      animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.1s;
-    }
-  }
-
-  &__icon-2 {
-    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
-    animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
-
-    &.sky-blue {
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.2s;
-      animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.2s;
-    }
-
-    &.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.2s;
-      animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.2s;
-    }
-  }
-
-  &__icon-3 {
-    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.3s;
-    animation: blinker 0.3s ease-in-out infinite alternate 0.3s;
-
-    &.sky-blue {
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.3s;
-      animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.3s;
-    }
-
-    &.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.3s;
-      animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.3s;
+      fill: $color-primary-sky-blue-dark;
+      transform: scale(1.3, 1.3);
     }
   }
 }
@@ -1248,14 +1096,14 @@
   width: 100%;
   height: 40px;
   z-index: 9000;
-  background-image: linear-gradient(135deg, rgba($color-primary-light, 1) 50%, rgba($color-primary-dark, 1) 100%);
+  background-image: linear-gradient(135deg, rgba($color-primary-sky-blue-dark, 1) 50%, rgba($color-primary-sky-blue-light, 1) 100%);
 
-  &.sky-blue {
-    background-image: linear-gradient(135deg, rgba($color-primary-sky-blue-light, 1) 50%, rgba($color-primary-sky-blue-dark, 1) 100%);
+  &.green {
+    background-image: linear-gradient(135deg, rgba($color-primary-dark, 1) 50%, rgba($color-primary-light, 1) 100%);
   }
 
   &.purple {
-    background-image: linear-gradient(135deg, rgba($color-primary-purple-light, 1) 50%, rgba($color-primary-purple-dark, 1) 100%);
+    background-image: linear-gradient(135deg, rgba($color-primary-purple-dark, 1) 50%, rgba($color-primary-purple-light, 1) 100%);
   }
   @include clearFix;
   @include respond(tab-port) {
@@ -1286,19 +1134,35 @@
   &__icon {
     width: 30px;
     height: 30px;
-    fill: $color-secondary-light;
+    fill: #fff;
+    transition: all 0.3s ease-in-out;
 
-    &.sky-blue {
-      fill: $color-primary-sky-blue-light;
+    &.green {
+      fill: #fff;
+
+      &:hover {
+        fill: $color-secondary-light;
+        transform: scale(1.3, 1.3);
+      }
     }
 
     &.purple {
-      fill: $color-primary-purple-light;
+      fill: #fff;
+
+      &:hover {
+        fill: $color-primary-purple-dark;
+        transform: scale(1.3, 1.3);
+      }
     }
     @include respond(phone) {
       width: 22px;
       height: 22px;
       margin-top: 0.3rem;
+    }
+
+    &:hover {
+      fill: $color-primary-sky-blue-dark;
+      transform: scale(1.1, 1.1);
     }
   }
 }
@@ -1324,77 +1188,30 @@
   &__color-picker {
     width: inherit;
     height: inherit;
-    fill: $color-secondary-light;
-    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.4s;
-    animation: blinker 0.3s ease-in-out infinite alternate 0.4s;
+    fill: #fff;
+    transition: all 0.3s ease-in-out;
 
-    &.sky-blue {
-      fill: $color-primary-sky-blue-dark;
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s;
-      animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s;
+    &.green {
+      fill: #fff;
+
+      &:hover {
+        fill: $color-secondary-light;
+        transform: scale(1.3, 1.3);
+      }
     }
 
     &.purple {
-      fill: $color-primary-purple-dark;
-      -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s;
-      animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s;
+      fill: #fff;
+
+      &:hover {
+        fill: $color-primary-purple-dark;
+        transform: scale(1.3, 1.3);
+      }
     }
 
     &:hover {
-      -webkit-animation: 0;
-      animation: 0;
-
-      &.sky-blue {
-        -webkit-animation: 0;
-        animation: 0;
-      }
-
-      &.purple {
-        -webkit-animation: 0;
-        animation: 0;
-      }
-      @include respond(tab-land) {
-        --webkit-animation: blinker 0.3s ease-in-out infinite alternate 4s;
-        animation: blinker 0.3s ease-in-out infinite alternate 0.4s;
-
-        &.sky-blue {
-          -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s;
-          animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s;
-        }
-
-        &.purple {
-          -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s;
-          animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s;
-        }
-      }
-      @include respond(tab-port) {
-        --webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.4s;
-        animation: blinker 0.3s ease-in-out infinite alternate 0.4s;
-
-        &.sky-blue {
-          -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s;
-          animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s;
-        }
-
-        &.purple {
-          -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s;
-          animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s;
-        }
-      }
-      @include respond(phone) {
-        --webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.4s;
-        animation: blinker 0.3s ease-in-out infinite alternate 0.4s;
-
-        &.sky-blue {
-          -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s;
-          animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s;
-        }
-
-        &.purple {
-          -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s;
-          animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s;
-        }
-      }
+      fill: $color-primary-sky-blue-dark;
+      transform: scale(1.3, 1.3);
     }
   }
 }
@@ -1406,7 +1223,7 @@
   align-items: center;
   width: 90%;
   height: 50px;
-  background-image: linear-gradient(135deg, rgba($color-primary-light, 1) 50%, rgba($color-primary-dark, 1) 100%);
+  background-image: linear-gradient(135deg, rgba($color-primary-sky-blue-light, 1) 50%, rgba($color-primary-sky-blue-dark, 1) 100%);
   position: relative;
   left: 0;
   bottom: 30%;
@@ -1421,15 +1238,15 @@
     opacity: 1;
   }
 
-  &.sky-blue {
-    background-image: linear-gradient(135deg, rgba($color-primary-sky-blue-light, 1) 50%, rgba($color-primary-sky-blue-dark, 1) 100%);
+  &.green {
+    background-image: linear-gradient(135deg, rgba($color-primary-light, 1) 50%, rgba($color-primary-dark, 1) 100%);
   }
 
   &.purple {
     background-image: linear-gradient(135deg, rgba($color-primary-purple-light, 1) 50%, rgba($color-primary-purple-dark, 1) 100%);
   }
   @include respond(laptop) {
-    bottom: 32%;
+    bottom: 34%;
   }
   @include respond(tab-land) {
     width: 66%;
@@ -1484,7 +1301,7 @@
     display: inline-block;
     width: 38px;
     height: 38px;
-    background-color: $color-primary-sky-blue-dark;
+    background-color: $color-secondary-light;
     border-radius: 50%;
     cursor: pointer;
     @include respond(laptop) {
@@ -1540,7 +1357,7 @@
     display: inline-block;
     width: 38px;
     height: 38px;
-    background-color: $color-secondary-light;
+    background-color: $color-primary-sky-blue-dark;
     border-radius: 50%;
     cursor: pointer;
     @include respond(laptop) {

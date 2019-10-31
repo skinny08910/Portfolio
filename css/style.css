@@ -5,9 +5,9 @@
   box-sizing: border-box; }
 
 html {
-  background-image: linear-gradient(135deg, #28b485 50%, #7ed56f 100%); }
-  html.sky-blue {
-    background-image: linear-gradient(135deg, #4dcbff 50%, #8fdeff 100%); }
+  background-image: linear-gradient(135deg, #8fdeff 50%, #4dcbff 100%); }
+  html.green {
+    background-image: linear-gradient(135deg, #7ed56f 50%, #28b485 100%); }
   html.purple {
     background-image: linear-gradient(135deg, #ff33ff 50%, #ff33ff 100%); }
 
@@ -25,7 +25,15 @@ main {
   top: 50%;
   left: 50%;
   width: 90%;
-  transform: translate(-45%, -65%); }
+  transform: translate(-53%, -65%); }
+  @media only screen and (max-width: 90em) {
+    .container {
+      width: 100%;
+      transform: translate(-45%, -65%); } }
+  @media only screen and (max-width: 75em) {
+    .container {
+      width: 90%;
+      transform: translate(-45%, -60%); } }
   @media only screen and (max-width: 56.25em) {
     .container {
       width: 100%;
@@ -40,20 +48,20 @@ main {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: linear-gradient(135deg, rgba(126, 213, 111, 0.5) 50%, rgba(40, 180, 133, 0.5) 100%), url("../img/bg-photo-1.jpg");
+  background-image: linear-gradient(135deg, rgba(143, 222, 255, 0.5) 50%, rgba(77, 203, 255, 0.5) 100%), url("../img/bg-photo-1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   z-index: -600;
   overflow: hidden; }
-  .top-section.sky-blue {
-    background-image: linear-gradient(135deg, rgba(143, 222, 255, 0.5) 50%, rgba(77, 203, 255, 0.5) 100%), url("../img/bg-photo-1.jpg"); }
+  .top-section.green {
+    background-image: linear-gradient(135deg, rgba(126, 213, 111, 0.5) 50%, rgba(40, 180, 133, 0.5) 100%), url("../img/bg-photo-1.jpg"); }
   .top-section.purple {
     background-image: linear-gradient(135deg, rgba(252, 126, 252, 0.5) 50%, rgba(255, 51, 255, 0.5) 100%), url("../img/bg-photo-1.jpg"); }
 
 .about-section {
-  background-image: linear-gradient(135deg, rgba(126, 213, 111, 0.5) 50%, rgba(40, 180, 133, 0.5) 100%), url("../img/bg-photo-2.jpg");
+  background-image: linear-gradient(135deg, rgba(143, 222, 255, 0.5) 50%, rgba(77, 203, 255, 0.5) 100%), url("../img/bg-photo-2.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,8 +72,8 @@ main {
   width: 100%;
   overflow: hidden;
   transition: all 1s ease-in-out; }
-  .about-section.sky-blue {
-    background-image: linear-gradient(135deg, rgba(143, 222, 255, 0.5) 50%, rgba(77, 203, 255, 0.5) 100%), url("../img/bg-photo-2.jpg"); }
+  .about-section.green {
+    background-image: linear-gradient(135deg, rgba(126, 213, 111, 0.5) 50%, rgba(40, 180, 133, 0.5) 100%), url("../img/bg-photo-2.jpg"); }
   .about-section.purple {
     background-image: linear-gradient(135deg, rgba(252, 126, 252, 0.5) 50%, rgba(255, 51, 255, 0.5) 100%), url("../img/bg-photo-2.jpg"); }
   .about-section.active {
@@ -90,7 +98,7 @@ main {
       z-index: -400; } }
 
 .project-section {
-  background-image: linear-gradient(135deg, rgba(126, 213, 111, 0.5) 50%, rgba(40, 180, 133, 0.5) 100%), url("../img/bg-photo-3.jpg");
+  background-image: linear-gradient(135deg, rgba(143, 222, 255, 0.5) 50%, rgba(77, 203, 255, 0.5) 100%), url("../img/bg-photo-3.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,18 +109,23 @@ main {
   width: 100%;
   overflow: hidden;
   transition: all 1s ease-in-out; }
-  .project-section.sky-blue {
-    background-image: linear-gradient(135deg, rgba(143, 222, 255, 0.5) 50%, rgba(77, 203, 255, 0.5) 100%), url("../img/bg-photo-3.jpg"); }
+  .project-section.green {
+    background-image: linear-gradient(135deg, rgba(126, 213, 111, 0.5) 50%, rgba(40, 180, 133, 0.5) 100%), url("../img/bg-photo-3.jpg"); }
   .project-section.purple {
     background-image: linear-gradient(135deg, rgba(252, 126, 252, 0.5) 50%, rgba(255, 51, 255, 0.5) 100%), url("../img/bg-photo-3.jpg"); }
   .project-section.active {
     top: 0;
     left: 0;
     transform: translate3d(0, 0, 0); }
+  @media only screen and (max-width: 75em) {
+    .project-section {
+      overflow: scroll;
+      padding: 41rem 0;
+      z-index: -400; } }
   @media only screen and (max-width: 56.25em) {
     .project-section {
       overflow: scroll;
-      padding: 34rem 0;
+      padding: 40rem 0;
       z-index: -400; } }
   @media only screen and (max-width: 37.5em) {
     .project-section {
@@ -122,12 +135,12 @@ main {
   @media only screen and (max-width: 35.5em) {
     .project-section {
       overflow: scroll;
-      padding: 75rem 0;
+      padding: 85rem 0;
       z-index: -400; } }
 
 .footer {
   margin-top: 150px; }
-  @media only screen and (min-width: 80em) and (max-width: 90em) {
+  @media only screen and (max-width: 90em) {
     .footer {
       margin-top: 30px; } }
   @media only screen and (max-width: 75em) {
@@ -144,12 +157,12 @@ main {
   width: 10%;
   height: 100vh;
   z-index: 10000;
-  background-image: linear-gradient(135deg, #7ed56f 50%, #28b485 100%);
+  background-image: linear-gradient(135deg, #8fdeff 50%, #4dcbff 100%);
   transition: all 0.4s ease-in-out; }
   .main-menu.active {
     transform: translate3d(0, 0, 0); }
-  .main-menu.sky-blue {
-    background-image: linear-gradient(135deg, #8fdeff 50%, #4dcbff 100%); }
+  .main-menu.green {
+    background-image: linear-gradient(135deg, #7ed56f 50%, #28b485 100%); }
   .main-menu.purple {
     background-image: linear-gradient(135deg, #fc7efc 50%, #ff33ff 100%); }
   @media only screen and (max-width: 56.25em) {
@@ -218,94 +231,17 @@ main {
   .social-media__icon {
     height: inherit;
     width: inherit;
-    -webkit-animation: shake 0.2s ease-in-out infinite alternate;
-    animation: shake 0.2s ease-in-out infinite alternate; }
-    .social-media__icon.sky-blue {
-      fill: #4dcbff;
-      -webkit-animation: colorPickerShakeSkyBlue 0.2s ease-in-out infinite alternate;
-      animation: colorPickerShakeSkyBlue 0.2s ease-in-out infinite alternate; }
-    .social-media__icon.purple {
-      fill: #ff33ff;
-      -webkit-animation: colorPickerShakePurple 0.2s ease-in-out infinite alternate;
-      animation: colorPickerShakePurple 0.2s ease-in-out infinite alternate; }
-    @media only screen and (max-width: 75em) {
-      .social-media__icon {
-        -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
-        animation: shake-3 0.2s ease-in-out infinite alternate; }
-        .social-media__icon.sky-blue {
-          fill: #4dcbff;
-          -webkit-animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
-          animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate; }
-        .social-media__icon.purple {
-          fill: #ff33ff;
-          -webkit-animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
-          animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate; } }
-    @media only screen and (max-width: 56.25em) {
-      .social-media__icon {
-        -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
-        animation: shake-3 0.2s ease-in-out infinite alternate; }
-        .social-media__icon.sky-blue {
-          fill: #4dcbff;
-          -webkit-animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
-          animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate; }
-        .social-media__icon.purple {
-          fill: #ff33ff;
-          -webkit-animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
-          animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate; } }
-    @media only screen and (max-width: 37.5em) {
-      .social-media__icon {
-        -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
-        animation: shake-3 0.2s ease-in-out infinite alternate; }
-        .social-media__icon.sky-blue {
-          fill: #4dcbff;
-          -webkit-animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
-          animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate; }
-        .social-media__icon.open {
-          fill: #ff33ff;
-          -webkit-animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
-          animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate; } }
+    fill: #fff;
+    transition: all 0.3s ease-in-out; }
     .social-media__icon:hover {
-      fill: #7fff00;
-      -webkit-animation: shake 0;
-      animation: shake 0; }
-      .social-media__icon:hover.sky-blue {
-        fill: #4dcbff;
-        -webkit-animation: shake 0;
-        animation: shake 0; }
+      fill: #4dcbff;
+      transform: scale(1.3, 1.3); }
+      .social-media__icon:hover.green {
+        fill: #7fff00;
+        transform: scale(1.3, 1.3); }
       .social-media__icon:hover.purple {
         fill: #ff33ff;
-        -webkit-animation: shake 0;
-        animation: shake 0; }
-      @media only screen and (max-width: 75em) {
-        .social-media__icon:hover {
-          -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
-          animation: shake-3 0.2s ease-in-out infinite alternate; }
-          .social-media__icon:hover.sky-blue {
-            -webkit-animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
-            animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate; }
-          .social-media__icon:hover.purple {
-            -webkit-animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
-            animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate; } }
-      @media only screen and (max-width: 56.25em) {
-        .social-media__icon:hover {
-          -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
-          animation: shake-3 0.2s ease-in-out infinite alternate; }
-          .social-media__icon:hover.sky-blue {
-            -webkit-animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
-            animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate; }
-          .social-media__icon:hover.purple {
-            -webkit-animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
-            animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate; } }
-      @media only screen and (max-width: 37.5em) {
-        .social-media__icon:hover {
-          -webkit-animation: shake-3 0.2s ease-in-out infinite alternate;
-          animation: shake-3 0.2s ease-in-out infinite alternate; }
-          .social-media__icon:hover.sky-blue {
-            -webkit-animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate;
-            animation: colorPickerShake-3SkyBlue 0.2s ease-in-out infinite alternate; }
-          .social-media__icon:hover.purple {
-            -webkit-animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate;
-            animation: colorPickerShake-3Purple 0.2s ease-in-out infinite alternate; } }
+        transform: scale(1.3, 1.3); }
 
 .center {
   margin-bottom: 5rem; }
@@ -323,12 +259,12 @@ main {
     /* For IE */
     height: 30px;
     border-style: solid;
-    border-color: #7fff00;
+    border-color: #4dcbff;
     border-width: 1px 0 0 0;
     border-radius: 20px;
     width: 30%; }
-    .center__hr.sky-blue {
-      border-color: #4dcbff; }
+    .center__hr.green {
+      border-color: #7fff00; }
     .center__hr.purple {
       border-color: #ff33ff; }
     @media only screen and (max-width: 75em) {
@@ -357,12 +293,12 @@ main {
     height: 30px;
     margin-top: -65px;
     border-style: solid;
-    border-color: #7fff00;
+    border-color: #4dcbff;
     border-width: 0 0 1px 0;
     border-radius: 20px;
     width: 30%; }
-    .center__hr-2.sky-blue {
-      border-color: #4dcbff; }
+    .center__hr-2.green {
+      border-color: #7fff00; }
     .center__hr-2.purple {
       border-color: #ff33ff; }
     @media only screen and (max-width: 75em) {
@@ -388,15 +324,16 @@ main {
           width: 30%; } }
   .center__click {
     display: none;
-    color: #7fff00;
-    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.2s;
-    animation: blinker 0.2s ease-in-out infinite alternate 0.2s; }
-    .center__click.sky-blue {
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.2s;
-      animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.2s; }
+    color: #4dcbff;
+    -webkit-animation: blinker 0.5s ease-in-out infinite alternate;
+    animation: blinker 0.5s ease-in-out infinite alternate; }
+    .center__click.green {
+      color: #7fff00;
+      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate;
+      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate; }
     .center__click.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.2s;
-      animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.2s; }
+      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate;
+      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate; }
     @media only screen and (max-width: 75em) {
       .center__click {
         display: inline-block;
@@ -411,15 +348,17 @@ main {
         font-size: 0.9rem; } }
   .center__click-2 {
     display: none;
-    color: #7fff00;
-    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.3s;
-    animation: blinker 0.2s ease-in-out infinite alternate 0.3s; }
-    .center__click-2.sky-blue {
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.3s;
-      animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.3s; }
+    color: #4dcbff;
+    -webkit-animation: blinker 0.5s ease-in-out infinite alternate 0.2s;
+    animation: blinker 0.5s ease-in-out infinite alternate 0.2s; }
+    .center__click-2.green {
+      color: #7fff00;
+      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.2s;
+      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.2s; }
     .center__click-2.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.3s;
-      animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.3s; }
+      color: #ff33ff;
+      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.2s;
+      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.2s; }
     @media only screen and (max-width: 75em) {
       .center__click-2 {
         display: inline-block;
@@ -434,15 +373,16 @@ main {
         font-size: 0.9rem; } }
   .center__click-3 {
     display: none;
-    color: #7fff00;
-    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.4s;
-    animation: blinker 0.2s ease-in-out infinite alternate 0.4s; }
-    .center__click-3.sky-blue {
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.4s;
-      animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.4s; }
+    color: #4dcbff;
+    -webkit-animation: blinker 0.5s ease-in-out infinite alternate 0.3s;
+    animation: blinker 0.5s ease-in-out infinite alternate 0.3s; }
+    .center__click-3.green {
+      color: #7fff00;
+      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.3s;
+      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.3s; }
     .center__click-3.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.4s;
-      animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.4s; }
+      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.3s;
+      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.3s; }
     @media only screen and (max-width: 75em) {
       .center__click-3 {
         display: inline-block;
@@ -457,15 +397,16 @@ main {
         font-size: 0.9rem; } }
   .center__click-4 {
     display: none;
-    color: #7fff00;
-    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.5s;
-    animation: blinker 0.2s ease-in-out infinite alternate 0.5s; }
-    .center__click-4.sky-blue {
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.5s;
-      animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.5s; }
+    color: #4dcbff;
+    -webkit-animation: blinker 0.5s ease-in-out infinite alternate 0.4s;
+    animation: blinker 0.5s ease-in-out infinite alternate 0.4s; }
+    .center__click-4.green {
+      color: #7fff00;
+      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.4s;
+      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.4s; }
     .center__click-4.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.5s;
-      animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.5s; }
+      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.4s;
+      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.4s; }
     @media only screen and (max-width: 75em) {
       .center__click-4 {
         display: inline-block;
@@ -480,15 +421,16 @@ main {
         font-size: 0.9rem; } }
   .center__click-5 {
     display: none;
-    color: #7fff00;
-    -webkit-animation: blinker 0.2s ease-in-out infinite alternate 0.6s;
-    animation: blinker 0.2s ease-in-out infinite alternate 0.6s; }
-    .center__click-5.sky-blue {
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.6s;
-      animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate 0.6s; }
+    color: #4dcbff;
+    -webkit-animation: blinker 0.5s ease-in-out infinite alternate 0.5s;
+    animation: blinker 0.5s ease-in-out infinite alternate 0.5s; }
+    .center__click-5.green {
+      color: #7fff00;
+      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.5s;
+      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.5s; }
     .center__click-5.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.6s;
-      animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate 0.6s; }
+      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.5s;
+      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.5s; }
     @media only screen and (max-width: 75em) {
       .center__click-5 {
         display: inline-block;
@@ -504,7 +446,7 @@ main {
 
 .about-section--center {
   padding-top: 15rem; }
-  @media only screen and (min-width: 80em) and (max-width: 90em) {
+  @media only screen and (max-width: 90em) {
     .about-section--center {
       margin-bottom: 3rem; } }
   @media only screen and (max-width: 75em) {
@@ -522,17 +464,17 @@ main {
   max-width: 70rem;
   margin: 0 auto;
   padding: 2rem;
-  background-image: linear-gradient(135deg, rgba(40, 180, 133, 0.5) 50%, rgba(40, 180, 133, 0.5) 100%);
+  background-image: linear-gradient(135deg, rgba(151, 208, 232, 0.5) 50%, rgba(151, 208, 232, 0.5) 100%);
   border-radius: 10px;
-  -webkit-box-shadow: -1px 0 30px -10px #80ff00;
-  -moz-box-shadow: -1px 0 30px -10px #80ff00;
-  box-shadow: -1px 0 30px -10px #80ff00;
+  -webkit-box-shadow: -1px 0 30px -10px #4dcbff;
+  -moz-box-shadow: -1px 0 30px -10px #4dcbff;
+  box-shadow: -1px 0 30px -10px #4dcbff;
   -webkit-animation: blinker-2 1s ease-in-out infinite alternate;
   animation: blinker-2 1s ease-in-out infinite alternate; }
-  .bio-box.sky-blue {
-    background-image: linear-gradient(135deg, rgba(151, 208, 232, 0.5) 50%, rgba(151, 208, 232, 0.5) 100%);
-    -webkit-animation: colorPickerBlinker-2SkyBlue 1s ease-in-out infinite alternate;
-    animation: colorPickerBlinker-2SkyBlue 1s ease-in-out infinite alternate; }
+  .bio-box.green {
+    background-image: linear-gradient(135deg, rgba(40, 180, 133, 0.5) 50%, rgba(40, 180, 133, 0.5) 100%);
+    -webkit-animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate;
+    animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate; }
   .bio-box.purple {
     background-image: linear-gradient(135deg, rgba(201, 125, 201, 0.5) 50%, rgba(201, 125, 201, 0.5) 100%);
     -webkit-animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate;
@@ -555,42 +497,42 @@ main {
       .bio-box__name {
         font-size: 1.4rem; } }
   .bio-box__state {
-    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.3s;
-    animation: blinker 0.3s ease-in-out infinite alternate 0.3s; }
-    .bio-box__state.sky-blue {
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.3s;
-      animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.3s; }
+    -webkit-animation: blinker 0.5s ease-in-out infinite alternate 0.3s;
+    animation: blinker 0.5s ease-in-out infinite alternate 0.3s; }
+    .bio-box__state.green {
+      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.3s;
+      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.3s; }
     .bio-box__state.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.3s;
-      animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.3s; }
+      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.3s;
+      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.3s; }
   .bio-box__location {
     font-size: 1rem;
-    color: #7fff00;
+    color: #4dcbff;
     margin-bottom: 1.5rem;
-    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.2s;
-    animation: blinker 0.3s ease-in-out infinite alternate 0.2s; }
-    .bio-box__location.sky-blue {
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.2s;
-      animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.2s; }
+    -webkit-animation: blinker 0.5s ease-in-out infinite alternate 0.2s;
+    animation: blinker 0.5s ease-in-out infinite alternate 0.2s; }
+    .bio-box__location.green {
+      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.2s;
+      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.2s; }
     .bio-box__location.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.2s;
-      animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.2s; }
+      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.2s;
+      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.2s; }
     @media only screen and (max-width: 37.5em) {
       .bio-box__location {
         font-size: 0.9rem; } }
   .bio-box__icon {
     width: 12px;
     height: 12px;
-    fill: #7fff00;
+    fill: #4dcbff;
     margin-right: 0.2rem;
-    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
-    animation: blinker 0.3s ease-in-out infinite alternate 0.1s; }
-    .bio-box__icon.sky-blue {
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.1s;
-      animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.1s; }
+    -webkit-animation: blinker 0.5s ease-in-out infinite alternate;
+    animation: blinker 0.5s ease-in-out infinite alternate; }
+    .bio-box__icon.green {
+      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate;
+      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate; }
     .bio-box__icon.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.1s;
-      animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.1s; }
+      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate;
+      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate; }
     @media only screen and (max-width: 37.5em) {
       .bio-box__icon {
         font-size: 1rem; } }
@@ -622,69 +564,53 @@ main {
         width: 90; } }
   .bio-box__html {
     color: #fff;
-    background-color: rgba(127, 255, 0, 0.5);
+    background-color: rgba(77, 203, 255, 0.5);
     padding: 10px 30px;
     border-radius: 10px;
     position: relative;
     cursor: pointer;
-    margin-right: 30px; }
-    .bio-box__html.sky-blue {
-      background-color: rgba(77, 203, 255, 0.5); }
+    margin-right: 30px;
+    transition: all 0.3s ease-in-out; }
+    .bio-box__html.green {
+      background-color: rgba(127, 255, 0, 0.5); }
     .bio-box__html.purple {
       background-color: rgba(255, 51, 255, 0.5); }
     .bio-box__html:hover {
-      background-color: rgba(127, 255, 0, 0.8);
-      -webkit-animation: shake-2 0.2s ease-in-out 3 alternate;
-      animation: shake-2 0.2s ease-in-out 3 alternate; }
-      .bio-box__html:hover.sky-blue {
-        background-color: rgba(77, 203, 255, 0.8); }
+      fill: #4dcbff;
+      transform: scale(1.08, 1.08); }
+      .bio-box__html:hover.green {
+        fill: #7fff00;
+        transform: scale(1.1, 1.1); }
       .bio-box__html:hover.purple {
-        background-color: rgba(255, 51, 255, 0.8); }
-      @media only screen and (max-width: 37.5em) {
-        .bio-box__html:hover {
-          -webkit-animation: 0;
-          animation: 0; }
-          .bio-box__html:hover.sky-blue {
-            -webkit-animation: 0;
-            animation: 0; }
-          .bio-box__html:hover.purple {
-            -webkit-animation: 0;
-            animation: 0; } }
+        fill: #ff33ff;
+        transform: scale(1.1, 1.1); }
   .bio-box__css {
     color: #fff;
-    background-color: rgba(127, 255, 0, 0.5);
-    padding: 10px 30px;
+    background-color: rgba(77, 203, 255, 0.5);
+    padding: 10px 35px;
     border-radius: 10px;
     position: relative;
-    cursor: pointer; }
-    .bio-box__css.sky-blue {
-      background-color: rgba(77, 203, 255, 0.5); }
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; }
+    .bio-box__css.green {
+      background-color: rgba(127, 255, 0, 0.5); }
     .bio-box__css.purple {
       background-color: rgba(255, 51, 255, 0.5); }
     .bio-box__css:hover {
-      background-color: rgba(127, 255, 0, 0.8);
-      -webkit-animation: shake-2 0.2s ease-in-out 3 alternate;
-      animation: shake-2 0.2s ease-in-out 3 alternate; }
-      .bio-box__css:hover.sky-blue {
-        background-color: rgba(77, 203, 255, 0.8); }
+      fill: #4dcbff;
+      transform: scale(1.08, 1.08); }
+      .bio-box__css:hover.green {
+        fill: #7fff00;
+        transform: scale(1.1, 1.1); }
       .bio-box__css:hover.purple {
-        background-color: rgba(255, 51, 255, 0.8); }
-      @media only screen and (max-width: 37.5em) {
-        .bio-box__css:hover {
-          -webkit-animation: 0;
-          animation: 0; }
-          .bio-box__css:hover.sky-blue {
-            -webkit-animation: 0;
-            animation: 0; }
-          .bio-box__css:hover.purple {
-            -webkit-animation: 0;
-            animation: 0; } }
+        fill: #ff33ff;
+        transform: scale(1.1, 1.1); }
 
 .project-section--center {
   padding-top: 17rem; }
-  @media only screen and (min-width: 80em) and (max-width: 90em) {
+  @media only screen and (max-width: 90em) {
     .project-section--center {
-      margin-bottom: 2.5rem; } }
+      margin-bottom: 1rem; } }
   @media only screen and (max-width: 75em) {
     .project-section--center {
       padding-top: 18rem;
@@ -698,68 +624,97 @@ main {
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 300px);
+  grid-template-columns: repeat(5, 300px);
   grid-template-rows: 320px;
   grid-gap: 20px;
   max-width: 80rem;
   margin: 0 auto; }
-  @media only screen and (min-width: 80em) and (max-width: 90em) {
+  @media only screen and (max-width: 90em) {
     .wrapper {
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: 390px;
+      grid-template-rows: 310px 310px;
+      grid-gap: 10px;
       max-width: 70rem; } }
   @media only screen and (max-width: 75em) {
     .wrapper {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 290px);
+      grid-template-rows: repeat(3, 290px);
+      grid-gap: 10px;
       width: 90%; } }
   @media only screen and (max-width: 56.25em) {
     .wrapper {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 320px);
+      grid-template-rows: repeat(2, 310px);
       width: 90%; } }
   @media only screen and (max-width: 37.5em) {
     .wrapper {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(4, 320px);
+      grid-template-rows: repeat(5, 320px);
       grid-row-gap: 140px;
       width: 90%;
       margin-bottom: 50px; } }
   .wrapper__items {
+    -webkit-box-shadow: -1px 0 30px -10px #4dcbff;
+    -moz-box-shadow: -1px 0 30px -10px #4dcbff;
+    box-shadow: -1px 0 30px -10px #4dcbff;
     -webkit-animation: blinker-2 1s ease-in-out infinite alternate;
     animation: blinker-2 1s ease-in-out infinite alternate; }
-    .wrapper__items.sky-blue {
-      -webkit-animation: colorPickerBlinker-2SkyBlue 1s ease-in-out infinite alternate;
-      animation: colorPickerBlinker-2SkyBlue 1s ease-in-out infinite alternate; }
+    .wrapper__items.green {
+      -webkit-animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate;
+      animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate; }
     .wrapper__items.purple {
       -webkit-animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate;
       animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate; }
     @media only screen and (max-width: 37.5em) {
       .wrapper__items {
         height: 110%;
-        -webkit-box-shadow: -1px 0 30px -10px #80ff00;
-        -moz-box-shadow: -1px 0 30px -10px #80ff00;
-        box-shadow: -1px 0 30px -10px #80ff00; }
-        .wrapper__items.sky-blue {
-          -webkit-animation: colorPickerBlinker-2SkyBlue 1s ease-in-out infinite alternate;
-          animation: colorPickerBlinker-2SkyBlue 1s ease-in-out infinite alternate; }
+        -webkit-box-shadow: -1px 0 30px -10px #4dcbff;
+        -moz-box-shadow: -1px 0 30px -10px #4dcbff;
+        box-shadow: -1px 0 30px -10px #4dcbff; }
+        .wrapper__items.green {
+          -webkit-animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate;
+          animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate; }
         .wrapper__items.purple {
           -webkit-animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate;
           animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate; } }
     .wrapper__items:hover {
       transform: scale3d(0, 10px, 0); }
+      .wrapper__items:hover.green {
+        -webkit-animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate;
+        animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate; }
+      .wrapper__items:hover.purple {
+        -webkit-animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate;
+        animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate; }
       @media only screen and (max-width: 75em) {
         .wrapper__items:hover {
           -webkit-animation: 0;
-          animation: 0; } }
+          animation: 0; }
+          .wrapper__items:hover.green {
+            -webkit-animation: 0;
+            animation: 0; }
+          .wrapper__items:hover.purple {
+            -webkit-animation: 0;
+            animation: 0; } }
       @media only screen and (max-width: 56.25em) {
         .wrapper__items:hover {
           -webkit-animation: 0;
-          animation: 0; } }
+          animation: 0; }
+          .wrapper__items:hover.green {
+            -webkit-animation: 0;
+            animation: 0; }
+          .wrapper__items:hover.purple {
+            -webkit-animation: 0;
+            animation: 0; } }
       @media only screen and (max-width: 37.5em) {
         .wrapper__items:hover {
           -webkit-animation: 0;
-          animation: 0; } }
+          animation: 0; }
+          .wrapper__items:hover.green {
+            -webkit-animation: 0;
+            animation: 0; }
+          .wrapper__items:hover.purple {
+            -webkit-animation: 0;
+            animation: 0; } }
     .wrapper__items:hover > .wrapper__info {
       opacity: 1;
       visibility: visible;
@@ -793,7 +748,7 @@ main {
     font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
     height: 100%;
-    background-image: linear-gradient(to right, rgba(126, 213, 111, 0.9), rgba(40, 180, 133, 0.9));
+    background-image: linear-gradient(to right, rgba(143, 222, 255, 0.9), rgba(77, 203, 255, 0.9));
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -803,8 +758,8 @@ main {
     border-radius: 10px;
     opacity: 0;
     visibility: hidden; }
-    .wrapper__info.sky-blue {
-      background-image: linear-gradient(to right, rgba(143, 222, 255, 0.9), rgba(77, 203, 255, 0.9)); }
+    .wrapper__info.green {
+      background-image: linear-gradient(to right, rgba(126, 213, 111, 0.9), rgba(40, 180, 133, 0.9)); }
     .wrapper__info.purple {
       background-image: linear-gradient(to right, rgba(252, 126, 252, 0.9), rgba(255, 51, 255, 0.9)); }
   .wrapper__title {
@@ -842,45 +797,49 @@ main {
     .wrapper__button-container--project {
       color: #fff;
       text-decoration: none;
-      background-color: rgba(127, 255, 0, 0.5);
+      background-color: rgba(77, 203, 255, 0.5);
       padding: 10px 25px;
       border-radius: 10px;
       position: relative;
-      cursor: pointer; }
-      .wrapper__button-container--project.sky-blue {
-        background-color: rgba(77, 203, 255, 0.5); }
+      cursor: pointer;
+      transition: all 0.3s ease-in-out; }
+      .wrapper__button-container--project.green {
+        background-color: rgba(127, 255, 0, 0.5); }
       .wrapper__button-container--project.purple {
         background-color: rgba(255, 51, 255, 0.5); }
       .wrapper__button-container--project:hover {
-        background-color: rgba(127, 255, 0, 0.8);
-        -webkit-animation: shake-2 0.2s ease-in-out 3 alternate;
-        animation: shake-2 0.2s ease-in-out 3 alternate; }
-        .wrapper__button-container--project:hover.sky-blue {
-          background-color: rgba(77, 203, 255, 0.8); }
+        fill: #4dcbff;
+        transform: scale(1.08, 1.08); }
+        .wrapper__button-container--project:hover.green {
+          fill: #7fff00;
+          transform: scale(1.1, 1.1); }
         .wrapper__button-container--project:hover.purple {
-          background-color: rgba(255, 51, 255, 0.8); }
+          fill: #ff33ff;
+          transform: scale(1.1, 1.1); }
     .wrapper__button-container--code {
       color: #fff;
       text-decoration: none;
-      background-color: rgba(127, 255, 0, 0.5);
-      padding: 10px 25px;
+      background-color: rgba(77, 203, 255, 0.5);
+      padding: 10px 32px;
       border-radius: 10px;
       position: relative;
-      cursor: pointer; }
-      .wrapper__button-container--code.sky-blue {
-        background-color: rgba(77, 203, 255, 0.5); }
+      cursor: pointer;
+      transition: all 0.3s ease-in-out; }
+      .wrapper__button-container--code.green {
+        background-color: rgba(127, 255, 0, 0.5); }
       .wrapper__button-container--code.purple {
         background-color: rgba(255, 51, 255, 0.5); }
       .wrapper__button-container--code:hover {
-        background-color: rgba(127, 255, 0, 0.8);
-        -webkit-animation: shake-2 0.2s ease-in-out 3 alternate;
-        animation: shake-2 0.2s ease-in-out 3 alternate; }
-        .wrapper__button-container--code:hover.sky-blue {
-          background-color: rgba(77, 203, 255, 0.8); }
+        fill: #4dcbff;
+        transform: scale(1.08, 1.08); }
+        .wrapper__button-container--code:hover.green {
+          fill: #7fff00;
+          transform: scale(1.1, 1.1); }
         .wrapper__button-container--code:hover.purple {
-          background-color: rgba(255, 51, 255, 0.8); }
+          fill: #ff33ff;
+          transform: scale(1.1, 1.1); }
   .wrapper__items--1 {
-    background-image: url("../img/beatson.jpg");
+    background-image: url("../img/ebay-email-img.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -915,19 +874,25 @@ main {
     .wrapper__list-items:not(:last-child) {
       margin-right: 1.5rem; }
   .wrapper__items--2 {
-    background-image: url("../img/project-img-2.jpg");
+    background-image: url("../img/broward-email-img.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px; }
   .wrapper__items--3 {
-    background-image: url("../img/project-img-3.jpg");
+    background-image: url("../img/beatson.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px; }
   .wrapper__items--4 {
     background-image: url("../img/castle-care.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px; }
+  .wrapper__items--5 {
+    background-image: url("../img/codingphaseclone-img.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -943,43 +908,43 @@ main {
       font-size: 1rem; } }
 
 .footer__copywrite {
-  color: #7fff00;
-  --webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
-  animation: blinker 0.3s ease-in-out infinite alternate 0.1s; }
-  .footer__copywrite.sky-blue {
-    color: #4dcbff;
-    -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.1s;
-    animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.1s; }
+  color: #4dcbff;
+  -webkit-animation: blinker 0.5s ease-in-out infinite alternate;
+  animation: blinker 0.5s ease-in-out infinite alternate; }
+  .footer__copywrite.green {
+    color: #7fff00;
+    --webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate;
+    animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate; }
   .footer__copywrite.purple {
     color: #ff33ff;
-    -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.1s;
-    animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.1s; }
+    -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate;
+    animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate; }
 
 .footer__first-name {
-  color: #7fff00;
-  -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.2s;
-  animation: blinker 0.3s ease-in-out infinite alternate 0.2s; }
-  .footer__first-name.sky-blue {
-    color: #4dcbff;
-    -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.2s;
-    animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.2s; }
+  color: #4dcbff;
+  -webkit-animation: blinker 0.5s ease-in-out infinite alternate 0.2s;
+  animation: blinker 0.5s ease-in-out infinite alternate 0.2s; }
+  .footer__first-name.green {
+    color: #7fff00;
+    -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.2s;
+    animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.2s; }
   .footer__first-name.purple {
     color: #ff33ff;
-    -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.2s;
-    animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.2s; }
+    -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.2s;
+    animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.2s; }
 
 .footer__last-name {
-  color: #7fff00;
+  color: #4dcbff;
   -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.3s;
   animation: blinker 0.3s ease-in-out infinite alternate 0.3s; }
-  .footer__last-name.sky-blue {
-    color: #4dcbff;
-    -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.3s;
-    animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.3s; }
+  .footer__last-name.green {
+    color: #7fff00;
+    -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.3s;
+    animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.3s; }
   .footer__last-name.purple {
     color: #ff33ff;
-    -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.3s;
-    animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.3s; }
+    -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.3s;
+    animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.3s; }
 
 .side-menu {
   width: 10%;
@@ -1007,77 +972,21 @@ main {
   .side-menu__icon {
     width: inherit;
     height: inherit;
-    fill: #7fff00; }
-    .side-menu__icon.sky-blue {
-      fill: #4dcbff; }
+    fill: #fff;
+    transition: all 0.3s ease-in-out; }
+    .side-menu__icon.green {
+      fill: #fff; }
+      .side-menu__icon.green:hover {
+        fill: #7fff00;
+        transform: scale(1.3, 1.3); }
     .side-menu__icon.purple {
-      fill: #ff33ff; }
+      fill: #fff; }
+      .side-menu__icon.purple:hover {
+        fill: #ff33ff;
+        transform: scale(1.3, 1.3); }
     .side-menu__icon:hover {
-      -webkit-animation: 0;
-      animation: 0; }
-      .side-menu__icon:hover.sky-blue {
-        -webkit-animation: 0;
-        animation: 0; }
-      .side-menu__icon:hover.purple {
-        -webkit-animation: 0;
-        animation: 0; }
-      @media only screen and (max-width: 75em) {
-        .side-menu__icon:hover {
-          --webkit-animation: blinker 0.2s ease-in-out infinite alternate;
-          animation: blinker 0.2s ease-in-out infinite alternate; }
-          .side-menu__icon:hover.sky-blue {
-            --webkit-animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate;
-            animation: colorPickerBlinkerSkyBlue 0.2s ease-in-out infinite alternate; }
-          .side-menu__icon:hover.purple {
-            --webkit-animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate;
-            animation: colorPickerBlinkerPurple 0.2s ease-in-out infinite alternate; } }
-      @media only screen and (max-width: 56.25em) {
-        .side-menu__icon:hover {
-          --webkit-animation: blinker 0.3s ease-in-out infinite alternate;
-          animation: blinker 0.3s ease-in-out infinite alternate; }
-          .side-menu__icon:hover.sky-blue {
-            --webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate;
-            animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate; }
-          .side-menu__icon:hover.purple {
-            --webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate;
-            animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate; } }
-      @media only screen and (max-width: 37.5em) {
-        .side-menu__icon:hover {
-          --webkit-animation: blinker 0.4s ease-in-out infinite alternate;
-          animation: blinker 0.4s ease-in-out infinite alternate; }
-          .side-menu__icon:hover.sky-blue {
-            --webkit-animation: colorPickerBlinkerSkyBlue 0.4s ease-in-out infinite alternate;
-            animation: colorPickerBlinkerSkyBlue 0.4s ease-in-out infinite alternate; }
-          .side-menu__icon:hover.purple {
-            --webkit-animation: colorPickerBlinkerPurple 0.4s ease-in-out infinite alternate;
-            animation: colorPickerBlinkerPurple 0.4s ease-in-out infinite alternate; } }
-  .side-menu__icon-1 {
-    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
-    animation: blinker 0.3s ease-in-out infinite alternate 0.1s; }
-    .side-menu__icon-1.sky-blue {
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.1s;
-      animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.1s; }
-    .side-menu__icon-1.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.1s;
-      animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.1s; }
-  .side-menu__icon-2 {
-    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.1s;
-    animation: blinker 0.3s ease-in-out infinite alternate 0.1s; }
-    .side-menu__icon-2.sky-blue {
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.2s;
-      animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.2s; }
-    .side-menu__icon-2.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.2s;
-      animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.2s; }
-  .side-menu__icon-3 {
-    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.3s;
-    animation: blinker 0.3s ease-in-out infinite alternate 0.3s; }
-    .side-menu__icon-3.sky-blue {
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.3s;
-      animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.3s; }
-    .side-menu__icon-3.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.3s;
-      animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.3s; }
+      fill: #4dcbff;
+      transform: scale(1.3, 1.3); }
 
 .mobile-menu {
   display: none;
@@ -1088,11 +997,11 @@ main {
   width: 100%;
   height: 40px;
   z-index: 9000;
-  background-image: linear-gradient(135deg, #7ed56f 50%, #28b485 100%); }
-  .mobile-menu.sky-blue {
-    background-image: linear-gradient(135deg, #8fdeff 50%, #4dcbff 100%); }
+  background-image: linear-gradient(135deg, #4dcbff 50%, #8fdeff 100%); }
+  .mobile-menu.green {
+    background-image: linear-gradient(135deg, #28b485 50%, #7ed56f 100%); }
   .mobile-menu.purple {
-    background-image: linear-gradient(135deg, #fc7efc 50%, #ff33ff 100%); }
+    background-image: linear-gradient(135deg, #ff33ff 50%, #fc7efc 100%); }
   .mobile-menu:after {
     display: table;
     content: "";
@@ -1120,16 +1029,26 @@ main {
   .mobile-menu__icon {
     width: 30px;
     height: 30px;
-    fill: #7fff00; }
-    .mobile-menu__icon.sky-blue {
-      fill: #8fdeff; }
+    fill: #fff;
+    transition: all 0.3s ease-in-out; }
+    .mobile-menu__icon.green {
+      fill: #fff; }
+      .mobile-menu__icon.green:hover {
+        fill: #7fff00;
+        transform: scale(1.3, 1.3); }
     .mobile-menu__icon.purple {
-      fill: #fc7efc; }
+      fill: #fff; }
+      .mobile-menu__icon.purple:hover {
+        fill: #ff33ff;
+        transform: scale(1.3, 1.3); }
     @media only screen and (max-width: 37.5em) {
       .mobile-menu__icon {
         width: 22px;
         height: 22px;
         margin-top: 0.3rem; } }
+    .mobile-menu__icon:hover {
+      fill: #4dcbff;
+      transform: scale(1.1, 1.1); }
 
 .picker {
   width: 30px;
@@ -1150,56 +1069,21 @@ main {
   .picker__color-picker {
     width: inherit;
     height: inherit;
-    fill: #7fff00;
-    -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.4s;
-    animation: blinker 0.3s ease-in-out infinite alternate 0.4s; }
-    .picker__color-picker.sky-blue {
-      fill: #4dcbff;
-      -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s;
-      animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s; }
+    fill: #fff;
+    transition: all 0.3s ease-in-out; }
+    .picker__color-picker.green {
+      fill: #fff; }
+      .picker__color-picker.green:hover {
+        fill: #7fff00;
+        transform: scale(1.3, 1.3); }
     .picker__color-picker.purple {
-      fill: #ff33ff;
-      -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s;
-      animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s; }
+      fill: #fff; }
+      .picker__color-picker.purple:hover {
+        fill: #ff33ff;
+        transform: scale(1.3, 1.3); }
     .picker__color-picker:hover {
-      -webkit-animation: 0;
-      animation: 0; }
-      .picker__color-picker:hover.sky-blue {
-        -webkit-animation: 0;
-        animation: 0; }
-      .picker__color-picker:hover.purple {
-        -webkit-animation: 0;
-        animation: 0; }
-      @media only screen and (max-width: 75em) {
-        .picker__color-picker:hover {
-          --webkit-animation: blinker 0.3s ease-in-out infinite alternate 4s;
-          animation: blinker 0.3s ease-in-out infinite alternate 0.4s; }
-          .picker__color-picker:hover.sky-blue {
-            -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s;
-            animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s; }
-          .picker__color-picker:hover.purple {
-            -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s;
-            animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s; } }
-      @media only screen and (max-width: 56.25em) {
-        .picker__color-picker:hover {
-          --webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.4s;
-          animation: blinker 0.3s ease-in-out infinite alternate 0.4s; }
-          .picker__color-picker:hover.sky-blue {
-            -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s;
-            animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s; }
-          .picker__color-picker:hover.purple {
-            -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s;
-            animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s; } }
-      @media only screen and (max-width: 37.5em) {
-        .picker__color-picker:hover {
-          --webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.4s;
-          animation: blinker 0.3s ease-in-out infinite alternate 0.4s; }
-          .picker__color-picker:hover.sky-blue {
-            -webkit-animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s;
-            animation: colorPickerBlinkerSkyBlue 0.3s ease-in-out infinite alternate 0.4s; }
-          .picker__color-picker:hover.purple {
-            -webkit-animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s;
-            animation: colorPickerBlinkerPurple 0.3s ease-in-out infinite alternate 0.4s; } }
+      fill: #4dcbff;
+      transform: scale(1.3, 1.3); }
 
 .color-switcher {
   display: flex;
@@ -1207,7 +1091,7 @@ main {
   align-items: center;
   width: 90%;
   height: 50px;
-  background-image: linear-gradient(135deg, #7ed56f 50%, #28b485 100%);
+  background-image: linear-gradient(135deg, #8fdeff 50%, #4dcbff 100%);
   position: relative;
   left: 0;
   bottom: 30%;
@@ -1219,13 +1103,13 @@ main {
   .color-switcher.active {
     visibility: visible;
     opacity: 1; }
-  .color-switcher.sky-blue {
-    background-image: linear-gradient(135deg, #8fdeff 50%, #4dcbff 100%); }
+  .color-switcher.green {
+    background-image: linear-gradient(135deg, #7ed56f 50%, #28b485 100%); }
   .color-switcher.purple {
     background-image: linear-gradient(135deg, #fc7efc 50%, #ff33ff 100%); }
-  @media only screen and (min-width: 80em) and (max-width: 90em) {
+  @media only screen and (max-width: 90em) {
     .color-switcher {
-      bottom: 32%; } }
+      bottom: 34%; } }
   @media only screen and (max-width: 75em) {
     .color-switcher {
       width: 66%;
@@ -1276,10 +1160,10 @@ main {
     display: inline-block;
     width: 38px;
     height: 38px;
-    background-color: #4dcbff;
+    background-color: #7fff00;
     border-radius: 50%;
     cursor: pointer; }
-    @media only screen and (min-width: 80em) and (max-width: 90em) {
+    @media only screen and (max-width: 90em) {
       .color-switcher__switcher-1 {
         width: 34px;
         height: 34px; } }
@@ -1305,7 +1189,7 @@ main {
     background-color: #ff33ff;
     border-radius: 50%;
     cursor: pointer; }
-    @media only screen and (min-width: 80em) and (max-width: 90em) {
+    @media only screen and (max-width: 90em) {
       .color-switcher__switcher-2 {
         width: 34px;
         height: 34px; } }
@@ -1328,10 +1212,10 @@ main {
     display: inline-block;
     width: 38px;
     height: 38px;
-    background-color: #7fff00;
+    background-color: #4dcbff;
     border-radius: 50%;
     cursor: pointer; }
-    @media only screen and (min-width: 80em) and (max-width: 90em) {
+    @media only screen and (max-width: 90em) {
       .color-switcher__switcher-3 {
         width: 34px;
         height: 34px; } }
@@ -1441,16 +1325,26 @@ video {
 
 @-webkit-keyframes shake {
   0% {
-    fill: rgba(127, 255, 0, 0);
+    fill: rgba(143, 222, 255, 0);
     -webkit-transform: translateX(10px);
     transform: translateX(10px); }
   100% {
-    fill: #7fff00;
+    fill: #4dcbff;
     -webkit-transform: translateX(-10px);
     transform: translateX(-10px); } }
 
 @keyframes shake {
   0% {
+    fill: rgba(143, 222, 255, 0);
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px); }
+  100% {
+    fill: #4dcbff;
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px); } }
+
+@-webkit-keyframes colorPickerShakeGreen {
+  0% {
     fill: rgba(127, 255, 0, 0);
     -webkit-transform: translateX(10px);
     transform: translateX(10px); }
@@ -1459,23 +1353,13 @@ video {
     -webkit-transform: translateX(-10px);
     transform: translateX(-10px); } }
 
-@-webkit-keyframes colorPickerShakeSkyBlue {
+@keyframes colorPickerShakeGreen {
   0% {
-    fill: rgba(143, 222, 255, 0);
+    fill: rgba(127, 255, 0, 0);
     -webkit-transform: translateX(10px);
     transform: translateX(10px); }
   100% {
-    fill: #4dcbff;
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px); } }
-
-@keyframes colorPickerShakeSkyBlue {
-  0% {
-    fill: rgba(143, 222, 255, 0);
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px); }
-  100% {
-    fill: #4dcbff;
+    fill: #7fff00;
     -webkit-transform: translateX(-10px);
     transform: translateX(-10px); } }
 
@@ -1500,52 +1384,29 @@ video {
     transform: translateX(-10px); } }
 
 /*********************************************************************************/
-@-webkit-keyframes shake-2 {
-  0% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px); }
-  50% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px); }
-  100% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px); } }
-
-@keyframes shake-2 {
-  0% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px); }
-  50% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px); }
-  100% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px); } }
-
-/*********************************************************************************/
 @-webkit-keyframes shake-3 {
   0% {
-    fill: rgba(127, 255, 0, 0.1); }
+    fill: rgba(143, 222, 255, 0.1); }
   100% {
-    fill: #7fff00; } }
+    fill: #4dcbff; } }
 
 @keyframes shake-3 {
   0% {
+    fill: rgba(143, 222, 255, 0.1); }
+  100% {
+    fill: #4dcbff; } }
+
+@-webkit-keyframes colorPickerShake-3Green {
+  0% {
     fill: rgba(127, 255, 0, 0.1); }
   100% {
     fill: #7fff00; } }
 
-@-webkit-keyframes colorPickerShake-3SkyBlue {
+@keyframes colorPickerShake-3Green {
   0% {
-    fill: rgba(143, 222, 255, 0.1); }
+    fill: rgba(127, 255, 0, 0.1); }
   100% {
-    fill: #4dcbff; } }
-
-@keyframes colorPickerShake-3SkyBlue {
-  0% {
-    fill: rgba(143, 222, 255, 0.1); }
-  100% {
-    fill: #4dcbff; } }
+    fill: #7fff00; } }
 
 @-webkit-keyframes colorPickerShake-3Purple {
   0% {
@@ -1562,48 +1423,48 @@ video {
 /*********************************************************************************/
 @-webkit-keyframes blinker {
   0% {
-    color: rgba(127, 255, 0, 0);
-    fill: rgba(127, 255, 0, 0); }
+    color: #fff;
+    fill: #fff; }
   100% {
-    color: #7fff00;
-    fill: #7fff00; } }
+    color: #4dcbff;
+    fill: #4dcbff; } }
 
 @keyframes blinker {
   0% {
-    color: rgba(127, 255, 0, 0);
-    fill: rgba(127, 255, 0, 0); }
+    color: #fff;
+    fill: #fff; }
+  100% {
+    color: #4dcbff;
+    fill: #4dcbff; } }
+
+@-webkit-keyframes colorPickerBlinkerGreen {
+  0% {
+    color: #fff;
+    fill: #fff; }
   100% {
     color: #7fff00;
     fill: #7fff00; } }
 
-@-webkit-keyframes colorPickerBlinkerSkyBlue {
+@keyframes colorPickerBlinkerGreen {
   0% {
-    color: rgba(143, 222, 255, 0);
-    fill: rgba(143, 222, 255, 0); }
+    color: #fff;
+    fill: #fff; }
   100% {
-    color: #4dcbff;
-    fill: #4dcbff; } }
-
-@keyframes colorPickerBlinkerSkyBlue {
-  0% {
-    color: rgba(143, 222, 255, 0);
-    fill: rgba(143, 222, 255, 0); }
-  100% {
-    color: #4dcbff;
-    fill: #4dcbff; } }
+    color: #7fff00;
+    fill: #7fff00; } }
 
 @-webkit-keyframes colorPickerBlinkerPurple {
   0% {
-    color: rgba(252, 126, 252, 0);
-    fill: rgba(252, 126, 252, 0); }
+    color: #fff;
+    fill: #fff; }
   100% {
     color: #ff33ff;
     fill: #ff33ff; } }
 
 @keyframes colorPickerBlinkerPurple {
   0% {
-    color: rgba(252, 126, 252, 0);
-    fill: rgba(252, 126, 252, 0); }
+    color: #fff;
+    fill: #fff; }
   100% {
     color: #ff33ff;
     fill: #ff33ff; } }
@@ -1611,48 +1472,48 @@ video {
 /*********************************************************************************/
 @-webkit-keyframes blinker-2 {
   0% {
-    -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 0);
-    box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 0); }
+    -webkit-box-shadow: -1px 0 30px -10px white;
+    box-shadow: -1px 0 30px -10px white; }
   100% {
-    -webkit-box-shadow: -1px 0 30px -10px #80ff00;
-    box-shadow: -1px 0 30px -10px #80ff00; } }
+    -webkit-box-shadow: -1px 0 30px -10px #4dcbff;
+    box-shadow: -1px 0 30px -10px #4dcbff; } }
 
 @keyframes blinker-2 {
   0% {
-    -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 0);
-    box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 0); }
+    -webkit-box-shadow: -1px 0 30px -10px white;
+    box-shadow: -1px 0 30px -10px white; }
+  100% {
+    -webkit-box-shadow: -1px 0 30px -10px #4dcbff;
+    box-shadow: -1px 0 30px -10px #4dcbff; } }
+
+@-webkit-keyframes colorPickerBlinker-2Green {
+  0% {
+    -webkit-box-shadow: -1px 0 30px -10px white;
+    box-shadow: -1px 0 30px -10px white; }
   100% {
     -webkit-box-shadow: -1px 0 30px -10px #80ff00;
     box-shadow: -1px 0 30px -10px #80ff00; } }
 
-@-webkit-keyframes colorPickerBlinker-2SkyBlue {
+@keyframes colorPickerBlinker-2Green {
   0% {
-    -webkit-box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 0);
-    box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 0); }
+    -webkit-box-shadow: -1px 0 30px -10px white;
+    box-shadow: -1px 0 30px -10px white; }
   100% {
-    -webkit-box-shadow: -1px 0 30px -10px #4dcbff;
-    box-shadow: -1px 0 30px -10px #4dcbff; } }
-
-@keyframes colorPickerBlinker-2SkyBlue {
-  0% {
-    -webkit-box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 0);
-    box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 0); }
-  100% {
-    -webkit-box-shadow: -1px 0 30px -10px #4dcbff;
-    box-shadow: -1px 0 30px -10px #4dcbff; } }
+    -webkit-box-shadow: -1px 0 30px -10px #80ff00;
+    box-shadow: -1px 0 30px -10px #80ff00; } }
 
 @-webkit-keyframes colorPickerBlinker-2Purple {
   0% {
-    -webkit-box-shadow: -1px 0 30px -10px rgba(255, 51, 255, 0);
-    box-shadow: -1px 0 30px -10px rgba(255, 51, 255, 0); }
+    -webkit-box-shadow: -1px 0 30px -10px white;
+    box-shadow: -1px 0 30px -10px white; }
   100% {
     -webkit-box-shadow: -1px 0 30px -10px #ff33ff;
     box-shadow: -1px 0 30px -10px #ff33ff; } }
 
 @keyframes colorPickerBlinker-2Purple {
   0% {
-    -webkit-box-shadow: -1px 0 30px -10px rgba(255, 51, 255, 0);
-    box-shadow: -1px 0 30px -10px rgba(255, 51, 255, 0); }
+    -webkit-box-shadow: -1px 0 30px -10px white;
+    box-shadow: -1px 0 30px -10px white; }
   100% {
     -webkit-box-shadow: -1px 0 30px -10px #ff33ff;
     box-shadow: -1px 0 30px -10px #ff33ff; } }
