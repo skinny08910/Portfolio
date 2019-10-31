@@ -559,6 +559,7 @@
 
 .project-section--center {
   padding-top: 17rem;
+  margin-left: 19rem;
   @include respond(laptop) {
     margin-bottom: 1rem;
   }
@@ -964,6 +965,7 @@
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
+  margin-left: 19rem;
   @include respond(phone) {
     font-size: 1rem;
   }
