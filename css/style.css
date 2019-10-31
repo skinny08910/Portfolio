@@ -782,10 +782,10 @@ main {
     margin: 8px auto; }
     @media only screen and (max-width: 75em) {
       .wrapper__button-container {
-        width: 50%; } }
+        width: 60%; } }
     @media only screen and (max-width: 56.25em) {
       .wrapper__button-container {
-        width: 60%;
+        width: 70%;
         margin: 10px auto 0; } }
     @media only screen and (max-width: 37.5em) {
       .wrapper__button-container {
@@ -793,7 +793,8 @@ main {
         margin: 10px auto 0; } }
     @media only screen and (max-width: 35.5em) {
       .wrapper__button-container {
-        margin: 5px auto 0; } }
+        width: 80%;
+        margin: 10px auto 0; } }
     .wrapper__button-container--project {
       color: #fff;
       text-decoration: none;

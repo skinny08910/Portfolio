@@ -785,10 +785,10 @@
     width: 80%;
     margin: 8px auto;
     @include respond(tab-land) {
-      width: 50%;
+      width: 60%;
     }
     @include respond(tab-port) {
-      width: 60%;
+      width: 70%;
       margin: 10px auto 0;
     }
     @include respond(phone) {
@@ -796,7 +796,8 @@
       margin: 10px auto 0;
     }
     @include respond(sm-phone) {
-      margin: 5px auto 0;
+      width: 80%;
+      margin: 10px auto 0;
     }
 
     &--project {
