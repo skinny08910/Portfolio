@@ -18,7 +18,7 @@
   }
 
   &.black {
-    background-image: linear-gradient(135deg, rgba($color-gray, .9) 50%, rgba($color-gray, .9) 100%) ,url("../img/bg-photo-1.jpg");
+    background-image: linear-gradient(135deg, rgba($color-gray, .7) 50%, rgba($color-gray, .7) 100%) ,url("../img/bg-photo-1.jpg");
   }
 }
 // About section
@@ -41,7 +41,7 @@
   }
 
   &.black {
-    background-image: linear-gradient(135deg, rgba($color-gray, .9) 50%, rgba($color-gray, .9) 100%) ,url("../img/bg-photo-2.jpg");
+    background-image: linear-gradient(135deg, rgba($color-gray, .7) 50%, rgba($color-gray, .7) 100%) ,url("../img/bg-photo-2.jpg");
   }
 
   &.active {
@@ -86,7 +86,7 @@
   }
 
   &.black {
-    background-image: linear-gradient(135deg, rgba($color-gray, .9) 50%, rgba($color-gray, .9) 100%) ,url("../img/bg-photo-3.jpg");
+    background-image: linear-gradient(135deg, rgba($color-gray, .7) 50%, rgba($color-gray, .7) 100%) ,url("../img/bg-photo-3.jpg");
   }
 
   &.active {
