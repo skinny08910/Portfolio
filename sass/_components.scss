@@ -74,13 +74,13 @@
       fill: $color-primary-sky-blue-dark;
       transform: scale(1.3, 1.3);
 
-      &.green {
-        fill: $color-secondary-light;
+      &.ocean {
+        fill: $color-dark-water-blue;
         transform: scale(1.3, 1.3);
       }
 
-      &.purple {
-        fill: $color-primary-purple-dark;
+      &.black {
+        fill: $color-gray-2;
         transform: scale(1.3, 1.3);
       }
     }
@@ -112,12 +112,12 @@
     border-radius: 20px;
     width: 30%;
 
-    &.green {
-      border-color: $color-secondary-light;
+    &.ocean {
+      border-color: $color-dark-water-blue;
     }
 
-    &.purple {
-      border-color: $color-primary-purple-dark;
+    &.black {
+      border-color: $color-primary-dark;
     }
     @include respond(tab-land) {
       width: 45%;
@@ -154,12 +154,12 @@
     border-radius: 20px;
     width: 30%;
 
-    &.green {
-      border-color: $color-secondary-light;
+    &.ocean {
+      border-color: $color-dark-water-blue;
     }
 
-    &.purple {
-      border-color: $color-primary-purple-dark;
+    &.black {
+      border-color: $color-primary-dark;
     }
     @include respond(tab-land) {
       width: 45%;
@@ -192,15 +192,15 @@
     -webkit-animation: blinker 0.5s ease-in-out infinite alternate;
     animation: blinker 0.5s ease-in-out infinite alternate;
 
-    &.green {
-      color: $color-secondary-light;
-      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate;
-      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate;
+    &.ocean {
+      color: $color-dark-water-blue;
+      -webkit-animation: colorPickerBlinkerOcean 0.5s ease-in-out infinite alternate;
+      animation: colorPickerBlinkerOcean 0.5s ease-in-out infinite alternate;
     }
 
-    &.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate;
-      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate;
+    &.black {
+      -webkit-animation: colorPickerBlinkerBlack 0.5s ease-in-out infinite alternate;
+      animation: colorPickerBlinkerBlack 0.5s ease-in-out infinite alternate;
     }
     @include respond(tab-land) {
       display: inline-block;
@@ -222,16 +222,16 @@
     -webkit-animation: blinker 0.5s ease-in-out infinite alternate 0.2s;
     animation: blinker 0.5s ease-in-out infinite alternate 0.2s;
 
-    &.green {
-      color: $color-secondary-light;
-      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.2s;
-      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.2s;
+    &.ocean {
+      color: $color-dark-water-blue;
+      -webkit-animation: colorPickerBlinkerOcean 0.5s ease-in-out infinite alternate 0.2s;
+      animation: colorPickerBlinkerOcean 0.5s ease-in-out infinite alternate 0.2s;
     }
 
-    &.purple {
-      color: $color-primary-purple-dark;
-      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.2s;
-      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.2s;
+    &.black {
+      color: $color-primary-dark;
+      -webkit-animation: colorPickerBlinkerBlack 0.5s ease-in-out infinite alternate 0.2s;
+      animation: colorPickerBlinkerBlack 0.5s ease-in-out infinite alternate 0.2s;
     }
     @include respond(tab-land) {
       display: inline-block;
@@ -253,15 +253,15 @@
     -webkit-animation: blinker 0.5s ease-in-out infinite alternate 0.3s;
     animation: blinker 0.5s ease-in-out infinite alternate 0.3s;
 
-    &.green {
-      color: $color-secondary-light;
-      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.3s;
-      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.3s;
+    &.ocean {
+      color: $color-dark-water-blue;
+      -webkit-animation: colorPickerBlinkerOcean 0.5s ease-in-out infinite alternate 0.3s;
+      animation: colorPickerBlinkerOcean 0.5s ease-in-out infinite alternate 0.3s;
     }
 
-    &.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.3s;
-      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.3s;
+    &.black {
+      -webkit-animation: colorPickerBlinkerBlack 0.5s ease-in-out infinite alternate 0.3s;
+      animation: colorPickerBlinkerBlack 0.5s ease-in-out infinite alternate 0.3s;
     }
     @include respond(tab-land) {
       display: inline-block;
@@ -283,15 +283,15 @@
     -webkit-animation: blinker 0.5s ease-in-out infinite alternate 0.4s;
     animation: blinker 0.5s ease-in-out infinite alternate 0.4s;
 
-    &.green {
-      color: $color-secondary-light;
-      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.4s;
-      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.4s;
+    &.ocean {
+      color: $color-dark-water-blue;
+      -webkit-animation: colorPickerBlinkerOcean 0.5s ease-in-out infinite alternate 0.4s;
+      animation: colorPickerBlinkerOcean 0.5s ease-in-out infinite alternate 0.4s;
     }
 
-    &.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.4s;
-      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.4s;
+    &.black {
+      -webkit-animation: colorPickerBlinkerBlack 0.5s ease-in-out infinite alternate 0.4s;
+      animation: colorPickerBlinkerBlack 0.5s ease-in-out infinite alternate 0.4s;
     }
     @include respond(tab-land) {
       display: inline-block;
@@ -313,15 +313,15 @@
     -webkit-animation: blinker 0.5s ease-in-out infinite alternate 0.5s;
     animation: blinker 0.5s ease-in-out infinite alternate 0.5s;
 
-    &.green {
-      color: $color-secondary-light;
-      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.5s;
-      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.5s;
+    &.ocean {
+      color: $color-dark-water-blue;
+      -webkit-animation: colorPickerBlinkerOcean 0.5s ease-in-out infinite alternate 0.5s;
+      animation: colorPickerBlinkerOcean 0.5s ease-in-out infinite alternate 0.5s;
     }
 
-    &.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.5s;
-      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.5s;
+    &.black {
+      -webkit-animation: colorPickerBlinkerBlack 0.5s ease-in-out infinite alternate 0.5s;
+      animation: colorPickerBlinkerBlack 0.5s ease-in-out infinite alternate 0.5s;
     }
     @include respond(tab-land) {
       display: inline-block;
@@ -361,7 +361,7 @@
   max-width: 70rem;
   margin: 0 auto;
   padding: 2rem;
-  background-image: linear-gradient(135deg, rgba($color-secondary-sky-blue, .5) 50%, rgba($color-secondary-sky-blue, .5) 100%);
+  background-image: linear-gradient(135deg, rgba($color-secondary-sky-blue, .7) 50%, rgba($color-secondary-sky-blue, 7) 100%);
   border-radius: 10px;
   -webkit-box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
   -moz-box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
@@ -369,16 +369,16 @@
   -webkit-animation: blinker-2 1s ease-in-out infinite alternate;
   animation: blinker-2 1s ease-in-out infinite alternate;
 
-  &.green {
-    background-image: linear-gradient(135deg, rgba($color-primary-dark, .5) 50%, rgba($color-primary-dark, .5) 100%);
-    -webkit-animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate;
-    animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate;
+  &.ocean {
+    background-image: linear-gradient(135deg, rgba($color-second-water, .7) 50%, rgba($color-second-water, .7) 100%);
+    -webkit-animation: colorPickerBlinker-2Ocean 1s ease-in-out infinite alternate;
+    animation: colorPickerBlinker-2Ocean 1s ease-in-out infinite alternate;
   }
 
-  &.purple {
-    background-image: linear-gradient(135deg, rgba($color-secondary-purple, .5) 50%, rgba($color-secondary-purple, .5) 100%);
-    -webkit-animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate;
-    animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate;
+  &.black {
+    background-image: linear-gradient(135deg, rgba($color-primary-dark, .7) 50%, rgba($color-primary-dark, .7) 100%);
+    -webkit-animation: colorPickerBlinker-2Black 1s ease-in-out infinite alternate;
+    animation: colorPickerBlinker-2Black 1s ease-in-out infinite alternate;
   }
   @include respond(tab-land) {
     width: 90%;
@@ -404,14 +404,14 @@
     -webkit-animation: blinker 0.5s ease-in-out infinite alternate 0.3s;
     animation: blinker 0.5s ease-in-out infinite alternate 0.3s;
 
-    &.green {
-      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.3s;
-      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.3s;
+    &.ocean {
+      -webkit-animation: colorPickerBlinkerOcean 0.5s ease-in-out infinite alternate 0.3s;
+      animation: colorPickerBlinkerOcean 0.5s ease-in-out infinite alternate 0.3s;
     }
 
-    &.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.3s;
-      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.3s;
+    &.black {
+      -webkit-animation: colorPickerBlinkerBlack 0.5s ease-in-out infinite alternate 0.3s;
+      animation: colorPickerBlinkerBlack 0.5s ease-in-out infinite alternate 0.3s;
     }
   }
 
@@ -422,14 +422,14 @@
     -webkit-animation: blinker 0.5s ease-in-out infinite alternate 0.2s;
     animation: blinker 0.5s ease-in-out infinite alternate 0.2s;
 
-    &.green {
-      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.2s;
-      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.2s;
+    &.ocean {
+      -webkit-animation: colorPickerBlinkerOcean 0.5s ease-in-out infinite alternate 0.2s;
+      animation: colorPickerBlinkerOcean 0.5s ease-in-out infinite alternate 0.2s;
     }
 
-    &.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.2s;
-      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.2s;
+    &.black {
+      -webkit-animation: colorPickerBlinkerBlack 0.5s ease-in-out infinite alternate 0.2s;
+      animation: colorPickerBlinkerBlack 0.5s ease-in-out infinite alternate 0.2s;
     }
     @include respond(phone) {
       font-size: 0.9rem;
@@ -444,14 +444,14 @@
     -webkit-animation: blinker 0.5s ease-in-out infinite alternate;
     animation: blinker 0.5s ease-in-out infinite alternate;
 
-    &.green {
-      -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate;
-      animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate;
+    &.ocean {
+      -webkit-animation: colorPickerBlinkerOcean 0.5s ease-in-out infinite alternate;
+      animation: colorPickerBlinkerOcean 0.5s ease-in-out infinite alternate;
     }
 
-    &.purple {
-      -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate;
-      animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate;
+    &.black {
+      -webkit-animation: colorPickerBlinkerBlack 0.5s ease-in-out infinite alternate;
+      animation: colorPickerBlinkerBlack 0.5s ease-in-out infinite alternate;
     }
     @include respond(phone) {
       font-size: 1rem;
@@ -498,25 +498,25 @@
     margin-right: 30px;
     transition: all 0.3s ease-in-out;
 
-    &.green {
-      background-color: rgba($color-secondary-light, .5);
+    &.ocean {
+      background-color: rgba($color-dark-water-blue, .5);
     }
 
-    &.purple {
-      background-color: rgba($color-primary-purple-dark, .5);
+    &.black {
+      background-color: rgba($color-primary-dark, .5);
     }
 
     &:hover {
       fill: $color-primary-sky-blue-dark;
       transform: scale(1.08, 1.08);
 
-      &.green {
-        fill: $color-secondary-light;
+      &.ocean {
+        fill: $color-dark-water-blue;
         transform: scale(1.1, 1.1);
       }
 
-      &.purple {
-        fill: $color-primary-purple-dark;
+      &.black {
+        fill: $color-primary-dark;
         transform: scale(1.1, 1.1);
       }
     }
@@ -531,25 +531,25 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 
-    &.green {
-      background-color: rgba($color-secondary-light, .5);
+    &.ocean {
+      background-color: rgba($color-dark-water-blue, .5);
     }
 
-    &.purple {
-      background-color: rgba($color-primary-purple-dark, .5);
+    &.black {
+      background-color: rgba($color-primary-dark, .5);
     }
 
     &:hover {
       fill: $color-primary-sky-blue-dark;
       transform: scale(1.08, 1.08);
 
-      &.green {
-        fill: $color-secondary-light;
+      &.ocean {
+        fill: $color-dark-water-blue;
         transform: scale(1.1, 1.1);
       }
 
-      &.purple {
-        fill: $color-primary-purple-dark;
+      &.black {
+        fill: $color-primary-dark;
         transform: scale(1.1, 1.1);
       }
     }
@@ -559,7 +559,6 @@
 
 .project-section--center {
   padding-top: 17rem;
-  margin-left: 19rem;
   @include respond(laptop) {
     margin-bottom: 1rem;
   }
@@ -578,33 +577,29 @@
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(5, 300px);
+  grid-template-columns: repeat(4, 300px);
   grid-template-rows: 320px;
   grid-gap: 20px;
   max-width: 80rem;
   margin: 0 auto;
   @include respond(laptop) {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 310px 310px;
-    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
     max-width: 70rem;
   }
   @include respond(tab-land) {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 290px);
-    grid-gap: 10px;
-    width: 90%;
+    grid-gap: 20px;
+    width: 80%;
   }
   @include respond(tab-port) {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 310px);
-    width: 90%;
+    width: 85%;
   }
   @include respond(phone) {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 320px);
     grid-row-gap: 140px;
-    width: 90%;
+    width: 100%;
     margin-bottom: 50px;
   }
 
@@ -615,14 +610,14 @@
     -webkit-animation: blinker-2 1s ease-in-out infinite alternate;
     animation: blinker-2 1s ease-in-out infinite alternate;
 
-    &.green {
-      -webkit-animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate;
-      animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate;
+    &.ocean {
+      -webkit-animation: colorPickerBlinker-2Ocean 1s ease-in-out infinite alternate;
+      animation: colorPickerBlinker-2Ocean 1s ease-in-out infinite alternate;
     }
 
-    &.purple {
-      -webkit-animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate;
-      animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate;
+    &.black {
+      -webkit-animation: colorPickerBlinker-2Black 1s ease-in-out infinite alternate;
+      animation: colorPickerBlinker-2Black 1s ease-in-out infinite alternate;
     }
     @include respond(phone) {
       height: 110%;
@@ -630,39 +625,39 @@
       -moz-box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
       box-shadow: -1px 0 30px -10px rgba(77, 203, 255, 1);
 
-      &.green {
-        -webkit-animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate;
-        animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate;
+      &.ocean {
+        -webkit-animation: colorPickerBlinker-2Ocean 1s ease-in-out infinite alternate;
+        animation: colorPickerBlinker-2Ocean 1s ease-in-out infinite alternate;
       }
 
-      &.purple {
-        -webkit-animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate;
-        animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate;
+      &.black {
+        -webkit-animation: colorPickerBlinker-2Black 1s ease-in-out infinite alternate;
+        animation: colorPickerBlinker-2Black 1s ease-in-out infinite alternate;
       }
     }
 
     &:hover {
       transform: scale3d(0, 10px, 0);
 
-      &.green {
-        -webkit-animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate;
-        animation: colorPickerBlinker-2Green 1s ease-in-out infinite alternate;
+      &.ocean {
+        -webkit-animation: colorPickerBlinker-2Ocean 1s ease-in-out infinite alternate;
+        animation: colorPickerBlinker-2Ocean 1s ease-in-out infinite alternate;
       }
 
-      &.purple {
-        -webkit-animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate;
-        animation: colorPickerBlinker-2Purple 1s ease-in-out infinite alternate;
+      &.black {
+        -webkit-animation: colorPickerBlinker-2Black 1s ease-in-out infinite alternate;
+        animation: colorPickerBlinker-2Black 1s ease-in-out infinite alternate;
       }
       @include respond(tab-land) {
         -webkit-animation: 0;
         animation: 0;
 
-        &.green {
+        &.ocean {
           -webkit-animation: 0;
           animation: 0;
         }
 
-        &.purple {
+        &.black {
           -webkit-animation: 0;
           animation: 0;
         }
@@ -671,12 +666,12 @@
         -webkit-animation: 0;
         animation: 0;
 
-        &.green {
+        &.ocean {
           -webkit-animation: 0;
           animation: 0;
         }
 
-        &.purple {
+        &.black {
           -webkit-animation: 0;
           animation: 0;
         }
@@ -685,12 +680,12 @@
         -webkit-animation: 0;
         animation: 0;
 
-        &.green {
+        &.ocean {
           -webkit-animation: 0;
           animation: 0;
         }
 
-        &.purple {
+        &.black {
           -webkit-animation: 0;
           animation: 0;
         }
@@ -748,12 +743,12 @@
     opacity: 0;
     visibility: hidden;
 
-    &.green {
-      background-image: linear-gradient(to right, rgba($color-primary-light, .9), rgba($color-primary-dark, .9));
+    &.ocean {
+      background-image: linear-gradient(to right, rgba($color-dark-water-blue, .9), rgba($color-dark-water-blue, .9));
     }
 
-    &.purple {
-      background-image: linear-gradient(to right, rgba($color-primary-purple-light, .9), rgba($color-primary-purple-dark, .9));
+    &.black {
+      background-image: linear-gradient(to right, rgba($color-primary-dark, .9), rgba($color-primary-dark, .9));
     }
   }
   // Title
@@ -811,25 +806,25 @@
       cursor: pointer;
       transition: all 0.3s ease-in-out;
 
-      &.green {
-        background-color: rgba($color-secondary-light, .5);
+      &.ocean {
+        background-color: rgba($color-dark-water-blue, .5);
       }
 
-      &.purple {
-        background-color: rgba($color-primary-purple-dark, .5);
+      &.black {
+        background-color: rgba($color-primary-dark, .5);
       }
 
       &:hover {
         fill: $color-primary-sky-blue-dark;
         transform: scale(1.08, 1.08);
 
-        &.green {
-          fill: $color-secondary-light;
+        &.ocean {
+          fill: $color-dark-water-blue;
           transform: scale(1.1, 1.1);
         }
 
-        &.purple {
-          fill: $color-primary-purple-dark;
+        &.black {
+          fill: $color-primary-dark;
           transform: scale(1.1, 1.1);
         }
       }
@@ -845,25 +840,25 @@
       cursor: pointer;
       transition: all 0.3s ease-in-out;
 
-      &.green {
-        background-color: rgba($color-secondary-light, .5);
+      &.ocean {
+        background-color: rgba($color-dark-water-blue, .5);
       }
 
-      &.purple {
-        background-color: rgba($color-primary-purple-dark, .5);
+      &.black {
+        background-color: rgba($color-primary-dark, .5);
       }
 
       &:hover {
         fill: $color-primary-sky-blue-dark;
         transform: scale(1.08, 1.08);
 
-        &.green {
-          fill: $color-secondary-light;
+        &.ocean {
+          fill: $color-dark-water-blue;
           transform: scale(1.1, 1.1);
         }
 
-        &.purple {
-          fill: $color-primary-purple-dark;
+        &.black {
+          fill: $color-primary-dark;
           transform: scale(1.1, 1.1);
         }
       }
@@ -871,7 +866,7 @@
   }
   // Wrapper item 1
   &__items--1 {
-    background-image: url("../img/ebay-email-img.png");
+    background-image: url("../img/ebay-email-img.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -927,7 +922,7 @@
   }
   // Wrapper item 2
   &__items--2 {
-    background-image: url("../img/broward-email-img.png");
+    background-image: url("../img/broward-email-img.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -943,15 +938,7 @@
   }
   // Wrapper item 4
   &__items--4 {
-    background-image: url("../img/castle-care.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-  }
-  // Wrapper item 5
-  &__items--5 {
-    background-image: url("../img/codingphaseclone-img.png");
+    background-image: url("../img/codingphaseclone-img.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -965,7 +952,6 @@
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
-  margin-left: 19rem;
   @include respond(phone) {
     font-size: 1rem;
   }
@@ -976,16 +962,16 @@
   -webkit-animation: blinker 0.5s ease-in-out infinite alternate;
   animation: blinker 0.5s ease-in-out infinite alternate;
 
-  &.green {
-    color: $color-secondary-light;
-    --webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate;
-    animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate;
+  &.ocean {
+    color: $color-dark-water-blue;
+    --webkit-animation: colorPickerBlinkerOcean 0.5s ease-in-out infinite alternate;
+    animation: colorPickerBlinkerOcean 0.5s ease-in-out infinite alternate;
   }
 
-  &.purple {
-    color: $color-primary-purple-dark;
-    -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate;
-    animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate;
+  &.black {
+    color: $color-primary-dark;
+    -webkit-animation: colorPickerBlinkerBlack 0.5s ease-in-out infinite alternate;
+    animation: colorPickerBlinkerBlack 0.5s ease-in-out infinite alternate;
   }
 }
 
@@ -994,16 +980,16 @@
   -webkit-animation: blinker 0.5s ease-in-out infinite alternate 0.2s;
   animation: blinker 0.5s ease-in-out infinite alternate 0.2s;
 
-  &.green {
-    color: $color-secondary-light;
-    -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.2s;
-    animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.2s;
+  &.ocean {
+    color: $color-dark-water-blue;
+    -webkit-animation: colorPickerBlinkerOcean 0.5s ease-in-out infinite alternate 0.2s;
+    animation: colorPickerBlinkerOcean 0.5s ease-in-out infinite alternate 0.2s;
   }
 
-  &.purple {
-    color: $color-primary-purple-dark;
-    -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.2s;
-    animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.2s;
+  &.black {
+    color: $color-primary-dark;
+    -webkit-animation: colorPickerBlinkerBlack 0.5s ease-in-out infinite alternate 0.2s;
+    animation: colorPickerBlinkerBlack 0.5s ease-in-out infinite alternate 0.2s;
   }
 }
 
@@ -1012,16 +998,16 @@
   -webkit-animation: blinker 0.3s ease-in-out infinite alternate 0.3s;
   animation: blinker 0.3s ease-in-out infinite alternate 0.3s;
 
-  &.green {
-    color: $color-secondary-light;
-    -webkit-animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.3s;
-    animation: colorPickerBlinkerGreen 0.5s ease-in-out infinite alternate 0.3s;
+  &.ocean {
+    color: $color-dark-water-blue;
+    -webkit-animation: colorPickerBlinkerOcean 0.5s ease-in-out infinite alternate 0.3s;
+    animation: colorPickerBlinkerOcean 0.5s ease-in-out infinite alternate 0.3s;
   }
 
-  &.purple {
-    color: $color-primary-purple-dark;
-    -webkit-animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.3s;
-    animation: colorPickerBlinkerPurple 0.5s ease-in-out infinite alternate 0.3s;
+  &.black {
+    color: $color-primary-dark;
+    -webkit-animation: colorPickerBlinkerBlack 0.5s ease-in-out infinite alternate 0.3s;
+    animation: colorPickerBlinkerBlack 0.5s ease-in-out infinite alternate 0.3s;
   }
 }
 // Side menu
@@ -1064,20 +1050,20 @@
     fill: #fff;
     transition: all 0.3s ease-in-out;
 
-    &.green {
+    &.ocean {
       fill: #fff;
 
       &:hover {
-        fill: $color-secondary-light;
+        fill: $color-dark-water-blue;
         transform: scale(1.3, 1.3);
       }
     }
 
-    &.purple {
+    &.black {
       fill: #fff;
 
       &:hover {
-        fill: $color-primary-purple-dark;
+        fill: $color-gray-2;
         transform: scale(1.3, 1.3);
       }
     }
@@ -1099,14 +1085,14 @@
   width: 100%;
   height: 40px;
   z-index: 9000;
-  background-image: linear-gradient(135deg, rgba($color-primary-sky-blue-dark, 1) 50%, rgba($color-primary-sky-blue-light, 1) 100%);
+  background-image: linear-gradient(135deg, rgba($color-primary-sky-blue-dark, 1) 50%, rgba($color-primary-sky-blue-light, .3) 100%);
 
-  &.green {
-    background-image: linear-gradient(135deg, rgba($color-primary-dark, 1) 50%, rgba($color-primary-light, 1) 100%);
+  &.ocean {
+    background-image: linear-gradient(135deg, rgba($color-dark-water-blue, 1) 50%, rgba($color-dark-water-blue, .3) 100%);
   }
 
-  &.purple {
-    background-image: linear-gradient(135deg, rgba($color-primary-purple-dark, 1) 50%, rgba($color-primary-purple-light, 1) 100%);
+  &.black {
+    background-image: linear-gradient(135deg, rgba($color-dark-blue, .1) 50%, rgba($color-dark-blue, .1) 100%);
   }
   @include clearFix;
   @include respond(tab-port) {
@@ -1140,20 +1126,20 @@
     fill: #fff;
     transition: all 0.3s ease-in-out;
 
-    &.green {
+    &.ocean {
       fill: #fff;
 
       &:hover {
-        fill: $color-secondary-light;
+        fill: $color-dark-water-blue;
         transform: scale(1.3, 1.3);
       }
     }
 
-    &.purple {
+    &.black {
       fill: #fff;
 
       &:hover {
-        fill: $color-primary-purple-dark;
+        fill: $color-gray-2;
         transform: scale(1.3, 1.3);
       }
     }
@@ -1194,20 +1180,20 @@
     fill: #fff;
     transition: all 0.3s ease-in-out;
 
-    &.green {
+    &.ocean {
       fill: #fff;
 
       &:hover {
-        fill: $color-secondary-light;
+        fill: $color-dark-water-blue;
         transform: scale(1.3, 1.3);
       }
     }
 
-    &.purple {
+    &.black {
       fill: #fff;
 
       &:hover {
-        fill: $color-primary-purple-dark;
+        fill: $color-gray-2;
         transform: scale(1.3, 1.3);
       }
     }
@@ -1241,12 +1227,12 @@
     opacity: 1;
   }
 
-  &.green {
-    background-image: linear-gradient(135deg, rgba($color-primary-light, 1) 50%, rgba($color-primary-dark, 1) 100%);
+  &.ocean {
+    background-image: linear-gradient(135deg, rgba($color-dark-water-blue, .2) 50%, rgba($color-dark-water-blue, .2) 100%);
   }
 
-  &.purple {
-    background-image: linear-gradient(135deg, rgba($color-primary-purple-light, 1) 50%, rgba($color-primary-purple-dark, 1) 100%);
+  &.black {
+    background-image: linear-gradient(135deg, rgba($color-gray-2, 1) 50%, rgba($color-gray-2, 1) 100%);
   }
   @include respond(laptop) {
     bottom: 34%;
@@ -1304,7 +1290,7 @@
     display: inline-block;
     width: 38px;
     height: 38px;
-    background-color: $color-secondary-light;
+    background-color: $color-dark-water-blue;
     border-radius: 50%;
     cursor: pointer;
     @include respond(laptop) {
@@ -1332,7 +1318,7 @@
     display: inline-block;
     width: 38px;
     height: 38px;
-    background-color: $color-primary-purple-dark;
+    background-color: $color-primary-dark;
     border-radius: 50%;
     cursor: pointer;
     @include respond(laptop) {

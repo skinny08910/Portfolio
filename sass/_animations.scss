@@ -28,60 +28,60 @@
   }
 }
 // Color Picker
-// Green
+// Ocean
 // Safari
-@-webkit-keyframes colorPickerShakeGreen {
+@-webkit-keyframes colorPickerShakeOcean {
   0% {
-    fill: rgba($color-secondary-light, .0);
+    fill: rgba($color-dark-water-blue, .0);
     -webkit-transform: translateX(10px);
     transform: translateX(10px);
   }
 
   100% {
-    fill: $color-secondary-light;
+    fill: $color-dark-water-blue;
     -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
 }
 // Safari
-@keyframes colorPickerShakeGreen {
+@keyframes colorPickerShakeOcean {
   0% {
-    fill: rgba($color-secondary-light, .0);
+    fill: rgba($color-dark-water-blue, .0);
     -webkit-transform: translateX(10px);
     transform: translateX(10px);
   }
 
   100% {
-    fill: $color-secondary-light;
+    fill: $color-dark-water-blue;
     -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
 }
-// Purple
+// Black
 // Safari
-@-webkit-keyframes colorPickerShakePurple {
+@-webkit-keyframes colorPickerShakeBlack {
   0% {
-    fill: rgba($color-primary-purple-light, .0);
+    fill: rgba($color-gray, .0);
     -webkit-transform: translateX(10px);
     transform: translateX(10px);
   }
 
   100% {
-    fill: $color-primary-purple-dark;
+    fill: $color-primary-dark;
     -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
 }
 // Safari
-@keyframes colorPickerShakePurple {
+@keyframes colorPickerShakeBlack {
   0% {
-    fill: rgba($color-primary-purple-light, .0);
+    fill: rgba($color-gray, .0);
     -webkit-transform: translateX(10px);
     transform: translateX(10px);
   }
 
   100% {
-    fill: $color-primary-purple-dark;
+    fill: $color-primary-dark;
     -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
@@ -109,46 +109,46 @@
   }
 }
 // Color Picker
-// Green
+// Ocean
 // Safari
-@-webkit-keyframes colorPickerShake-3Green {
+@-webkit-keyframes colorPickerShake-3Ocean {
   0% {
-    fill: rgba($color-secondary-light, .1);
+    fill: rgba($color-dark-water-blue, .1);
   }
 
   100% {
-    fill: $color-secondary-light;
+    fill: $color-dark-water-blue;
   }
 }
 // Safari
-@keyframes colorPickerShake-3Green {
+@keyframes colorPickerShake-3Ocean {
   0% {
-    fill: rgba($color-secondary-light, .1);
+    fill: rgba($color-dark-water-blue, .1);
   }
 
   100% {
-    fill: $color-secondary-light;
+    fill: $color-dark-water-blue;
   }
 }
-// Purple
+// Black
 // Safari
-@-webkit-keyframes colorPickerShake-3Purple {
+@-webkit-keyframes colorPickerShake-3Black {
   0% {
-    fill: rgba($color-primary-purple-light, .1);
+    fill: rgba($color-gray, .1);
   }
 
   100% {
-    fill: $color-primary-purple-dark;
+    fill: $color-primary-dark;
   }
 }
 // Safari
-@keyframes colorPickerShake-3Purple {
+@keyframes colorPickerShake-3Black {
   0% {
-    fill: rgba($color-primary-purple-light, .1);
+    fill: rgba($color-gray, .1);
   }
 
   100% {
-    fill: $color-primary-purple-dark;
+    fill: $color-primary-dark;
   }
 }
 /*********************************************************************************/
@@ -178,54 +178,54 @@
   }
 }
 // Color Picker
-// Green
+// Ocean
 // Safari
-@-webkit-keyframes colorPickerBlinkerGreen {
+@-webkit-keyframes colorPickerBlinkerOcean {
   0% {
     color: #fff;
     fill: #fff;
   }
 
   100% {
-    color: $color-secondary-light;
-    fill: $color-secondary-light;
+    color: $color-dark-water-blue;
+    fill: $color-dark-water-blue;
   }
 }
 // Safari
-@keyframes colorPickerBlinkerGreen {
+@keyframes colorPickerBlinkerOcean {
   0% {
     color: #fff;
     fill: #fff;
   }
 
   100% {
-    color: $color-secondary-light;
-    fill: $color-secondary-light;
+    color: $color-dark-water-blue;
+    fill: $color-dark-water-blue;
   }
 }
-// Purple
+// Black
 // Safari
-@-webkit-keyframes colorPickerBlinkerPurple {
+@-webkit-keyframes colorPickerBlinkerBlack {
   0% {
     color: #fff;
     fill: #fff;
   }
 
   100% {
-    color: $color-primary-purple-dark;
-    fill: $color-primary-purple-dark;
+    color: $color-primary-dark;
+    fill: $color-primary-dark;
   }
 }
 // Safari
-@keyframes colorPickerBlinkerPurple {
+@keyframes colorPickerBlinkerBlack {
   0% {
     color: #fff;
     fill: #fff;
   }
 
   100% {
-    color: $color-primary-purple-dark;
-    fill: $color-primary-purple-dark;
+    color: $color-primary-dark;
+    fill: $color-primary-dark;
   }
 }
 /*********************************************************************************/
@@ -255,54 +255,54 @@
   }
 }
 // Color Picker
-// Green
+// Ocean
 // Safari
-@-webkit-keyframes colorPickerBlinker-2Green {
+@-webkit-keyframes colorPickerBlinker-2Ocean {
   0% {
     -webkit-box-shadow: -1px 0 30px -10px rgb(255, 255, 255);
     box-shadow: -1px 0 30px -10px rgb(255, 255, 255);
   }
 
   100% {
-    -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
-    box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
+    -webkit-box-shadow: -1px 0 30px -10px rgba(5, 31, 52, 1);
+    box-shadow: -1px 0 30px -10px rgba(5, 31, 52, 1);
   }
 }
 // Safari
-@keyframes colorPickerBlinker-2Green {
+@keyframes colorPickerBlinker-2Ocean {
   0% {
     -webkit-box-shadow: -1px 0 30px -10px rgb(255, 255, 255);
     box-shadow: -1px 0 30px -10px rgb(255, 255, 255);
   }
 
   100% {
-    -webkit-box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
-    box-shadow: -1px 0 30px -10px rgba(128, 255, 0, 1);
+    -webkit-box-shadow: -1px 0 30px -10px rgba(5, 31, 52, 1);
+    box-shadow: -1px 0 30px -10px rgba(5, 31, 52, 1);
   }
 }
-// Purple
+// Black
 // Safari
-@-webkit-keyframes colorPickerBlinker-2Purple {
+@-webkit-keyframes colorPickerBlinker-2Black {
   0% {
     -webkit-box-shadow: -1px 0 30px -10px rgb(255, 255, 255);
     box-shadow: -1px 0 30px -10px rgb(255, 255, 255);
   }
 
   100% {
-    -webkit-box-shadow: -1px 0 30px -10px rgba(255, 51, 255, 1);
-    box-shadow: -1px 0 30px -10px rgba(7255, 51, 255, 1);
+    -webkit-box-shadow: -1px 0 30px -10px rgba(7, 7, 8, 1);
+    box-shadow: -1px 0 30px -10px rgba(7, 7, 8, 1);
   }
 }
 // Safari
-@keyframes colorPickerBlinker-2Purple {
+@keyframes colorPickerBlinker-2Black {
   0% {
     -webkit-box-shadow: -1px 0 30px -10px rgb(255, 255, 255);
     box-shadow: -1px 0 30px -10px rgb(255, 255, 255);
   }
 
   100% {
-    -webkit-box-shadow: -1px 0 30px -10px rgba(255, 51, 255, 1);
-    box-shadow: -1px 0 30px -10px rgba(7255, 51, 255, 1);
+    -webkit-box-shadow: -1px 0 30px -10px rgba(7, 7, 8, 1);
+    box-shadow: -1px 0 30px -10px rgba(7, 7, 8, 1);
   }
 }
 /*********************************************************************************/

@@ -13,12 +13,12 @@
   z-index: -600;
   overflow: hidden;
 
-  &.green {
-    background-image: linear-gradient(135deg, rgba($color-primary-light, .5) 50%, rgba($color-primary-dark, .5) 100%) ,url("../img/bg-photo-1.jpg");
+  &.ocean {
+    background-image: linear-gradient(135deg, rgba($color-light-water-blue, .5) 50%, rgba($color-primary-dark, .5) 100%) ,url("../img/bg-photo-1.jpg");
   }
 
-  &.purple {
-    background-image: linear-gradient(135deg, rgba($color-primary-purple-light, .5) 50%, rgba($color-primary-purple-dark, .5) 100%) ,url("../img/bg-photo-1.jpg");
+  &.black {
+    background-image: linear-gradient(135deg, rgba($color-gray, .9) 50%, rgba($color-gray, .9) 100%) ,url("../img/bg-photo-1.jpg");
   }
 }
 // About section
@@ -36,12 +36,12 @@
   overflow: hidden;
   transition: all 1s ease-in-out;
 
-  &.green {
-    background-image: linear-gradient(135deg, rgba($color-primary-light, .5) 50%, rgba($color-primary-dark, .5) 100%) ,url("../img/bg-photo-2.jpg");
+  &.ocean {
+    background-image: linear-gradient(135deg, rgba($color-light-water-blue, .5) 50%, rgba($color-primary-dark, .5) 100%) ,url("../img/bg-photo-2.jpg");
   }
 
-  &.purple {
-    background-image: linear-gradient(135deg, rgba($color-primary-purple-light, .5) 50%, rgba($color-primary-purple-dark, .5) 100%) ,url("../img/bg-photo-2.jpg");
+  &.black {
+    background-image: linear-gradient(135deg, rgba($color-gray, .9) 50%, rgba($color-gray, .9) 100%) ,url("../img/bg-photo-2.jpg");
   }
 
   &.active {
@@ -81,12 +81,12 @@
   overflow: hidden;
   transition: all 1s ease-in-out;
 
-  &.green {
-    background-image: linear-gradient(135deg, rgba($color-primary-light, .5) 50%, rgba($color-primary-dark, .5) 100%) ,url("../img/bg-photo-3.jpg");
+  &.ocean {
+    background-image: linear-gradient(135deg, rgba($color-light-water-blue, .5) 50%, rgba($color-primary-dark, .5) 100%) ,url("../img/bg-photo-3.jpg");
   }
 
-  &.purple {
-    background-image: linear-gradient(135deg, rgba($color-primary-purple-light, .5) 50%, rgba($color-primary-purple-dark, .5) 100%) ,url("../img/bg-photo-3.jpg");
+  &.black {
+    background-image: linear-gradient(135deg, rgba($color-gray, .9) 50%, rgba($color-gray, .9) 100%) ,url("../img/bg-photo-3.jpg");
   }
 
   &.active {
@@ -101,17 +101,17 @@
   }
   @include respond(tab-port) {
     overflow: scroll;
-    padding: 40rem 0;
-    z-index: -400;
-  }
-  @include respond(phone) {
-    overflow: scroll;
-    padding: 70rem 0;
+    padding: 35rem 0;
     z-index: -400;
   }
   @include respond(sm-phone) {
     overflow: scroll;
     padding: 85rem 0;
+    z-index: -400;
+  }
+  @include respond(phone) {
+    overflow: scroll;
+    padding: 70rem 0;
     z-index: -400;
   }
 }
@@ -141,19 +141,19 @@
   width: 10%;
   height: 100vh;
   z-index: 10000;
-  background-image: linear-gradient(135deg, rgba($color-primary-sky-blue-light, 1) 50%, rgba($color-primary-sky-blue-dark, 1) 100%);
+  background-image: linear-gradient(135deg, rgba($color-primary-sky-blue-dark, .7) 50%, rgba($color-primary-sky-blue-dark, .7) 100%);
   transition: all 0.4s ease-in-out;
 
   &.active {
     transform: translate3d(0, 0, 0);
   }
 
-  &.green {
-    background-image: linear-gradient(135deg, rgba($color-primary-light, 1) 50%, rgba($color-primary-dark, 1) 100%);
+  &.ocean {
+    background-image: linear-gradient(135deg, rgba($color-dark-water-blue, .7) 50%, rgba($color-dark-water-blue, .7) 100%);
   }
 
-  &.purple {
-    background-image: linear-gradient(135deg, rgba($color-primary-purple-light, 1) 50%, rgba($color-primary-purple-dark, 1) 100%);
+  &.black {
+    background-image: linear-gradient(135deg, rgba($color-dark-blue, .7) 50%, rgba($color-dark-blue, .7) 100%);
   }
   @include respond(tab-port) {
     transform: translate3d(-100%, 0, 0);
